@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Root from "../layout/root";
 import Error from "./Error";
 import LandingPage from "./LandingPage/LandingPage";
+import AdminMessages from "./AdminMessage";
 
 
 export const router = createBrowserRouter([
@@ -19,6 +20,7 @@ export const router = createBrowserRouter([
 
         children: [
             { index: true, element: <LandingPage /> },
+            { path: "/leads", element: <AdminMessages /> },
 
             
         
