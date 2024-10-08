@@ -23,11 +23,6 @@ import UserOrders from "./UserOrders";
 
 export const router = createBrowserRouter([
 
-    {
-        path: "/studio",
-        element: <LandingPage/>,
-        errorElement: <Error />,
-    },
 
     {
         path: "/",
