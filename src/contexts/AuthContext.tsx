@@ -1,7 +1,7 @@
 import { jwtDecode } from "jwt-decode";
 import { createContext, FC, useEffect, useMemo, useState } from "react";
+import { AuthContextType, ContextProviderProps, DecodedToken, IUser } from "../@Types/types";
 import * as auth from "../services/auth";
-import { ContextProviderProps, AuthContextType, IUser, DecodedToken } from "../@Types/types";
 import dialogs from "../ui/dialogs";
 
 

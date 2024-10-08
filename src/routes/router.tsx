@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import { CarouselComponent } from "../components/Carousel";
 import Root from "../layout/root";
 import About from "./About";
 import AdminDashboard from "./AdminDashboard";
@@ -11,6 +12,7 @@ import Login from "./Login";
 import OrderConfirmation from "./OrderConfirmation";
 
 import Product from "./Product";
+import Products from "./Products";
 import ProtectedRouteAdmin from "./ProtectedRouteAdmin";
 import ProtectedRouteUser from "./ProtectedRouteUser";
 import Register from "./Register";
@@ -21,6 +23,11 @@ import UserOrders from "./UserOrders";
 
 export const router = createBrowserRouter([
 
+    {
+        path: "/studio",
+        element: <LandingPage/>,
+        errorElement: <Error />,
+    },
 
     {
         path: "/",
@@ -28,7 +35,7 @@ export const router = createBrowserRouter([
         errorElement: <Error />,
 
         children: [
-            { index: true, element: <LandingPage /> },
+            { index: true, element: <><CarouselComponent /><Products /></> },
             { path: "/register", element: <Register /> },
             { path: "/login", element: <Login /> },
             /* {
@@ -96,8 +103,8 @@ export const router = createBrowserRouter([
             {
                 path: "/about", element: <About />
             },
+      
 
-       
             
             
 
