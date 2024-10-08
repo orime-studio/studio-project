@@ -4,14 +4,12 @@ import About from "./About";
 import AdminDashboard from "./AdminDashboard";
 import Cart from "./Cart";
 import Contact from "./Contact";
-import CreatePage from "./CreatePage";
 import CreateProduct from "./CreateProduct";
 import Error from "./Error";
 import LandingPage from "./LandingPage/LandingPage";
 import Login from "./Login";
 import OrderConfirmation from "./OrderConfirmation";
-import PageDetail from "./Page";
-import PagesList from "./Pages";
+
 import Product from "./Product";
 import ProtectedRouteAdmin from "./ProtectedRouteAdmin";
 import ProtectedRouteUser from "./ProtectedRouteUser";
@@ -98,15 +96,8 @@ export const router = createBrowserRouter([
             {
                 path: "/about", element: <About />
             },
-            {
-                path: "/pages", element: <PagesList />
-            },
-            {
-                path: "/pages/:id", element: <PageDetail />
-            },
-            {
-                path: "/create-page", element: <CreatePage />
-            },
+
+       
             
             
 
