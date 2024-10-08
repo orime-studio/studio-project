@@ -1,9 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "../layout/root";
+import AdminMessages from "./AdminMessage";
 import Error from "./Error";
 import LandingPage from "./LandingPage/LandingPage";
-import Login from "./Login";
-import AdminMessages from "./AdminMessage";
 
 
 
