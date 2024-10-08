@@ -35,7 +35,7 @@ export const router = createBrowserRouter([
         errorElement: <Error />,
 
         children: [
-            { index: true, element: <><CarouselComponent /><Products /></> },
+            { index: true, element: <LandingPage /> },
             { path: "/register", element: <Register /> },
             { path: "/login", element: <Login /> },
             /* {
