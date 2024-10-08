@@ -3,6 +3,7 @@ import Root from "../layout/root";
 import Error from "./Error";
 import LandingPage from "./LandingPage/LandingPage";
 import Login from "./Login";
+import AdminMessages from "./AdminMessage";
 
 
 
@@ -21,7 +22,7 @@ export const router = createBrowserRouter([
 
         children: [
             { index: true, element: <LandingPage /> },
-            { path: "/leads", element: <Login /> },
+            { path: "/leads", element: <AdminMessages/> },
 
         ],
     },
