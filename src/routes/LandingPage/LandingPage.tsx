@@ -58,7 +58,7 @@ const LandingPage = () => {
                     <a href="#contactForm" className="small-banner get-in-touch">
                         <div className="banner-content">
                             <h2>Get in Touch</h2>
-                            <p>30 Figma icons + 15 solid color</p>
+                            <p>We’d love to hear your ideas</p>
                         </div>
 
                         <div className="icon-container">
@@ -72,7 +72,7 @@ const LandingPage = () => {
                     <a href="#firstProject" className="small-banner projects">
                         <div className="banner-content">
                             <h2>Projects</h2>
-                            <p>30 Figma icons + 15 solid color</p>
+                            <p>View recent works and designs</p>
                         </div>
                         <div className="icon-container">
                             <img src="img/Arrow.svg" alt="Arrow Icon" className="arrow-icon" />
