@@ -126,7 +126,7 @@ const LandingPage = () => {
                     <div className="left-content-square">
                         <h3 className="ecommerce-title">Software Design</h3>
                         <h2 className="ecommerce-name">Priimo</h2>
-                        <p className="ecommerce-description">45x1U keyset. 30 Figma icons + 15 solid color</p>
+                        <p className="ecommerce-description">Personalizing Cancer Treatments</p>
                         <div className="arrow-icon-container">
                             <img src="img/Arrow.svg" alt="Arrow Icon" className="arrow-icon" />
                         </div>
@@ -143,7 +143,7 @@ const LandingPage = () => {
                     <div className="content-square">
                         <h3 className="ecommerce-title">Management System</h3>
                         <h2 className="ecommerce-name">Ilan Overview</h2>
-                        <p className="ecommerce-description">45x1U keyset. 30 Figma icons + 15 solid color</p>
+                        <p className="ecommerce-description">App for managing apartment defects and buyer delivery</p>
                         <div className="arrow-icon-container">
                             <img src="img/Arrow.svg" alt="Arrow Icon" className="arrow-icon" />
                         </div>
@@ -159,7 +159,7 @@ const LandingPage = () => {
                     <div className="left-content-square">
                         <h3 className="ecommerce-title">Video Motion Game</h3>
                         <h2 className="ecommerce-name">ReAbility Online</h2>
-                        <p className="ecommerce-description">45x1U keyset. 30 Figma icons + 15 solid color</p>
+                        <p className="ecommerce-description">Games for Cognitive Motion Rehabilitation</p>
                         <div className="arrow-icon-container">
                             <img src="img/Arrow.svg" alt="Arrow Icon" className="arrow-icon" />
                         </div>
