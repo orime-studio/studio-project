@@ -180,7 +180,7 @@ const LandingPage = () => {
 
                         <div className='member-info'>
                             <div className='member-details'>
-                                <h3 className='member-title'>Tamar</h3>
+                                <h3 className='member-title'>Tamar Tamam</h3>
                                 <p className='member-description'>Full-Stack Developer</p>
                             </div>
                             <div className='member-social'>
