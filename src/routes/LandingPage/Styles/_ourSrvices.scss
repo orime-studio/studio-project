@@ -36,11 +36,13 @@
     font-size: 0.9rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-align: center;
+
+    &:hover {
+        background-color: #C1B694;
+    }
 }
 
-.gold-button:hover {
-    background-color: #C8BEA0;
-}
 
 .right-side {
     width: 60%;
