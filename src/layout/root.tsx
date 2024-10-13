@@ -8,7 +8,7 @@ import Header from "../components/Header";
 const Root = () => {
 
     return (
-        <div className="flex flex-col min-h-screen text-blue-500">
+        <div className="flex flex-col min-h-screen">
             <main className="flex-1">
                 <Outlet />
                 
