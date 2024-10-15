@@ -13,7 +13,7 @@ const StudioContact = () => {
         handleSubmit,
         formState: { errors },
     } = useForm<IMessage>({
-        defaultValues: { fullName: "", email: "", message: "" },
+        defaultValues: { fullName: "", email: "", phone: "", message: "" },
         mode: "onChange",
     });
 
