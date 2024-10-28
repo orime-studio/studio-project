@@ -45,7 +45,7 @@ const LandingPage = () => {
             <div className="banner-container">
                 <div className="banner">
                     <div className="top-left-text">
-<img src="img/Logo.png" alt="orime-logo" />
+                        <img src="img/Logo-white.png" alt="orime-logo" />
                     </div>
                     <div className="center-text">
                         <h2>Design - Develop - Deliver</h2>
