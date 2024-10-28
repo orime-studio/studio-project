@@ -5,6 +5,7 @@ import Error from "./Error";
 import LandingPage from "./LandingPage/LandingPage";
 import ProtectedRouteAdmin from "./ProtectedRouteAdmin";
 import Login from "./Login";
+import LandingPageHeb from "./LandingPageHebrew/LandingPageHebrew";
 
 
 
@@ -23,6 +24,7 @@ export const router = createBrowserRouter([
 
         children: [
             { index: true, element: <LandingPage /> },
+            {path: "/heb", element: <LandingPageHeb />},
             {
                 path: "/leads", element: <ProtectedRouteAdmin>
                     <AdminMessages />
