@@ -53,7 +53,7 @@ const LandingPageHeb = () => {
                         <img src="img/Logo.png" alt="orime-logo" />
                     </div>
                     <div className="center-text">
-                        <h2>עיצוב - בנייה - הגשמה</h2>
+                        <h2>עיצוב - פיתוח - השקה</h2>
                         <p>מעצבים רעיונות, בונים פתרונות</p>
                     </div>
 
@@ -62,8 +62,8 @@ const LandingPageHeb = () => {
                 <div className="side-banners">
                     <a href="#contactForm" className="small-banner get-in-touch">
                         <div className="banner-content">
-                            <h2>Get in Touch</h2>
-                            <p>We’d love to hear your ideas</p>
+                            <h2>בואו נדבר</h2>
+                            <p>נשמח לשמוע את הרעיון שלך</p>
                         </div>
 
                         <div className="icon-container">
@@ -76,8 +76,8 @@ const LandingPageHeb = () => {
 
                     <a href="#firstProject" className="small-banner projects">
                         <div className="banner-content">
-                            <h2>Projects</h2>
-                            <p>View recent works and designs</p>
+                            <h2>פרוייקטים</h2>
+                            <p>צפייה בפרוייקטים נבחרים</p>
                         </div>
                         <div className="icon-container">
                             <img src="img/Arrow.svg" alt="Arrow Icon" className="arrow-icon" />
