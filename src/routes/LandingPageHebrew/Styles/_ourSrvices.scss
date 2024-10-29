@@ -1,4 +1,4 @@
-.services-section {
+.services-section-heb {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,7 +9,7 @@
     font-family: 'Assistant', sans-serif !important;
 }
 
-.left-side {
+.left-side-heb {
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@
 
 }
 
-.description {
+.description-heb {
     font-size: 16px;
     color: #2B2E37;
     line-height: 1.6;
@@ -45,13 +45,13 @@ direction: rtl;
     background-color: #C8BEA0;
 }
 
-.right-side {
+.right-side-heb {
     width: 60%;
     direction: rtl;
         unicode-bidi: plaintext;
 }
 
-.cards-container {
+.cards-container-heb {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* 3 columns */
@@ -60,7 +60,7 @@ direction: rtl;
     
 }
 
-.card {
+.card-heb {
     /* Remove background color */
     padding: 10px;
     border-radius: 10px;
@@ -84,7 +84,7 @@ direction: rtl;
     height: 25px;
 }
 
-.card h3 {
+.card-heb h3 {
     font-size: 16px;
     /* Adjust font size */
     color: #2B2E37;
@@ -92,7 +92,7 @@ direction: rtl;
     font-weight: 600;
 }
 
-.card p {
+.card-heb p {
     font-size: 12px;
     /* Adjust font size */
     color: #000000;
@@ -100,7 +100,7 @@ direction: rtl;
 }
 
 @media screen and (max-width: 1000px) {
-    .cards-container {
+    .cards-container-heb {
             grid-template-columns: repeat(2, 1fr);
 
     }
@@ -113,17 +113,17 @@ direction: rtl;
     
 
 @media screen and (max-width: 680px) {
-    .services-section {
+    .services-section-heb {
         flex-direction: column;
         align-items: center;
     }
 
-    .left-side,
-    .right-side {
+    .left-side-heb,
+    .right-side-heb {
         width: 100%;
     }
 
-    .cards-container {
+    .cards-container-heb {
         grid-template-columns: repeat(2, 1fr);
     }
 

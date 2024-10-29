@@ -46,20 +46,20 @@ const services = [
 
 const LandingPageHeb = () => {
     return (
-        <div className="landing-page">
-            <div className="banner-container">
-                <div className="banner">
+        <div className="landing-page-heb">
+            <div className="banner-container-heb">
+                <div className="banner-heb">
                     <div className="top-left-text">
                         <img src="img/Logo.png" alt="orime-logo" />
                     </div>
-                    <div className="center-text">
+                    <div className="center-text-hebr">
                         <h2>עיצוב - פיתוח - השקה</h2>
                         <p>מעצבים רעיונות, בונים פתרונות</p>
                     </div>
 
                 </div>
 
-                <div className="side-banners">
+                <div className="side-banners-heb">
                     <a href="#contactForm" className="small-banner get-in-touch">
                         <div className="banner-content">
                             <h2>בואו נדבר</h2>
@@ -86,11 +86,11 @@ const LandingPageHeb = () => {
                 </div>
             </div>
 
-            <div className="services-section">
-                <div className="right-side">
-                    <div className="cards-container">
+            <div className="services-section-heb">
+                <div className="right-side-heb">
+                    <div className="cards-container-heb">
                         {services.map((service, index) => (
-                            <div className="card" key={index}>
+                            <div className="card-heb" key={index}>
                                 <div className="icon-circle">
                                     <img src={`${service.icon}`} alt={`${service.title} Icon`} />
                                 </div>
@@ -100,8 +100,8 @@ const LandingPageHeb = () => {
                         ))}
                     </div>
                 </div>
-                <div className="left-side">
-                    <p className="description">
+                <div className="left-side-heb">
+                    <p className="description-heb">
                         הפכו את הרעיונות שלכם למציאות בעזרת עיצוב ופיתוח חדשניים, שמקדמים את המותג שלכם קדימה
 
 
