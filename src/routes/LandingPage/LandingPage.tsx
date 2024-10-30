@@ -42,7 +42,6 @@ const services = [
 const LandingPage = () => {
     return (
         <div className="landing-page">
-         
             <div className="banner-container">
                 <div className="banner">
                     <div className="top-left-text">
@@ -97,8 +96,10 @@ const LandingPage = () => {
                                 <div className="icon-circle">
                                     <img src={`${service.icon}`} alt={`${service.title} Icon`} />
                                 </div>
-                                <h3>{service.title}</h3>
-                                <p>{service.description}</p>
+                                <div>
+                                    <h3>{service.title}</h3>
+                                    <p>{service.description}</p>
+                                </div>
                             </div>
                         ))}
                     </div>

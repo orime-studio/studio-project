@@ -1,9 +1,10 @@
-.landing-page{
+.landing-page {
     margin-left: 16px;
     margin-right: 16px;
     margin-top: 16px;
     overflow-x: hidden;
 }
+
 .language-switcher {
     position: absolute;
     top: 32px;
@@ -13,9 +14,12 @@
 }
 
 .lang-btn {
-    background-color: rgba(255, 255, 255, 0.5); /* צבע לבן עם שקיפות של 50% */
-    backdrop-filter: blur(21px); /* טשטוש רקע */
-    transition: background-color 0.3s ease; /* מעבר חלק */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* צבע לבן עם שקיפות של 50% */
+    backdrop-filter: blur(21px);
+    /* טשטוש רקע */
+    transition: background-color 0.3s ease;
+    /* מעבר חלק */
     border: none;
     padding: 8px 12px;
     cursor: pointer;
@@ -41,7 +45,7 @@
 
 
 .banner-container {
-display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -49,23 +53,23 @@ display: flex;
     position: relative;
     font-family: 'montserrat';
     background-image: url('/img/Main banner v2 2.jpg');
-   background-size: cover;
+    background-size: cover;
     background-position: center;
-    border-radius: 40px;
+    border-radius: 28px;
     padding: 16px;
-    
+
 }
 
 .banner {
     width: 70%;
     height: 100%;
-    border-radius: 40px;
+    border-radius: 28px;
     position: relative;
     padding: 16px;
     margin-bottom: 16px;
     position: relative;
-        z-index: 2;
- 
+    z-index: 2;
+
 }
 
 .top-left-text {
@@ -92,9 +96,9 @@ display: flex;
     align-items: flex-start;
     height: 100%;
     width: 100%;
- 
-/*     text-align: center;
- */   
+
+    /*     text-align: center;
+ */
 }
 
 .center-text h2 {
@@ -116,20 +120,20 @@ display: flex;
 
 .bottom-left-content {
     font-size: 1.2rem;
-        /* Adjusted size for better readability */
-        color: #2B2E37;
-        line-height: 1.5;
-        margin-top: 16px;
-        /* Added space below title */
-        max-width: 500px;
+    /* Adjusted size for better readability */
+    color: #2B2E37;
+    line-height: 1.5;
+    margin-top: 16px;
+    /* Added space below title */
+    max-width: 500px;
 }
 
 
 .bottom-left-content p {
     margin: 0;
-        color: #2B2E37;
-        font-size: 1rem;
-        line-height: 1.5;
+    color: #2B2E37;
+    font-size: 1rem;
+    line-height: 1.5;
 
 }
 
@@ -144,22 +148,27 @@ display: flex;
 
 .small-banner {
 
-    background-color: rgba(255, 255, 255, 0.5); /* צבע לבן עם שקיפות של 50% */
-    backdrop-filter: blur(21px); /* טשטוש רקע */
-    transition: background-color 0.3s ease; /* מעבר חלק */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* צבע לבן עם שקיפות של 50% */
+    backdrop-filter: blur(21px);
+    /* טשטוש רקע */
+    transition: background-color 0.3s ease;
+    /* מעבר חלק */
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding: 20px;
     height: 50%;
-    border-radius: 40px;
+    border-radius: 28px;
 
     position: relative;
 }
 
 .small-banner:hover {
-    background-color: rgba(255, 255, 255, 0.7); /* צבע לבן עם שקיפות של 70% במצב הובר */
+    background-color: rgba(255, 255, 255, 0.7);
+    /* צבע לבן עם שקיפות של 70% במצב הובר */
 }
+
 .get-in-touch {
     margin-bottom: 16px;
 }
@@ -169,21 +178,23 @@ display: flex;
     flex-direction: column;
     justify-content: left;
     align-items: flex-start;
+
+
+    h2 {
+        font-size: 1.7rem;
+        color: #2B2E37;
+        margin: 0;
+        font-weight: 600;
+        text-align: left;
+    }
+
+    p {
+        font-size: 0.8rem;
+        color: #181717;
+        margin-top: 5px;
+    }
 }
 
-.banner-content h2 {
-    font-size: 1.5rem;
-    color: #2B2E37;
-    margin: 0;
-    font-weight: 500;
-    text-align: left;
-}
-
-.banner-content p {
-    font-size: 0.7rem;
-    color: #181717;
-    margin-top: 5px;
-}
 
 .icon-container {
     background-color: #ffffff;
@@ -202,6 +213,3 @@ display: flex;
     width: 30px;
     height: 30px;
 }
-
-
-

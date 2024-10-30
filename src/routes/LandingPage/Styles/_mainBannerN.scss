@@ -1,0 +1,186 @@
+// משתנים כלליים
+$white-opacity-50: rgba(255, 255, 255, 0.5);
+$white-opacity-70: rgba(255, 255, 255, 0.7);
+$dark-color: #2B2E37;
+$font-family: 'montserrat';
+
+.landing-page {
+    margin: 16px;
+    overflow-x: hidden;
+}
+
+.language-switcher {
+    position: absolute;
+    top: 32px;
+    right: 50%;
+    display: flex;
+    gap: 10px;
+
+    .lang-btn {
+        background-color: $white-opacity-50;
+        backdrop-filter: blur(21px);
+        transition: background-color 0.3s ease;
+        border: none;
+        padding: 8px 12px;
+        cursor: pointer;
+        font-size: 14px;
+        z-index: 1;
+        border-radius: 50%;
+        height: 54px;
+        width: 54px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background-color: #ddd;
+        }
+    }
+
+    .en {
+        background: #FFFFFFCC;
+    }
+}
+
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 567px;
+    position: relative;
+    font-family: $font-family;
+    background-image: url('/img/Main banner v2 2.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 28px;
+    padding: 16px;
+
+    .banner {
+        width: 70%;
+        height: 100%;
+        border-radius: 28px;
+        position: relative;
+        padding: 16px;
+        margin-bottom: 16px;
+        z-index: 2;
+
+        .top-left-text {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: $dark-color;
+            z-index: 2;
+
+            img {
+                width: 80px;
+                margin-right: 10px;
+            }
+        }
+
+        .center-text {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100%;
+            width: 100%;
+
+            h2 {
+                font-size: 2.5rem;
+                font-weight: 600;
+                color: #FFFFFF;
+                margin: 0 0 16px 0;
+            }
+
+            p {
+                font-size: 1.2rem;
+                color: #FFFFFF;
+                margin: 0;
+            }
+        }
+
+        .bottom-left-content {
+            font-size: 1.2rem;
+            color: $dark-color;
+            line-height: 1.5;
+            margin-top: 16px;
+            max-width: 500px;
+
+            p {
+                margin: 0;
+                color: $dark-color;
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+        }
+    }
+
+    .side-banners {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        width: 337px;
+        font-family: $font-family;
+
+        .small-banner {
+            background-color: $white-opacity-50;
+            backdrop-filter: blur(21px);
+            transition: background-color 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 20px;
+            height: 50%;
+            border-radius: 28px;
+            position: relative;
+
+            &:hover {
+                background-color: $white-opacity-70;
+            }
+
+            .banner-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: left;
+                align-items: flex-start;
+
+                h2 {
+                    font-size: 1.7rem;
+                    color: $dark-color;
+                    margin: 0;
+                    font-weight: 600;
+                    text-align: left;
+                }
+
+                p {
+                    font-size: 0.7rem;
+                    color: #181717;
+                    margin-top: 5px;
+                }
+            }
+
+            .icon-container {
+                background-color: #ffffff;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+
+                .arrow-icon {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}

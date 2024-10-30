@@ -5,7 +5,7 @@
     background-color: #faf8f8;
     padding: 40px;
     margin-top: 16px;
-    border-radius: 40px;
+    border-radius: 28px;
     font-family: 'Assistant', sans-serif !important;
 }
 
@@ -24,31 +24,31 @@
     color: #2B2E37;
     line-height: 1.6;
     margin-bottom: 20px;
-direction: rtl;
+    direction: rtl;
     unicode-bidi: plaintext;
 }
 
 .gold-button {
-    background-color: #C8BEA0;
+    background-color: #BFB491;
     color: #FFFFFF;
     padding: 10px 20px;
-    border-radius: 40px;
+    border-radius: 28px;
     font-size: 0.9rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
     align-self: flex-end;
-        text-decoration: none;
+    text-decoration: none;
 
 }
 
 .gold-button:hover {
-    background-color: #C8BEA0;
+    background-color: #BFB491;
 }
 
 .right-side-heb {
     width: 60%;
     direction: rtl;
-        unicode-bidi: plaintext;
+    unicode-bidi: plaintext;
 }
 
 .cards-container-heb {
@@ -56,8 +56,8 @@ direction: rtl;
     grid-template-columns: repeat(3, 1fr);
     /* 3 columns */
     gap: 20px;
-        text-align: right;
-    
+    text-align: right;
+
 }
 
 .card-heb {
@@ -101,16 +101,16 @@ direction: rtl;
 
 @media screen and (max-width: 1000px) {
     .cards-container-heb {
-            grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
 
     }
 
-        .gold-button {
-            width: 100%;
-            margin-bottom: 30px;
-        }
+    .gold-button {
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
-    
+
 
 @media screen and (max-width: 680px) {
     .services-section-heb {
@@ -127,8 +127,8 @@ direction: rtl;
         grid-template-columns: repeat(2, 1fr);
     }
 
-        .gold-button {
-            width: 100%;
-            margin-bottom: 30px;
-        }
+    .gold-button {
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }

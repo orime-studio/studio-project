@@ -4,8 +4,9 @@
     align-items: center;
     justify-content: center;
     background-color: #f5f5f5;
-/*     margin: 16px auto;
- */    border-radius: 40px;
+    /*     margin: 16px auto;
+ */
+    border-radius: 28px;
     padding: 16px;
     margin-top: 16px;
     margin-bottom: 16px;
@@ -24,7 +25,7 @@
     font-size: 1.5rem;
     text-align: left;
     font-weight: 700;
-    
+
 }
 
 
@@ -45,8 +46,9 @@
 
 
 }
+
 .contact-input:focus {
-outline: none !important;
+    outline: none !important;
     border-bottom-color: #000 !important;
     box-shadow: none !important;
 }
@@ -61,12 +63,12 @@ outline: none !important;
     font-size: 0.9rem;
     width: 100%;
     padding: 10px 20px;
-    background-color: #C8BEA0;
+    background-color: #BFB491;
     margin-top: 2rem;
     color: white;
     font-weight: 700;
     border: none;
-    border-radius: 40px;
+    border-radius: 28px;
     cursor: pointer;
 
     &:hover {
