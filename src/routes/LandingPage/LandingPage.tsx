@@ -42,10 +42,7 @@ const services = [
 const LandingPage = () => {
     return (
         <div className="landing-page">
-            <div className="language-switcher">
-                <button className="lang-btn en">ENG</button>
-                <button className="lang-btn">עבר</button>
-            </div>
+         
             <div className="banner-container">
                 <div className="banner">
                     <div className="top-left-text">
