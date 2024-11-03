@@ -36,7 +36,7 @@ const StudioContactHebrew = () => {
                 onSubmit={handleSubmit(onSend)}
                 className="contact-form-heb"
             >
-                <h2 className="contact-title-heb">Get in Touch</h2>
+                <h2 className="contact-title-heb">צור קשר</h2>
 
                 {/* Full Name */}
                 <section>
@@ -58,7 +58,7 @@ const StudioContactHebrew = () => {
                 {/* Email */}
                 <section>
                     <input
-                        placeholder="Email"
+                        placeholder="מייל"
                         type="email"
                         className="contact-input-heb"
                         {...register("email", {
@@ -77,7 +77,7 @@ const StudioContactHebrew = () => {
                 {/* Phone */}
                 <section>
                     <input
-                        placeholder="Phone"
+                        placeholder="טלפון"
                         type="tel"
                         className="contact-input-heb"
                         {...register("phone", {
@@ -96,7 +96,7 @@ const StudioContactHebrew = () => {
                 {/* Message */}
                 <section>
                     <textarea
-                        placeholder="Message"
+                        placeholder="הודעה"
                         className="contact-input-heb"
                         rows={1}
 
@@ -116,7 +116,7 @@ const StudioContactHebrew = () => {
                     type="submit"
                     className="contact-button-heb"
                 >
-                    Start Your Project
+                    בוא נתחיל
                 </button>
             </form>
         </div>
