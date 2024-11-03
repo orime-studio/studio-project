@@ -6,7 +6,7 @@ import dialogs from "../../ui/dialogs";
 import patterns from "../../validations/patterns";
 
 
-const StudioContact = () => {
+const StudioContactHebrew = () => {
     const navigate = useNavigate();
     const {
         register,
@@ -30,20 +30,20 @@ const StudioContact = () => {
     };
 
     return (
-        <div className="contact-container">
+        <div className="contact-container-heb">
             <form
                 noValidate
                 onSubmit={handleSubmit(onSend)}
-                className="contact-form"
+                className="contact-form-heb"
             >
-                <h2 className="contact-title">Get in Touch</h2>
+                <h2 className="contact-title-heb">Get in Touch</h2>
 
                 {/* Full Name */}
                 <section>
                     <input
                         placeholder="Full Name"
                         type="text"
-                        className="contact-input"
+                        className="contact-input-heb"
                         {...register("fullName", {
                             required: "This field is mandatory",
                             minLength: { value: 2, message: "Too short" },
@@ -60,7 +60,7 @@ const StudioContact = () => {
                     <input
                         placeholder="Email"
                         type="email"
-                        className="contact-input"
+                        className="contact-input-heb"
                         {...register("email", {
                             required: "This field is mandatory",
                             pattern: {
@@ -79,7 +79,7 @@ const StudioContact = () => {
                     <input
                         placeholder="Phone"
                         type="tel"
-                        className="contact-input"
+                        className="contact-input-heb"
                         {...register("phone", {
                             required: "This field is mandatory",
                             pattern: {
@@ -97,7 +97,7 @@ const StudioContact = () => {
                 <section>
                     <textarea
                         placeholder="Message"
-                        className="contact-input"
+                        className="contact-input-heb"
                         rows={1}
 
                         {...register("message", {
@@ -114,7 +114,7 @@ const StudioContact = () => {
                 <button
 
                     type="submit"
-                    className="contact-button"
+                    className="contact-button-heb"
                 >
                     Start Your Project
                 </button>
@@ -123,4 +123,4 @@ const StudioContact = () => {
     );
 };
 
-export default StudioContact;
+export default StudioContactHebrew;

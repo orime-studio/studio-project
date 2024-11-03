@@ -1,5 +1,5 @@
-.contact-container {
-    font-family: 'montserrat';
+.contact-container-heb {
+    font-family: 'Assistant', sans-serif !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,7 +13,7 @@
 
 }
 
-.contact-form {
+.contact-form-heb {
     width: 100%;
     max-width: 640px;
     padding: 2rem;
@@ -21,15 +21,15 @@
 
 }
 
-.contact-title {
+.contact-title-heb {
     font-size: 1.5rem;
-    text-align: left;
+    text-align: right;
     font-weight: 700;
 
 }
 
 
-.contact-input {
+.contact-input-heb {
     width: 100%;
     padding-top: 1.25rem;
     border: none;
@@ -42,6 +42,7 @@
 
     &::placeholder {
         font-size: 0.75rem;
+        text-align: right;
     }
 
 
@@ -53,13 +54,13 @@
     box-shadow: none !important;
 }
 
-.errorMessage {
+.errorMessage-heb {
     color: #ff0000;
     font-size: 0.70rem;
     margin-top: 0.25rem;
 }
 
-.contact-button {
+.contact-button-heb {
     font-size: 0.9rem;
     width: 100%;
     padding: 10px 20px;

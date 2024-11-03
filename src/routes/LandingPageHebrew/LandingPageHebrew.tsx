@@ -2,6 +2,7 @@ import React from 'react';
 import './Styles/main.scss';
 import RuningCode from '../../components/RuningCode';
 import StudioContact from './StudioContact';
+import StudioContactHebrew from './StudioContact';
 
 
 const services = [
@@ -226,7 +227,7 @@ const LandingPageHeb = () => {
             </section>
 
             <div id="contactForm">
-                <StudioContact />
+                <StudioContactHebrew />
             </div>
 
         </div>
