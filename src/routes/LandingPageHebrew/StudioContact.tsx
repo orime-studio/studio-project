@@ -116,7 +116,7 @@ const StudioContactHebrew = () => {
                     type="submit"
                     className="contact-button-heb"
                 >
-                    בוא נתחיל
+                    בואו נתחיל
                 </button>
             </form>
         </div>
