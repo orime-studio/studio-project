@@ -23,8 +23,8 @@ export const router = createBrowserRouter([
         errorElement: <Error />,
 
         children: [
-            { index: true, element: <LandingPage /> },
-            {path: "/heb", element: <LandingPageHeb />},
+            { index: true, element: <LandingPageHeb /> },
+            {path: "/en", element: <LandingPage />},
             {
                 path: "/leads", element: <ProtectedRouteAdmin>
                     <AdminMessages />
