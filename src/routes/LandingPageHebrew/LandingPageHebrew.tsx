@@ -191,7 +191,7 @@ const LandingPageHeb = () => {
 
                         <div className='member-info'>
                             <div className='member-details'>
-                                <h3 className='member-title'>Tamar Tamam</h3>
+                                <h3 className='member-title'>תמר תמם</h3>
                                 <p className='member-description'>Full-Stack Developer</p>
                             </div>
                             <div className='member-social'>
