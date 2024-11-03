@@ -1,4 +1,4 @@
-.banner-section {
+.banner-section-heb {
     position: relative;
     border-radius: 20px;
     overflow: hidden;
@@ -86,10 +86,11 @@
 
 }
 
-.arrow-icon {
+.arrow-icon-heb {
     width: 35px;
     height: 35px;
     filter: invert(19%) sepia(12%) saturate(0%) hue-rotate(210deg) brightness(96%) contrast(85%);
+    transform: scaleX(-1);
 }
 
 
