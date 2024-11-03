@@ -47,10 +47,7 @@ const services = [
 const LandingPageHeb = () => {
     return (
         <div className="landing-page-heb">
-               <div className="language-switcher">
-                <button className="lang-btn en">ENG</button>
-                <button className="lang-btn he">עבר</button>
-            </div>
+          
             <div className="banner-container-heb">
                 <div className="banner-heb">
                     <div className="top-left-text">
@@ -60,7 +57,6 @@ const LandingPageHeb = () => {
                         <h2>עיצוב - פיתוח - השקה</h2>
                         <p>מעצבים רעיונות, בונים פתרונות</p>
                     </div>
-
                 </div>
 
                 <div className="side-banners-heb">
