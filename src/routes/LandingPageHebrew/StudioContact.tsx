@@ -41,7 +41,7 @@ const StudioContactHebrew = () => {
                 {/* Full Name */}
                 <section>
                     <input
-                        placeholder="Full Name"
+                        placeholder="שם מלא"
                         type="text"
                         className="contact-input-heb"
                         {...register("fullName", {
