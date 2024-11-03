@@ -28,7 +28,7 @@ const services = [
         description: 'בניית תשתיות חזקות ומאובטחות שמתפקדות בצורה מושלמת מאחורי הקלעים, כך שהמערכת שלך תוכל להציע שירות חלק ומהיר למשתמשים. התאמה אישית לכל צורך כדי להבטיח פתרונות טכנולוגיים יציבים ואמינים.',
         icon: 'img/Back-End Development.svg',
     },
-    
+
     {
         title: 'פיתוח חנויות Shopify',
         description: 'צירת חנויות Shopify שמספרות את סיפור המותג שלך ויוצרות חוויית קנייה ייחודית ואינטואיטיבית. כל חנות נבנית בהתאמה אישית כדי לשקף את הערכים שלך ולמשוך את הלקוחות הנכונים.',
@@ -39,7 +39,7 @@ const services = [
         description: 'עיצוב ופיתוח אתרים מתקדמים ב-WordPress עם Elementor, המאפשרים לך לשלוט בקלות בתוכן ולהתאים אותו לצרכים שלך. כל אתר מעוצב בקפידה כדי לשדר אמינות, נראות מרשימה, וגמישות מלאה בניהול.',
         icon: 'img/WordPress & Elementor.svg',
     },
-   
+
 ];
 
 
@@ -47,21 +47,21 @@ const services = [
 const LandingPageHeb = () => {
     return (
         <div className="landing-page-heb">
-          
-            <div className="banner-container-heb">
-                <div className="banner-heb">
-                    <div className="top-left-text">
-                        <img src="img/Logo.png" alt="orime-logo" />
+
+            <div className="main-banner-container">
+                <div className="right-side-banner">
+                    <div className="logo">
+                        <img src="img/Logo-white.png" alt="orime-logo" />
                     </div>
-                    <div className="center-text-hebr">
+                    <div className="center-text-heb">
                         <h2>עיצוב - פיתוח - השקה</h2>
                         <p>מעצבים רעיונות, בונים פתרונות</p>
                     </div>
                 </div>
 
-                <div className="side-banners-heb">
-                    <a href="#contactForm" className="small-banner get-in-touch">
-                        <div className="banner-content">
+                <div className="left-side-banner">
+                    <a href="#contactForm" className="Square-banner get-in-touch">
+                        <div className="Square-banner-text">
                             <h2>בואו נדבר</h2>
                             <p>נשמח לשמוע את הרעיון שלך</p>
                         </div>
@@ -69,13 +69,11 @@ const LandingPageHeb = () => {
                         <div className="icon-container">
                             <img src="img/Arrow.svg" alt="Arrow Icon" className="arrow-icon" />
                         </div>
-
-
                     </a>
 
 
-                    <a href="#firstProject" className="small-banner projects">
-                        <div className="banner-content">
+                    <a href="#firstProject" className="Square-banner projects">
+                        <div className="Square-banner-text">
                             <h2>פרוייקטים</h2>
                             <p>צפייה בפרוייקטים נבחרים</p>
                         </div>
@@ -103,9 +101,6 @@ const LandingPageHeb = () => {
                 <div className="left-side-heb">
                     <p className="description-heb">
                         הפכו את הרעיונות שלכם למציאות בעזרת עיצוב ופיתוח חדשניים, שמקדמים את המותג שלכם קדימה
-
-
-
                     </p>
                     <a href="#contactForm" className="gold-button">ספרו לנו על הפרויקט שלכם</a>
                 </div>
