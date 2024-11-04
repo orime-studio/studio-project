@@ -113,7 +113,7 @@
                 }
 
                 p {
-                    font-size: 0.7rem;
+                    font-size: 0.75rem;
                     margin-top: 5px;
                 }
             }
@@ -142,12 +142,27 @@
 @media (max-width: 680px) {
 
     .main-banner-container {
+        flex-direction: column;
         .right-side-banner {
+            width: 100%;
             .center-text-heb {
                 h2 {
-                    font-size: 23px;
+                    font-size: 1.438rem;
                 }
             }
         }
+
+        .left-side-banner {
+            width: 100%;
+
+            .Square-banner {
+                .Square-banner-text {
+                    h2 {
+                        font-size: 1.438rem;
+                    }
+                }
+            }
+        }
+        
     }
 }
