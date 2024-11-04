@@ -94,7 +94,9 @@
 @media screen and (max-width: 680px) {
     .services-section-heb {
         .cards-container-heb {
-            grid-template-columns: 1fr;
+            display: flex;
+            flex-direction: column-reverse;
+            
         }
     }
 }
