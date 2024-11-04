@@ -32,7 +32,7 @@ const OurServiceN = () => {
             </div>
             <div className="cards">
                 <div className="cards-container-heb">
-                    {services.map((service, index) => (
+                {services.reverse().map((service, index) => (
                         <div className="card-heb" key={index}>
                             <div className="icon-circle">
                                 <img src={`${service.icon}`} alt={`${service.title} Icon`} />
