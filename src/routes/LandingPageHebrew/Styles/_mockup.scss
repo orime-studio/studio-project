@@ -9,19 +9,19 @@
     direction: rtl; /* כיוון התוכן לעברית */
 
     &.fashion-heb {
-        background-image: url('img/T&T Fashion.jpg');
+        background-image: url('/img/T&T Fashion.jpg');
     }
 
     &.priimo-heb {
-        background-image: url('img/Priimo.jpg');
+        background-image: url('/img/Priimo.jpg');
     }
 
     &.shemesh-heb {
-        background-image: url('img/Ilan.jpg');
+        background-image: url('/img/Ilan.jpg');
     }
 
     &.reability-heb {
-        background-image: url('img/Reability.jpg');
+        background-image: url('/img/Reability.jpg');
     }
 
     // השתמש ב-flexbox
@@ -108,19 +108,19 @@
          /* אפשר ריווח סביב התוכן */
 
         &.fashion-heb {
-            background-image: url('img/T&T FashionM.jpg'); /* תמונה מתאימה למסכים קטנים */
+            background-image: url('/img/T&T FashionM.jpg'); /* תמונה מתאימה למסכים קטנים */
         }
 
         &.priimo-heb {
-            background-image: url('img/PriimoM.jpg');
+            background-image: url('/img/PriimoM.jpg');
         }
 
         &.shemesh-heb {
-            background-image: url('img/Ilan OverviewM.jpg');
+            background-image: url('/img/Ilan OverviewM.jpg');
         }
 
         &.reability-heb {
-            background-image: url('img/ReAbility OnlineM.jpg');
+            background-image: url('/img/ReAbility OnlineM.jpg');
         }
 
         .content-overlay-heb {
