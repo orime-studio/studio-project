@@ -1,0 +1,99 @@
+.services-section-heb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #faf8f8;
+    padding: 40px;
+    margin-top: 16px;
+    border-radius: 28px;
+
+    .title {
+        text-align: center;
+        margin-bottom: 30px; /* הגדלת המרג'ין כדי ליצור אוויר מתחת לכותרת */
+
+        .services-title {
+            font-size: 40px; /* **הגדלת גודל הכותרת** */
+            color: #2B2E37;
+            margin-bottom: 20px;
+        }
+    }
+
+    .button-container {
+        margin-top: 60px; /* **הגדלת המרווח בין הכפתור לטקסט** */
+    }
+
+    .gold-button {
+        background-color: #BFB491;
+        color: #FFFFFF;
+        padding: 15px 30px; /* **הגדלת גודל הכפתור** */
+        border-radius: 28px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+
+    .gold-button:hover {
+        background-color: #a89c7d;
+    }
+
+    .cards-container-heb {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        text-align: center;
+        width: 100%;
+
+        .card-heb {
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+
+            .icon-circle {
+                background-color: #EBE1F7;
+                width: 80px; /* **הגדלת האייקונים** */
+                height: 80px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto 20px auto; /* **מרכוז האייקון בצורה מושלמת** */
+
+                img {
+                    width: 50px; /* **הגדלת גודל האייקון** */
+                    height: 50px;
+                }
+            }
+
+            h3 {
+                font-size: 20px; /* **הגדלת הטקסט של הכותרות** */
+                color: #2B2E37;
+                margin-bottom: 10px;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 16px; /* **הגדלת הטקסט של התיאורים** */
+                color: #000000;
+                line-height: 1.6;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .services-section-heb {
+        .cards-container-heb {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .services-section-heb {
+        .cards-container-heb {
+            grid-template-columns: 1fr;
+        }
+    }
+}

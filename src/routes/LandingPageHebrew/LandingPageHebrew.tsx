@@ -1,6 +1,7 @@
 import AboutUs from './AboutUs';
 import MainBanner from './MainBanner';
 import OurService from './OurService';
+import OurServiceN from './OurServicesN';
 import StudioContactHebrew from './StudioContact';
 import './Styles/main.scss';
 
@@ -15,7 +16,8 @@ const LandingPageHeb = () => {
 
             <MainBanner />
 
-            <OurService />
+
+            <OurServiceN/>
 
             <div className="banner-section-heb" id="firstProject">
                 <img src="img/T&T Fashion.jpg" alt="Banner Image" className="banner-image fashion" />
