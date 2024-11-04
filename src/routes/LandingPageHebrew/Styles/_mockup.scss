@@ -1,3 +1,4 @@
+// Banner Section
 .banner-section-heb {
     position: relative;
     border-radius: 20px;
@@ -6,107 +7,123 @@
     height: 908px;
     font-family: 'Assistant', sans-serif !important;
 
-}
-
-.banner-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.content-overlay {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-}
-
-.content-square {
-    background: linear-gradient(90deg, rgba(212, 220, 238, 0.8) 0%, rgba(232, 219, 247, 0.8) 100%);
-    padding: 8px;
-    border-radius: 20px;
-    width: 538px;
-    height: 160px;
-    position: relative;
-    padding-left: 13px;
-}
-
-.left-content-overlay {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-}
-
-.left-content-square {
-    background: linear-gradient(90deg, rgba(212, 220, 238, 0.8) 0%, rgba(232, 219, 247, 0.8) 100%);
-    padding: 8px;
-    border-radius: 20px;
-    width: 538px;
-    height: 160px;
-    position: relative;
-    padding-left: 13px;
-}
-
-.ecommerce-title {
-    font-size: 1rem;
-    color: #000000;
-    background-color: #FFFFFF;
-    padding: 5px 10px;
-    border-radius: 20px;
-    display: inline-block;
-    margin: 0;
-    margin-top: 10px;
-}
-
-.ecommerce-name {
-    font-size: 24px;
-    font-weight: 600;
-    color: #2B2E37;
-    margin: 10px 0 0 0;
-    text-align: left;
-}
-
-.ecommerce-description {
-    font-size: 1rem;
-    color: #707070;
-    margin: 5px 0 0 0;
-}
-
-.arrow-icon-container {
-    background-color: #FFFFFF;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    align-items: center;
-
-}
-
-.arrow-icon-heb {
-    width: 35px;
-    height: 35px;
-    filter: invert(19%) sepia(12%) saturate(0%) hue-rotate(210deg) brightness(96%) contrast(85%);
-    transform: scaleX(-1);
-}
-
-
-/* סגנון מותאם למסכים מתחת ל-680px */
-@media (max-width: 680px) {
-    .banner-section-heb  {
-        position: relative;
-        height: auto;
-    }
-
     .banner-image {
         width: 100%;
-        height: auto;
-        display: block;
+        height: 100%;
+        object-fit: cover;
     }
 
+    .content-overlay {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .left-content-overlay {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .content-square, .left-content-square {
+        background: linear-gradient(90deg, rgba(212, 220, 238, 0.8) 0%, rgba(232, 219, 247, 0.8) 100%);
+        padding: 8px;
+        border-radius: 20px;
+        width: 538px;
+        height: 160px;
+        position: relative;
+        padding-left: 13px;
+    }
+    
+    .ecommerce-title {
+        font-size: 1rem;
+        color: #000;
+        background-color: #fff;
+        padding: 5px 10px;
+        border-radius: 20px;
+        display: inline-block;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .ecommerce-name {
+        font-size: 24px;
+        font-weight: 600;
+        color: #2B2E37;
+        margin: 10px 0 0 0;
+        text-align: left;
+    }
+
+    .ecommerce-description {
+        font-size: 1rem;
+        color: #707070;
+        margin: 5px 0 0 0;
+    }
+
+    .arrow-icon-container {
+        background-color: #fff;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        align-items: center;
+
+        .arrow-icon-heb {
+            width: 35px;
+            height: 35px;
+            filter: invert(19%) sepia(12%) saturate(0%) hue-rotate(210deg) brightness(96%) contrast(85%);
+            transform: scaleX(-1);
+        }
+    }
+}
+
+// Mobile Styling for screens smaller than 680px
+@media (max-width: 680px) {
+    .banner-section-heb {
+        height: auto;
+
+        .banner-image {
+            height: auto;
+            display: block;
+        }
+
+        .content-overlay,
+        .left-content-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 0;
+            background: none;
+        }
+
+        .content-square, .left-content-square {
+            background: none;
+            width: 100%;
+            height: 100%;
+            text-align: start;
+            padding-left: 10px;
+        }
+
+        .ecommerce-title {
+            font-size: 0.6rem;
+        }
+
+        .ecommerce-name {
+            font-size: 0.9rem;
+        }
+
+        .ecommerce-description {
+            font-size: 0.6rem;
+        }
+    }
+
+    // Adjust images for mobile
     .fashion {
         content: url('/img/T&T FashionM.jpg');
     }
@@ -122,39 +139,4 @@
     .reability {
         content: url('/img/ReAbility OnlineM.jpg');
     }
-
-    .content-overlay,
-    .left-content-overlay {
-        position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            padding: 0;
-            background: none;
-    }
-
-    .content-square,
-    .left-content-square {
-        background: none;
-            width: 100%;
-            height: 100%;
-            text-align: start;
-            padding-left: 10px;
-    }
-
-    .ecommerce-title {
-        font-size: .6rem;
-        margin-bottom: none;
-    }
-
-    .ecommerce-name {
-        margin-top: none;
-        font-size: 0.9rem;
-    }
-
-    .ecommerce-description {
-        font-size: 0.6rem;
-    }
-
-
 }
