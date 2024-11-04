@@ -6,38 +6,54 @@ const AboutUs = () => {
             <div className="aboutUs-content">
                 <h2 className="aboutUs-title">הסיפור שלנו</h2>
                 <p className="aboutUs-description">
-                    אנחנו צופיה, תמר ואלכס מסטודיו Orime – שתי מפתחות Full Stack ומעצב UX/UI. יחד, <br /> אנחנו מביאים שילוב ייחודי של מיומנויות וניסיון לתחום בניית חנויות E-commerce, אתרים ותוכנות.
+                    יש לכם רעיון מדהים, אבל לא יודעים איך להפוך אותו למציאות דיגיטלית שמוכרת?
+                    <br /> 
+                    גם אנחנו היינו שם.
+                    <br /><br />
+
+<p>
+
+אנחנו צוות Orime –  
+<strong> צופיה, תמר ואלכס – חברים שחיים ונושמים טכנולוגיה ועיצוב. </strong> כל אחד מאיתנו מביא את הייחודיות שלו: צופיה ותמר מפתחות Full Stack  עם תשוקה לקוד ולפתרון בעיות, ואלכס מעצב UX/UI שמאמין בכוחו של עיצוב טוב ליצור חוויית משתמש בלתי נשכחות.
+
+                    </p>
+                    <br />
+
+
+
                 </p>
                 <p className="aboutUs-description">
-                    אנחנו מתמחים בפיתוח חנויות ואתרים בקוד פתוח או בפלטפורמות כמו Elementor ו-Shopify, תוך הקפדה על <br />אבטחת מידע ברמה הגבוהה ביותר, רספונסיביות, ופונקציונליות מתקדמת. המטרה שלנו היא ליצור חנויות ואתרים <br /> שנראים לא רק מצוין, אלא גם מספקים חוויית משתמש מיטבית שממקסמת את ההצלחה העסקית שלכם.
+                התחלנו את המסע שלנו מתוך <strong> אהבה אמיתית ליצירה דיגיטלית ורצון לעזור לעסקים להגשים את החלומות שלהם. </strong>
+אנחנו מאמינים שהשילוב בין טכנולוגיה לעיצוב יכול לספר את הסיפור של העסק שלכם, ליצור השפעה אמיתית <strong>ולהוביל להצלחה.</strong>
+
+                    <br />
+
+                    אנחנו כאן כדי להקשיב, להבין, ולבנות עבורכם פתרון דיגיטלי שמתאים בדיוק לכם.
                 </p>
-                <p className="aboutUs-description">
-                    ב-Orime, אנחנו מאמינים בשיתוף פעולה ובחדשנות, ועובדים בצמוד ללקוחותינו כדי להביא לידי ביטוי את החזון והצרכים הייחודיים שלהם. <br /> אנחנו מתחייבים לספק שירות מקצועי ואישי שיסייע לעסק שלכם לצמוח ולהצליח בעולם הדיגיטלי.
-                </p>
-                <p className="aboutUs-description">מוכנים לבנות משהו מדהים יחד? בואו נהפוך את הרעיונות שלכם למציאות.</p>
+
             </div>
 
             <div className="members-container">
-                <TeamMember 
-                    name="תמר תמם" 
-                    role="Full-Stack Developer" 
-                    imgClass="tamar-img" 
-                    socialIcon="img/Back-End Development.svg" 
-                    socialAlt="Back-End Development" 
+                <TeamMember
+                    name="תמר תמם"
+                    role="Full-Stack Developer"
+                    imgClass="tamar-img"
+                    socialIcon="img/Back-End Development.svg"
+                    socialAlt="Back-End Development"
                 />
-                <TeamMember 
-                    name="צופיה אוסדצ׳י" 
-                    role="Full-Stack Developer" 
-                    imgClass="tsofiya-img" 
-                    socialIcon="img/Back-End Development.svg" 
-                    socialAlt="Back-End Development" 
+                <TeamMember
+                    name="צופיה אוסדצ׳י"
+                    role="Full-Stack Developer"
+                    imgClass="tsofiya-img"
+                    socialIcon="img/Back-End Development.svg"
+                    socialAlt="Back-End Development"
                 />
-                <TeamMember 
-                    name="אלכס אוסדצ׳י" 
-                    role="Product Designer (UX/UI)" 
-                    imgClass="alex-img" 
-                    socialIcon="img/Product & Web Design.svg" 
-                    socialAlt="Product & Web Design" 
+                <TeamMember
+                    name="אלכס אוסדצ׳י"
+                    role="Product Designer (UX/UI)"
+                    imgClass="alex-img"
+                    socialIcon="img/Product & Web Design.svg"
+                    socialAlt="Product & Web Design"
                 />
             </div>
         </section>

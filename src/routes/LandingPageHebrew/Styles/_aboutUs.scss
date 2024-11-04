@@ -10,20 +10,22 @@
         max-width: 1200px;
         margin: 0 auto;
         text-align: center;
+        direction: rtl;
+
 
         .aboutUs-title {
-            font-size: 1.75rem;
+            font-size: 2.2rem;
             margin-bottom: 20px;
             color: #333;
             font-weight: bold;
         }
 
         .aboutUs-description {
-            font-size: 0.875rem;
+            font-size: 1.3rem;
             margin-bottom: 15px;
             color: #555;
             line-height: 1.6;
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
         }
     }
