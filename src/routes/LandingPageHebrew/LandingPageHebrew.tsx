@@ -1,47 +1,11 @@
-import React from 'react';
-import './Styles/main.scss';
-import RuningCode from '../../components/RuningCode';
-import StudioContact from './StudioContact';
+import AboutUs from './AboutUs';
+import MainBanner from './MainBanner';
+import OurService from './OurService';
 import StudioContactHebrew from './StudioContact';
+import './Styles/main.scss';
 
 
-const services = [
 
-    {
-        title: 'עיצוב מוצר ועיצוב אתרים',
-        description: 'תכנון ועיצוב חוויות דיגיטליות ייחודיות, המשלבות יצירתיות, חדשנות והתאמה מלאה לצרכים הייחודיים של המותג שלך. כל עיצוב נבנה במטרה ליצור חיבור משמעותי בין המוצר לקהל היעד שלו.',
-        icon: 'img/Product & Web Design.svg',
-    },
-    {
-        title: 'UX/UI ייעוץ',
-        description: 'ייעוץ מקצועי וממוקד לשיפור חוויית המשתמש, עם דגש על יצירת אינטראקציה טבעית ומזמינה. שילוב הבנה מעמיקה של הצרכים עם פתרונות מעשיים לשדרוג האפקטיביות והנגישות של המוצר שלך.',
-        icon: 'img/UI Consultation.svg',
-    },
-
-    {
-        title: 'פיתוח צד לקוח (Front-End)',
-        description: 'פיתוח צד לקוח מתמקד ביצירת ממשקי משתמש דינאמיים ואינטראקטיביים, עם דגש על חוויית משתמש חלקה, טבעית ומותאמת לכל מכשיר. הפיתוח משלב עיצוב מתקדם עם קוד איכותי, על מנת לספק ביצועים מעולים והתאמה מלאה לצרכים של משתמשי הקצה.',
-        icon: 'img/Front-End Development.svg',
-    },
-
-    {
-        title: 'פיתוח צד שרת (Back-End)',
-        description: 'בניית תשתיות חזקות ומאובטחות שמתפקדות בצורה מושלמת מאחורי הקלעים, כך שהמערכת שלך תוכל להציע שירות חלק ומהיר למשתמשים. התאמה אישית לכל צורך כדי להבטיח פתרונות טכנולוגיים יציבים ואמינים.',
-        icon: 'img/Back-End Development.svg',
-    },
-
-    {
-        title: 'פיתוח חנויות Shopify',
-        description: 'צירת חנויות Shopify שמספרות את סיפור המותג שלך ויוצרות חוויית קנייה ייחודית ואינטואיטיבית. כל חנות נבנית בהתאמה אישית כדי לשקף את הערכים שלך ולמשוך את הלקוחות הנכונים.',
-        icon: 'img/Shopify Store Development.svg',
-    },
-    {
-        title: 'WordPress ו-Elementor',
-        description: 'עיצוב ופיתוח אתרים מתקדמים ב-WordPress עם Elementor, המאפשרים לך לשלוט בקלות בתוכן ולהתאים אותו לצרכים שלך. כל אתר מעוצב בקפידה כדי לשדר אמינות, נראות מרשימה, וגמישות מלאה בניהול.',
-        icon: 'img/WordPress & Elementor.svg',
-    },
-
-];
 
 
 
@@ -49,64 +13,9 @@ const LandingPageHeb = () => {
     return (
         <div className="landing-page-heb">
 
-            <div className="main-banner-container">
-                <div className="right-side-banner">
-                    <div className="logo">
-                        <img src="img/Logo-white.png" alt="orime-logo" />
-                    </div>
-                    <div className="center-text-heb">
-                        <h2>עיצוב - פיתוח - השקה</h2>
-                        <p>מעצבים רעיונות, בונים פתרונות</p>
-                    </div>
-                </div>
+            <MainBanner />
 
-                <div className="left-side-banner">
-                    <a href="#contactForm" className="Square-banner get-in-touch">
-                        <div className="Square-banner-text">
-                            <h2>בואו נדבר</h2>
-                            <p>נשמח לשמוע את הרעיון שלך</p>
-                        </div>
-
-                        <div className="icon-container">
-                            <img src="img/Arrow.svg" alt="Arrow Icon" className="arrow-icon-heb" />
-                        </div>
-                    </a>
-
-
-                    <a href="#firstProject" className="Square-banner projects">
-                        <div className="Square-banner-text">
-                            <h2>פרוייקטים</h2>
-                            <p>צפייה בפרוייקטים נבחרים</p>
-                        </div>
-                        <div className="icon-container">
-                            <img src="img/Arrow.svg" alt="Arrow Icon" className="arrow-icon-heb" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div className="services-section-heb">
-                <div className="right-side-heb">
-                    <div className="cards-container-heb">
-                        {services.map((service, index) => (
-                            <div className="card-heb" key={index}>
-                                <div className="icon-circle">
-                                    <img src={`${service.icon}`} alt={`${service.title} Icon`} />
-                                </div>
-                                <h3>{service.title}</h3>
-                                <p>{service.description}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-                <div className="left-side-heb">
-                    <p className="description-heb">
-                        הפכו את הרעיונות שלכם למציאות בעזרת עיצוב ופיתוח חדשניים, שמקדמים את המותג שלכם קדימה
-                    </p>
-                    <a href="#contactForm" className="gold-button">ספרו לנו על הפרויקט שלכם</a>
-                </div>
-            </div>
-
+            <OurService />
 
             <div className="banner-section-heb" id="firstProject">
                 <img src="img/T&T Fashion.jpg" alt="Banner Image" className="banner-image fashion" />
@@ -171,60 +80,7 @@ const LandingPageHeb = () => {
                 </a>
             </div>
 
-            <section className="aboutUs-container">
-                <div className="aboutUs-content">
-                    <h2 className="aboutUs-title">קצת עלינו</h2>
-                    <p className="aboutUs-description">
-                        אנחנו צופיה, תמר ואלכס מסטודיו Orime – שתי מפתחות Full Stack ומעצב UX/UI. יחד, <br /> אנחנו מביאים שילוב ייחודי של מיומנויות וניסיון לתחום בניית חנויות E-commerce, אתרים ותוכנות.
-                    </p>
-                    <p className="aboutUs-description">
-                        אנחנו מתמחים בפיתוח חנויות ואתרים בקוד פתוח או בפלטפורמות כמו Elementor ו-Shopify, תוך הקפדה על <br />אבטחת מידע ברמה הגבוהה ביותר, רספונסיביות, ופונקציונליות מתקדמת. המטרה שלנו היא ליצור חנויות ואתרים <br /> שנראים לא רק  מצוין, אלא גם מספקים חוויית משתמש מיטבית שממקסמת את ההצלחה העסקית שלכם.
-                    </p>
-                    <p className="aboutUs-description">
-                        ב-Orime, אנחנו מאמינים בשיתוף פעולה ובחדשנות, ועובדים בצמוד ללקוחותינו כדי להביא לידי ביטוי את החזון והצרכים הייחודיים שלהם. <br /> אנחנו מתחייבים לספק שירות מקצועי ואישי שיסייע לעסק שלכם לצמוח ולהצליח בעולם הדיגיטלי.
-                    </p>
-                    <p className="aboutUs-description">מוכנים לבנות משהו מדהים יחד? בואו נהפוך את הרעיונות שלכם למציאות.</p>
-                </div>
-
-                <div className="members-container">
-                    <div className="aboutUs-member tamar-img">
-
-                        <div className='member-info'>
-                            <div className='member-details'>
-                                <h3 className='member-title'>תמר תמם</h3>
-                                <p className='member-description'>Full-Stack Developer</p>
-                            </div>
-                            <div className='member-social'>
-                                <img src='img/Back-End Development.svg' alt='Back-End Development' />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="aboutUs-member tsofiya-img">
-
-                        <div className='member-info'>
-                            <div className='member-details'>
-                                <h3 className='member-title'>Tsofiya Osadchi</h3>
-                                <p className='member-description'>Full-Stack Developer</p>
-                            </div>
-                            <div className='member-social'>
-                                <img src='img/Back-End Development.svg' alt='Back-End Development' />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="aboutUs-member alex-img">
-
-                        <div className='member-info'>
-                            <div className='member-details'>
-                                <h3 className='member-title'>Alex Osadchi</h3>
-                                <p className='member-description'>Product Designer (UX/UI)</p>
-                            </div>
-                            <div className='member-social'>
-                                <img src='img/Product & Web Design.svg' alt='Product & Web Design' />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+          <AboutUs />
 
             <div id="contactForm">
                 <StudioContactHebrew />
