@@ -40,11 +40,12 @@
         }
 
         .center-text-heb {
+            
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: flex-end;
-            /* יישור לימין */
+text-align: right;
             height: 100%;
             width: 100%;
             padding-right: 16px;
@@ -56,10 +57,12 @@
                 font-size: 2.75rem;
                 font-weight: 600;
                 margin: 0 0 16px 0;
+                direction: rtl;
             }
 
             p {
                 font-size: 1.2rem;
+                direction: rtl;
             }
         }
     }
