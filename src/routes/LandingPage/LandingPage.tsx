@@ -111,9 +111,11 @@ const LandingPage = () => {
                 <img src="img/T&T Fashion.jpg" alt="Banner Image" className="banner-image fashion" />
                 <a href="https://finalproject-ousr.onrender.com/about" target="_blank" rel="noopener noreferrer" className="content-overlay">
                     <div className="content-square">
-                        <h3 className="ecommerce-title">Full Stuck Development</h3>
-                        <h2 className="ecommerce-name">T&T Fashion</h2>
-                        <p className="ecommerce-description">Online shop was built by React and NodeJS</p>
+                        <div>
+                            <h3 className="ecommerce-title">Full Stuck Development</h3>
+                            <h2 className="ecommerce-name">T&T Fashion</h2>
+                            <p className="ecommerce-description">Online shop was built by React and NodeJS</p>
+                        </div>
                         <div className="arrow-icon-container">
                             <img src="img/Arrow.svg" alt="Arrow Icon" className="arrow-icon" />
                         </div>
@@ -126,7 +128,7 @@ const LandingPage = () => {
             <div className="banner-section">
                 <img src="img/Priimo.jpg" alt="Banner Image" className="banner-image priimo" />
                 <a href="http://www.alex-osadchi.com/primo/" target="_blank" rel="noopener noreferrer" className="left-content-overlay">
-                    <div className="left-content-square">
+                    <div className="content-square">
                         <h3 className="ecommerce-title">Software Design</h3>
                         <h2 className="ecommerce-name">Priimo</h2>
                         <p className="ecommerce-description">Personalizing Cancer Treatments</p>
