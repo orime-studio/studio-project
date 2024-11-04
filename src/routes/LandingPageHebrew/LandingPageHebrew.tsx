@@ -21,7 +21,7 @@ const LandingPageHeb = () => {
                         <div>
                         <h3 className="ecommerce-title-heb">Full Stack Development</h3>
                         <h2 className="ecommerce-name-heb">T&T Fashion</h2>
-                        <p className="ecommerce-description-heb">Online shop built with React and NodeJS</p>
+                        <p className="ecommerce-description-heb">חנות אונליין שנבנתה עם React ו-NodeJS</p>
                         </div>
                         <div className="arrow-icon-container-heb">
                             <img src="img/Arrow.svg" alt="Arrow Icon" className="arrow-icon-heb" />
@@ -37,7 +37,7 @@ const LandingPageHeb = () => {
                         <div>
                         <h3 className="ecommerce-title-heb">Software Design</h3>
                         <h2 className="ecommerce-name-heb">Priimo</h2>
-                        <p className="ecommerce-description-heb">Personalizing Cancer Treatments</p>
+                        <p className="ecommerce-description-heb">התאמת טיפולים אישיים לסרטן</p>
                         </div>
                         <div className="arrow-icon-container-heb">
                             <img src="img/Arrow.svg" alt="Arrow Icon" className="arrow-icon-heb" />
@@ -52,7 +52,7 @@ const LandingPageHeb = () => {
                         <div>
                         <h3 className="ecommerce-title-heb">Management System</h3>
                         <h2 className="ecommerce-name-heb">Ilan Overview</h2>
-                        <p className="ecommerce-description-heb">App for managing apartment defects and buyer delivery</p>
+                        <p className="ecommerce-description-heb">אפליקציה לניהול ליקויי דירה ומסירת דירות לרוכשים</p>
                         </div>
                         <div className="arrow-icon-container-heb">
                             <img src="img/Arrow.svg" alt="Arrow Icon" className="arrow-icon-heb" />
@@ -68,7 +68,7 @@ const LandingPageHeb = () => {
                         <div>
                         <h3 className="ecommerce-title-heb">Video Motion Game</h3>
                         <h2 className="ecommerce-name-heb">ReAbility Online</h2>
-                        <p className="ecommerce-description-heb">Games for Cognitive Motion Rehabilitation</p>
+                        <p className="ecommerce-description-heb">משחקים לשיפור הקוגנטיביות</p>
                         </div>
                         <div className="arrow-icon-container-heb">
                             <img src="img/Arrow.svg" alt="Arrow Icon" className="arrow-icon-heb" />
