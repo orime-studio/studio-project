@@ -14,6 +14,7 @@ const LandingPageHeb = () => {
             <MainBanner />
             <OurServiceN/>
             <div>
+                <h2 className='project-title'>הפרוייקטים שלנו</h2>
             <BannerSection
             sideClass="right"
                 href="https://finalproject-ousr.onrender.com/about"

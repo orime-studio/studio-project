@@ -34,6 +34,30 @@
         }
     }
 
+    .button-container {
+        margin-top: 60px; 
+        display: flex; /* שימוש ב-flex */
+        justify-content: center;
+    }
+
+    .gold-button {
+        background-color: #BFB491;
+        color: #FFFFFF;
+        padding: 15px 30px; 
+        border-radius: 28px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-decoration: none;
+        margin-top: 20px;
+        align-items: center;  
+        width: 300px;      
+    }
+
+    .gold-button:hover {
+        background-color: #a89c7d;
+    }
+
     .members-container {
         display: flex;
         flex-wrap: wrap;

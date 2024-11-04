@@ -8,7 +8,7 @@ const MainBanner = () => {
             <img src="img/Logo-white.png" alt="orime-logo" />
         </div>
         <div className="center-text-heb">
-            <h2>מעצבים רעיונות, בונים חוויות דיגיטליות</h2>
+            <h2>מעצבים רעיונות, <br /> בונים חוויות דיגיטליות</h2>
             <p>בונים אתרים וחנויות eCommerce שמספרים את הסיפור שלך ומניעים את הלקוחות שלך לפעולה</p>
         </div>
     </div>
