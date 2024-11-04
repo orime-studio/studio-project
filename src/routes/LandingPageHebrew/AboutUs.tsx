@@ -27,14 +27,14 @@ const AboutUs = () => {
                     socialAlt="Back-End Development" 
                 />
                 <TeamMember 
-                    name="Tsofiya Osadchi" 
+                    name="צופיה אוסדצי" 
                     role="Full-Stack Developer" 
                     imgClass="tsofiya-img" 
                     socialIcon="img/Back-End Development.svg" 
                     socialAlt="Back-End Development" 
                 />
                 <TeamMember 
-                    name="Alex Osadchi" 
+                    name="אלכס אוסדצי" 
                     role="Product Designer (UX/UI)" 
                     imgClass="alex-img" 
                     socialIcon="img/Product & Web Design.svg" 
