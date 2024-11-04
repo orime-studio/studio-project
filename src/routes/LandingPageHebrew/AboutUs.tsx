@@ -1,11 +1,10 @@
-import React from 'react';
 import TeamMember from './TeamMember';
 
 const AboutUs = () => {
     return (
         <section className="aboutUs-container">
             <div className="aboutUs-content">
-                <h2 className="aboutUs-title">קצת עלינו</h2>
+                <h2 className="aboutUs-title">הסיפור שלנו</h2>
                 <p className="aboutUs-description">
                     אנחנו צופיה, תמר ואלכס מסטודיו Orime – שתי מפתחות Full Stack ומעצב UX/UI. יחד, <br /> אנחנו מביאים שילוב ייחודי של מיומנויות וניסיון לתחום בניית חנויות E-commerce, אתרים ותוכנות.
                 </p>
@@ -27,14 +26,14 @@ const AboutUs = () => {
                     socialAlt="Back-End Development" 
                 />
                 <TeamMember 
-                    name="צופיה אוסדצי" 
+                    name="צופיה אוסדצ׳י" 
                     role="Full-Stack Developer" 
                     imgClass="tsofiya-img" 
                     socialIcon="img/Back-End Development.svg" 
                     socialAlt="Back-End Development" 
                 />
                 <TeamMember 
-                    name="אלכס אוסדצי" 
+                    name="אלכס אוסדצ׳י" 
                     role="Product Designer (UX/UI)" 
                     imgClass="alex-img" 
                     socialIcon="img/Product & Web Design.svg" 
