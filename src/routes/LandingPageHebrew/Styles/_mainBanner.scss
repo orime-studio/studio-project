@@ -20,7 +20,6 @@
         width: 70%;
         height: 100%;
         border-radius: 28px;
-        padding: 16px;
         margin-bottom: 16px;
         display: flex;
         flex-direction: column;
@@ -54,10 +53,11 @@
             margin-top: 16px;
 
             h2 {
-                font-size: 2.75rem;
-                font-weight: 600;
+                font-size: 3.5rem;
+                font-weight: 700;
                 margin: 0 0 16px 0;
                 direction: rtl;
+                line-height: 1.2;
             }
 
             p {
@@ -121,7 +121,7 @@
                 }
             }
 
-            .icon-container {
+            .icon-container-heb {
                 background-color: #ffffff;
                 border-radius: 50%;
                 width: 40px;
@@ -133,9 +133,10 @@
                 left: 20px;
                 bottom: 20px;
 
-                .arrow-icon {
+                .arrow-icon-heb {
                     width: 30px;
                     height: 30px;
+                    transform: scaleX(-1);
                 }
             }
         }
@@ -152,7 +153,8 @@
 
             .center-text-heb {
                 h2 {
-                    font-size: 1.438rem;
+                    font-size: 2rem;
+                    line-height: 1.3;
                 }
             }
         }

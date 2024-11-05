@@ -20,7 +20,7 @@ const MainBanner = () => {
                 <p>נשמח לשמוע את הרעיון שלך</p>
             </div>
 
-            <div className="icon-container">
+            <div className="icon-container-heb">
                 <img src="img/Arrow.svg" alt="Arrow Icon" className="arrow-icon-heb" />
             </div>
         </a>
@@ -31,7 +31,7 @@ const MainBanner = () => {
                 <h2>פרוייקטים</h2>
                 <p>צפייה בפרוייקטים נבחרים</p>
             </div>
-            <div className="icon-container">
+            <div className="icon-container-heb">
                 <img src="img/Arrow.svg" alt="Arrow Icon" className="arrow-icon-heb" />
             </div>
         </a>
