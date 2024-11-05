@@ -45,10 +45,11 @@
 
     .content-square-heb {
         background: linear-gradient(90deg, rgba(212, 220, 238, 0.8) 0%, rgba(232, 219, 247, 0.8) 100%);
-        padding: 16px;
+        padding: 32px;
         border-radius: 20px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
         text-align: right; /* טקסט מיושר לימין */
         color: #2B2E37;
     }
