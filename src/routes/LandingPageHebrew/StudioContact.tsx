@@ -114,7 +114,7 @@ const StudioContactHebrew = () => {
                 <button
 
                     type="submit"
-                    className="gold-button"
+                    className="contact-button-heb"
                 >
                     בואו נתחיל
                 </button>
