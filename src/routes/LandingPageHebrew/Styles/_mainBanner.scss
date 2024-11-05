@@ -152,6 +152,9 @@
 
         .right-side-banner {
             width: 100%;
+            .logo {
+                align-self: flex-start;
+            }
 
             .center-text-heb {
                 h2 {
