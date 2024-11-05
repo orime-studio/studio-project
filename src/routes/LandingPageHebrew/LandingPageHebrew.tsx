@@ -17,7 +17,7 @@ const LandingPageHeb = () => {
                 <h2 id="firstProject" className='project-title'>הפרוייקטים שלנו</h2>
                 <BannerSection
                     sideClass="right"
-                    href="https://finalproject-ousr.onrender.com/about"
+                    href="https://t-and-t-shop.onrender.com/about"
                     title="Full Stack Development"
                     name="T&T Fashion"
                     description="חנות אונליין שנבנתה עם React ו-NodeJS"
