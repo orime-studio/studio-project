@@ -29,8 +29,8 @@ const AboutUs = () => {
                     <br />
                     <br />
 
-                    אנחנו כאן כדי להקשיב, להבין, ולבנות עבורכם פתרון דיגיטלי שמתאים בדיוק לכם.
-                </p>
+                    <strong>אנחנו כאן כדי להקשיב, להבין, ולבנות עבורכם פתרון דיגיטלי שמתאים בדיוק לכם.</strong>
+                    </p>
 
             </div>
 
@@ -64,7 +64,7 @@ const AboutUs = () => {
 
 
             <div className="aboutUs-content">
-                <h2 className="aboutUs-title second-title">מה מייחד אותנו</h2>
+                <h2 className="aboutUs-title second-title">הדרך שלנו</h2>
                 <p className="aboutUs-description">
                     האתר שלכם הוא יותר מרק קוד ועיצוב – הוא הסיפור שלכם, המקום שבו הלקוחות שלכם פוגשים אתכם לראשונה.                    <br />
                     <br />
@@ -86,7 +86,7 @@ const AboutUs = () => {
                 <p className="aboutUs-description">
                     <br />
 
-                    <strong>אנחנו מאמינים שכשהלקוחות מתחברים לסיפור שלכם, הם מרגישים חלק ממנו, וזה מה שגורם להם לבחור בכם.</strong>
+                    <strong>יחד ניצור חוויה דיגיטלית שגורמת ללקוחות להתחבר, להישאר, ולבחור בך שוב ושוב.</strong>
 
                 </p>
 
