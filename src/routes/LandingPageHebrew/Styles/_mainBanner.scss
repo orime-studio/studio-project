@@ -1,3 +1,7 @@
+.landing-page {
+    font-family: 'Assistant', sans-serif !important;
+}
+
 .main-banner-container {
     display: flex;
     flex-direction: row-reverse;
@@ -6,10 +10,12 @@
     width: 100%;
     height: 567px;
     position: relative;
-    border-radius: 28px;
+   // background-image: url('/img/Main banner v2 2.jpg');
+    background-size: cover;
+    background-position: center;
+    //border-radius: 28px;
     padding: 16px;
-    overflow: hidden;
-
+    
     .background-video {
         position: absolute;
         top: 50%;
@@ -18,46 +24,63 @@
         height: 100%;
         object-fit: cover;
         transform: translate(-50%, -50%);
-        z-index: 1;
+        z-index: -1;
+        border-radius: 28px;
     }
 
     .right-side-banner {
-        position: relative;
-        z-index: 2;
         width: 70%;
         height: 100%;
+        border-radius: 28px;
+        margin-bottom: 16px;
         display: flex;
         flex-direction: column;
+        z-index: 2;
 
         .logo {
+            top: 16px;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #2B2E37;
             align-self: flex-end;
+
             img {
                 width: 80px;
                 margin: 16px 0 0 6px;
+
             }
         }
 
         .center-text-heb {
+
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: flex-end;
-            color: #FFFFFF;
+            text-align: right;
+            height: 100%;
+            width: 100%;
             padding-right: 16px;
+            text-align: right;
+            color: #FFFFFF;
             margin-top: 16px;
+
             h2 {
                 font-size: 3.5rem;
                 font-weight: 700;
+                margin: 0 0 16px 0;
+                direction: rtl;
                 line-height: 1.2;
             }
+
             p {
                 font-size: 1.2rem;
+                unicode-bidi: plaintext
             }
         }
     }
 
     .left-side-banner {
-        position: relative;
-        z-index: 2;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -66,8 +89,11 @@
 
         .Square-banner {
             background-color: #ffffff66;
+            /* צבע לבן עם שקיפות של 50% */
             backdrop-filter: blur(21px);
+            /* טשטוש רקע */
             transition: background-color 0.3s ease;
+            /* מעבר חלק */
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
@@ -76,21 +102,32 @@
             border-radius: 28px;
             position: relative;
             flex-direction: row-reverse;
+            /* מציג את הטקסט קודם ואז את האייקון */
             text-align: right;
 
             &:hover {
                 background-color: rgba(255, 255, 255, 0.7);
+                /* צבע לבן עם שקיפות של 70% במצב הובר */
+            }
+
+            .get-in-touch {
+                margin-bottom: 16px;
             }
 
             .Square-banner-text {
                 display: flex;
                 flex-direction: column;
+                justify-content: right;
                 align-items: flex-end;
                 color: #2B2E37;
+
                 h2 {
                     font-size: 1.7rem;
+                    margin: 0;
                     font-weight: 600;
+                    text-align: right;
                 }
+
                 p {
                     font-size: 1rem;
                     margin-top: 5px;
@@ -117,4 +154,52 @@
             }
         }
     }
+}
+
+@media (max-width: 680px) {
+
+    .main-banner-container {
+        flex-direction: column;
+        height: auto;
+
+        .right-side-banner {
+            width: 100%;
+            .logo {
+                align-self: flex-start;
+            }
+
+            .center-text-heb {
+                h2 {
+                    font-size: 2rem;
+                    line-height: 1.3;
+                }
+            }
+        }
+
+        .left-side-banner {
+            width: 100%;
+            height: 40%;
+
+            .Square-banner {
+                background-color: #ffffffb3;
+                .Square-banner-text {
+                    h2 {
+                        font-size: 1.438rem;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+.project-title {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    font-size: 40px;
+    color: #2B2E37;
+
+
 }
