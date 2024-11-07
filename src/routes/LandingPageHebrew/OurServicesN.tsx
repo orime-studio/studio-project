@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 
 const OurServiceN = () => {
     const services = [
@@ -24,17 +24,45 @@ const OurServiceN = () => {
             icon: 'img/Shopify Store Development.svg',
         },
     ];
-    return (
 
+  
+    const iconRefs = useRef([]);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.1 }
+        );
+
+        iconRefs.current.forEach((icon) => {
+            if (icon) observer.observe(icon);
+        });
+
+        return () => {
+            observer.disconnect();
+        };
+    }, []);
+
+    return (
         <div className="services-section-heb">
             <div className="title">
                 <h2 className="services-title">מה תקבלו אצלינו</h2>
             </div>
             <div className="cards">
                 <div className="cards-container-heb">
-                {services.reverse().map((service, index) => (
+                    {services.reverse().map((service, index) => (
                         <div className="card-heb" key={index}>
-                            <div className="icon-circle">
+                            <div
+                                className="icon-circle"
+                                ref={(el) => (iconRefs.current[index] = el)}
+                            >
                                 <img src={`${service.icon}`} alt={`${service.title} Icon`} />
                             </div>
                             <h3>{service.title}</h3>
@@ -47,7 +75,7 @@ const OurServiceN = () => {
                 <a href="#contactForm" className="gold-button">ספרו לנו על הפרוייקט שלכם</a>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default OurServiceN
+export default OurServiceN;

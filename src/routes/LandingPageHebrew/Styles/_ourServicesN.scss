@@ -9,10 +9,10 @@
 
     .title {
         text-align: center;
-        margin-bottom: 30px; 
+        margin-bottom: 30px;
 
         .services-title {
-            font-size: 40px; 
+            font-size: 40px;
             color: #2B2E37;
             margin-bottom: 20px;
         }
@@ -25,7 +25,7 @@
     .gold-button {
         background-color: #BFB491;
         color: #FFFFFF;
-        padding: 15px 30px; 
+        padding: 15px 30px;
         border-radius: 28px;
         font-size: 1.2rem;
         cursor: pointer;
@@ -37,7 +37,6 @@
             background-color: #a89c7d;
         }
     }
-
 
     .cards-container-heb {
         display: grid;
@@ -54,29 +53,38 @@
 
             .icon-circle {
                 background-color: #EBE1F7;
-                width: 80px; /* **הגדלת האייקונים** */
+                width: 80px;
                 height: 80px;
                 border-radius: 50%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin: 0 auto 20px auto; /* **מרכוז האייקון בצורה מושלמת** */
+                margin: 0 auto 20px auto;
+                transform: translateY(20px);
+                opacity: 0; 
+                transition: opacity 2s ease, transform 1s ease; 
+
+                // מחלקת fade-in שתתווסף דרך JavaScript כדי להתחיל את האנימציה
+                &.fade-in {
+                    opacity: 1; /* מגיעים לאופסיטי מלאה */
+                    transform: translateY(0); /* חוזרים למקום המקורי */
+                }
 
                 img {
-                    width: 50px; /* **הגדלת גודל האייקון** */
+                    width: 50px;
                     height: 50px;
                 }
             }
 
             h3 {
-                font-size: 20px; /* **הגדלת הטקסט של הכותרות** */
+                font-size: 20px;
                 color: #2B2E37;
                 margin-bottom: 10px;
                 font-weight: 600;
             }
 
             p {
-                font-size: 16px; /* **הגדלת הטקסט של התיאורים** */
+                font-size: 16px;
                 color: #000000;
                 line-height: 1.6;
             }
@@ -97,7 +105,6 @@
         .cards-container-heb {
             display: flex;
             flex-direction: column-reverse;
-            
         }
     }
 }
