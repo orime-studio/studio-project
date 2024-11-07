@@ -32,7 +32,7 @@ const MainBanner = () => {
 
                 <a href="#firstProject" className="Square-banner projects">
                     <div className="Square-banner-text">
-                        <h2>פרוייקטים</h2>
+                        <h2>הפרוייקטים שלנו</h2>
                         <p>צפייה בפרוייקטים נבחרים</p>
                     </div>
                     <div className="icon-container-heb">
