@@ -7,6 +7,7 @@
     background-size: cover;
     background-position: center;
     direction: rtl; /* כיוון התוכן לעברית */
+    cursor: pointer;
 
     &.fashion-heb {
         background-image: url('/img/T&T Fashion.jpg');
