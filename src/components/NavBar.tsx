@@ -5,7 +5,6 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FiBox, FiUser, FiShoppingCart, FiSettings, FiUsers, FiTrendingUp } from "react-icons/fi";
 import Search from "./Search";
 import './NavBar.scss';
-import { useCart } from "../hooks/useCart";
 import UserAvatar from "./UseAvatar";
 
 
@@ -13,7 +12,6 @@ import UserAvatar from "./UseAvatar";
 const Nav = () => {
     const { isLoggedIn, user, logout } = useAuth();
     const navigate = useNavigate();
-    const { cart } = useCart();
     const location = useLocation();
     const isActive = (path: string) => location.pathname === path;
 
@@ -28,22 +26,6 @@ const Nav = () => {
                     <Search />
                 </div>
 
-                <Link to="/cart" className="mr-4">
-                    <Tooltip
-                        content="View Cart"
-                        placement="top"
-                        className="text-xs bg-gray-700 text-white rounded px-2 py-1"
-                    >
-                        <div className="relative">
-                            <FiShoppingCart size={20} className={cart && cart.totalQuantity > 0 ? "text-red-500" : "text-gray-300"} />
-                            {cart && cart.totalQuantity > 0 && (
-                                <span className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full px-1 text-xs">
-                                    {cart.totalQuantity}
-                                </span>
-                            )}
-                        </div>
-                    </Tooltip>
-                </Link>
 
                 {isLoggedIn && user?.isAdmin && (
                     <>

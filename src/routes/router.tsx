@@ -12,12 +12,6 @@ import LandingPageHeb from "./LandingPageHebrew/LandingPageHebrew";
 export const router = createBrowserRouter([
 
     {
-        path: "/studio",
-        element: <LandingPage />,
-        errorElement: <Error />,
-    },
-
-    {
         path: "/",
         element: <Root />,
         errorElement: <Error />,
