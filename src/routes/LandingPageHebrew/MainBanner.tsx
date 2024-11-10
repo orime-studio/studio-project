@@ -4,7 +4,7 @@ const MainBanner = () => {
     return (
         <div className="main-banner-container">
             <video autoPlay loop muted playsInline className="background-video" poster='./img/Banner View V2.jpg'>
-                <source src="/img/Banner View V2.mp4" type="video/mp4" />
+                <source src="/img/main-banner-video.mp4" type="video/mp4" />
                 הדפדפן שלך אינו תומך בווידאו.
             </video>
             <div className="right-side-banner">
