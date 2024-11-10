@@ -1,7 +1,6 @@
 import AboutUs from './AboutUs';
 import BannerSection from './BannerSection';
 import MainBanner from './MainBanner';
-import OurService from './OurService';
 import OurServiceN from './OurServicesN';
 import StudioContactHebrew from './StudioContact';
 import './Styles/main.scss';
