@@ -4,6 +4,7 @@ import MainBanner from './MainBanner';
 import OurServiceN from './OurServicesN';
 import StudioContactHebrew from './StudioContact';
 import './Styles/main.scss';
+import WhatsAppButton from './WhatsAppButton';
 
 
 const LandingPageHeb = () => {
@@ -54,6 +55,8 @@ const LandingPageHeb = () => {
             <div id="contactForm">
                 <StudioContactHebrew />
             </div>
+            <WhatsAppButton />
+
 
         </div>
     );
