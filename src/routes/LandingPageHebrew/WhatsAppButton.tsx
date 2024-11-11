@@ -1,6 +1,6 @@
 import React from 'react';
 
-const WhatsAppButton = ({ phoneNumber = '972504428344', message = 'שלום! איך אפשר לעזור?' }) => {
+const WhatsAppButton = ({ phoneNumber = '972504428344', message ='אשמח לשמוע על פתרונות שיעזרו לי להקפיץ את הנראות הדיגיטלית של העסק.' }) => {
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
     return (
