@@ -63,7 +63,7 @@
                 margin: 0 auto 20px auto;
                 transform: translateY(20px);
                 opacity: 0; 
-                transition: opacity 2s ease, transform 1s ease; 
+                transition: opacity 4s ease, transform 1s ease; 
 
                 // מחלקת fade-in שתתווסף דרך JavaScript כדי להתחיל את האנימציה
                 &.fade-in {
