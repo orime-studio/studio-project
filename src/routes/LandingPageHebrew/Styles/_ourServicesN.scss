@@ -16,6 +16,11 @@
             color: #2B2E37;
             margin-bottom: 20px;
             font-weight: bold;
+            transition: font-size 0.3s ease;
+
+            @media screen and (max-width: 680px) {
+                font-size: 1.8rem;
+            }
         }
     }
 
@@ -61,19 +66,19 @@
                 justify-content: center;
                 align-items: center;
                 margin: 0 auto 20px auto;
-                transform: translateY(20px);
-                opacity: 0; 
-                transition: opacity 4s ease, transform 1s ease; 
+                transform: translateY(30px);
+                opacity: 0;
+                transition: opacity 1.2s ease, transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55); // נוספה תנועה דרמטית יותר עם ease-out
 
-                // מחלקת fade-in שתתווסף דרך JavaScript כדי להתחיל את האנימציה
                 &.fade-in {
-                    opacity: 1; /* מגיעים לאופסיטי מלאה */
-                    transform: translateY(0); /* חוזרים למקום המקורי */
+                    opacity: 1; // הגענו לאופסיטי מלאה
+                    transform: translateY(0); // נעבור למקום המקורי
                 }
 
                 img {
                     width: 50px;
                     height: 50px;
+                    transition: transform 0.3s ease;
                 }
             }
 
