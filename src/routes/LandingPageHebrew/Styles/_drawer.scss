@@ -25,17 +25,19 @@
   .drawer-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center; // ממורכז אנכית
+    align-items: center; // ממורכז אופקית
     height: 100%;
     text-align: center;
     direction: rtl;
+    gap: 15px;
   }
 
   .drawer-content p{
     justify-content: center;
 
   }
-  
+
   
   /* כפתור סגירה עם סמל X */
   .close-btn {
