@@ -21,9 +21,13 @@ const SideDrawer = () => {
       {/* ה-Drawer עצמו */}
       <div className={`side-drawer ${isOpen ? 'open' : ''}`}>
         <div className="drawer-content">
-          <h2>תוכן ה-Drawer</h2>
-          <p>כאן תוכלו לשים כל תוכן שתרצו</p>
-          {/* כפתור סגירה עם סמל X */}
+          <h2>
+            רוצים להקפיץ את העסק שלכם קדימה?
+            </h2>
+          <p>השאירו פרטים ונחזור אליכם בהקדם</p>
+        
+
+
           <button className="close-btn" onClick={closeDrawer}>×</button>
         </div>
       </div>
