@@ -21,11 +21,11 @@ const StudioContactHebrew = () => {
         console.log("Send data:", data);
         sendMessage(data)
             .then(() => {
-                dialogs.success("Message Sent", "Your message has been sent successfully.");
+                dialogs.success("ההודעה נשלחה", "ההודעה שלך נשלחה בהצלחה.");
                 navigate("/");
             })
             .catch((error) => {
-                dialogs.error("Message Error", error.response.data);
+                dialogs.error("שגיאה בשליחת ההודעה", error.response.data);
             });
     };
 
@@ -45,9 +45,9 @@ const StudioContactHebrew = () => {
                         type="text"
                         className="contact-input-heb"
                         {...register("fullName", {
-                            required: "This field is mandatory",
-                            minLength: { value: 2, message: "Too short" },
-                            maxLength: { value: 255, message: "Too long" },
+                            required: "נא להזין שם מלא",
+                            minLength: { value: 2, message: "שם קצר מדי, לפחות 2 תווים" },
+                            maxLength: { value: 255, message: "שם ארוך מדי" },
                         })}
                     />
                     {errors.fullName && (
@@ -62,10 +62,10 @@ const StudioContactHebrew = () => {
                         type="email"
                         className="contact-input-heb"
                         {...register("email", {
-                            required: "This field is mandatory",
+                            required: "נא להזין כתובת מייל",
                             pattern: {
                                 value: patterns.email,
-                                message: "Invalid email",
+                                message: "כתובת מייל לא תקינה",
                             },
                         })}
                     />
@@ -81,10 +81,10 @@ const StudioContactHebrew = () => {
                         type="tel"
                         className="contact-input-heb"
                         {...register("phone", {
-                            required: "This field is mandatory",
+                            required: "נא להזין מספר טלפון",
                             pattern: {
                                 value: patterns.phone,
-                                message: "Invalid phone number",
+                                message: "מספר טלפון לא תקין",
                             },
                         })}
                     />
@@ -99,11 +99,10 @@ const StudioContactHebrew = () => {
                         placeholder="הודעה"
                         className="contact-input-heb"
                         rows={1}
-
                         {...register("message", {
-                            required: "This field is mandatory",
-                            minLength: { value: 5, message: "Too short" },
-                            maxLength: { value: 500, message: "Too long" },
+                            required: "נא להזין הודעה",
+                            minLength: { value: 5, message: "ההודעה קצרה מדי, לפחות 5 תווים" },
+                            maxLength: { value: 500, message: "ההודעה ארוכה מדי" },
                         })}
                     />
                     {errors.message && (
@@ -112,7 +111,6 @@ const StudioContactHebrew = () => {
                 </section>
 
                 <button
-
                     type="submit"
                     className="contact-button-heb"
                 >
