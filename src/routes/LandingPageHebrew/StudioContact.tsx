@@ -99,11 +99,7 @@ const StudioContactHebrew = () => {
                         placeholder="הודעה"
                         className="contact-input-heb"
                         rows={1}
-                        {...register("message", {
-                            required: "נא להזין הודעה",
-                            minLength: { value: 5, message: "ההודעה קצרה מדי, לפחות 5 תווים" },
-                            maxLength: { value: 500, message: "ההודעה ארוכה מדי" },
-                        })}
+                      
                     />
                     {errors.message && (
                         <p className="errorMessage">{errors.message?.message}</p>
