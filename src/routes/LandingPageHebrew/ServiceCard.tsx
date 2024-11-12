@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-const ServiceCard = ({ icon, title, description, delay }) => {
+const ServiceCard = ({ icon, title, description }) => {
     const [isVisible, setIsVisible] = useState(false);
     const iconRef = useRef(null);
 
@@ -11,11 +11,9 @@ const ServiceCard = ({ icon, title, description, delay }) => {
                     if (entry.isIntersecting) {
                         // הכרטיס נראה בתצוגה
                         setIsVisible(true);
-                        console.log('Card is visible');
                     } else {
                         // הכרטיס יצא מהתצוגה
                         setIsVisible(false);
-                        console.log('Card is not visible');
                     }
                 });
             },
@@ -34,7 +32,6 @@ const ServiceCard = ({ icon, title, description, delay }) => {
             <div
                 className={`icon-circle ${isVisible ? 'fade-in' : ''}`}
                 ref={iconRef}
-                style={{ transitionDelay: `${delay}ms` }} // הוספת עיכוב לאנימציה
             >
                 <img src={icon} alt={`${title} Icon`} />
             </div>
