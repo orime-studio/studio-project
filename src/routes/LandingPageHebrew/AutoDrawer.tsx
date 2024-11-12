@@ -7,7 +7,7 @@ const SideDrawer = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsOpen(true);
-    }, 7000); // פתח אחרי 3 שניות
+    }, 5000); // פתח אחרי 3 שניות
 
     // מניעת דליפה של טיימר כשחוזרים מהקומפוננטה
     return () => clearTimeout(timer);
@@ -27,7 +27,7 @@ const SideDrawer = () => {
             <p>אנחנו כאן כדי לעזור!</p>
          
           <div className="button-container">
-                <a href="#contactForm" className="gold-button">ספרו לנו על הפרוייקט שלכם</a>
+                <a href="#contactForm" className="gold-button" onClick={closeDrawer}>ספרו לנו על הפרוייקט שלכם</a>
             </div>
         
 
