@@ -18,14 +18,15 @@ const SideDrawer = () => {
 
   return (
     <div>
-      {/* ה-Drawer עצמו */}
       <div className={`side-drawer ${isOpen ? 'open' : ''}`}>
         <div className="drawer-content">
           <h2>
             רוצים להקפיץ את העסק שלכם קדימה?
             </h2>
-          <p>השאירו פרטים ונחזור אליכם בהקדם</p>
-          
+         
+          <div className="button-container">
+                <a href="#contactForm" className="gold-button">ספרו לנו על הפרוייקט שלכם</a>
+            </div>
         
 
 
