@@ -66,13 +66,13 @@
                 justify-content: center;
                 align-items: center;
                 margin: 0 auto 20px auto;
-                transform: translateY(30px);
-                opacity: 0;
-                transition: opacity 1.2s ease, transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55); // נוספה תנועה דרמטית יותר עם ease-out
+                opacity: 0; /* מתחיל במצב נסתר */
+                transform: translateY(30px); /* מתחיל בתזוזה למטה */
+                transition: opacity 1.2s ease, transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
                 &.fade-in {
-                    opacity: 1; // הגענו לאופסיטי מלאה
-                    transform: translateY(0); // נעבור למקום המקורי
+                    opacity: 1;
+                    transform: translateY(0); /* מגיע למקום המקורי */
                 }
 
                 img {

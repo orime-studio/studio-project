@@ -1,6 +1,7 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
-const ServiceCard = ({ icon, title, description }) => {
+const ServiceCard = ({ icon, title, description, delay }) => {
+    const [isVisible, setIsVisible] = useState(false);
     const iconRef = useRef(null);
 
     useEffect(() => {
@@ -8,9 +9,13 @@ const ServiceCard = ({ icon, title, description }) => {
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add('fade-in'); // מוסיפים את האנימציה
+                        // הכרטיס נראה בתצוגה
+                        setIsVisible(true);
+                        console.log('Card is visible');
                     } else {
-                        entry.target.classList.remove('fade-in'); // אם יוצא מהתצוגה, מסירים את האנימציה
+                        // הכרטיס יצא מהתצוגה
+                        setIsVisible(false);
+                        console.log('Card is not visible');
                     }
                 });
             },
@@ -26,7 +31,11 @@ const ServiceCard = ({ icon, title, description }) => {
 
     return (
         <div className="card-heb">
-            <div className="icon-circle" ref={iconRef}>
+            <div
+                className={`icon-circle ${isVisible ? 'fade-in' : ''}`}
+                ref={iconRef}
+                style={{ transitionDelay: `${delay}ms` }} // הוספת עיכוב לאנימציה
+            >
                 <img src={icon} alt={`${title} Icon`} />
             </div>
             <h3>{title}</h3>
