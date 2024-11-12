@@ -1,4 +1,5 @@
 import AboutUs from './AboutUs';
+import AutoDrawer from './AutoDrawer';
 import BannerSection from './BannerSection';
 import MainBanner from './MainBanner';
 import OurServiceN from './OurServicesN';
@@ -56,7 +57,7 @@ const LandingPageHeb = () => {
                 <StudioContactHebrew />
             </div>
             <WhatsAppButton />
-
+            <AutoDrawer />
 
         </div>
     );

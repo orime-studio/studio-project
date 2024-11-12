@@ -1,0 +1,62 @@
+/* SideDrawer.css */
+
+/* העיצוב הבסיסי של ה-Drawer */
+.side-drawer {
+    position: fixed;
+    right: 0; /* ממוקם בצד ימין */
+    bottom: 0; /* צמוד לחלק התחתון */
+    transform: translateY(100%); /* מתחיל מחוץ למסך למטה */
+    width: 250px; /* רוחב ה-Drawer */
+    height: 200px; /* גובה ה-Drawer */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out; /* אנימציה לפתיחה */
+    z-index: 1000; /* לוודא שה-Drawer יהיה מעל כל אלמנט אחר */
+    padding: 20px;
+  }
+  
+  /* ה-Drawer פתוח */
+  .side-drawer.open {
+    transform: translateY(0); /* הפוך את ה-translate כך שיתפוס מקום */
+  }
+  
+  /* תוכן ה-Drawer */
+  .drawer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    text-align: center;
+  }
+  
+  /* כפתור סגירה עם סמל X */
+  .close-btn {
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    color: #2B2E37;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .close-btn:hover {
+    color: #BFB491; /* צבע בהיר בעת ריחוף */
+  }
+  /* עיצוב למובייל */
+@media (max-width: 768px) {
+    .side-drawer {
+      width: 200px; /* רוחב קטן יותר למובייל */
+      height: 150px; /* גובה קטן יותר למובייל */
+    }
+  
+    .close-btn {
+      font-size: 25px; /* הקטנת גודל ה-X למובייל */
+      top: 5px; /* מיקום מעט יותר קרוב לפינה */
+      right: 5px;
+    }
+  }
+  
