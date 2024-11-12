@@ -3,7 +3,7 @@ import React from 'react'
 const MainBanner = () => {
     return (
         <div className="main-banner-container">
-            <video autoPlay loop muted playsInline className="background-video" poster='./img/main-banner-img.jpg'>
+            <video autoPlay loop muted playsInline className="background-video" poster='/img/main-banner-img.jpg'>
                 <source src="/img/main-banner-video.mp4" type="video/mp4" />
                 הדפדפן שלך אינו תומך בווידאו.
             </video>
