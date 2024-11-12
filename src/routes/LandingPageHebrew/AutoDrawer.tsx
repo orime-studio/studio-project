@@ -7,7 +7,7 @@ const SideDrawer = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsOpen(true);
-    }, 3000); // פתח אחרי 3 שניות
+    }, 7000); // פתח אחרי 3 שניות
 
     // מניעת דליפה של טיימר כשחוזרים מהקומפוננטה
     return () => clearTimeout(timer);
