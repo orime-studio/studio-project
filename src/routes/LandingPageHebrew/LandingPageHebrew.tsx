@@ -57,7 +57,6 @@ const LandingPageHeb = () => {
                 <StudioContactHebrew />
             </div>
             <WhatsAppButton />
-            <AutoDrawer />
 
         </div>
     );
