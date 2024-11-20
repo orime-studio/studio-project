@@ -5,7 +5,7 @@ import './ProjectBanner.scss';
 const ProjectBanner = ({ onClose, logoSrc, logoAlt, title, description }) => (
   <div className="project-banner">
     <button className="close-button" onClick={onClose}>
-      <img src="public/img/Back icon.svg" alt="Close" />
+      <img src="img/Back icon.svg" alt="Close" />
     </button>
     <div className="logo">
       <img src={logoSrc} alt={logoAlt} />
