@@ -6,6 +6,7 @@ import LandingPage from "./LandingPage/LandingPage";
 import ProtectedRouteAdmin from "./ProtectedRouteAdmin";
 import Login from "./Login";
 import LandingPageHeb from "./LandingPageHebrew/LandingPageHebrew";
+import Scope from "./ProjectPage/Scope";
 
 
 
@@ -26,7 +27,11 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/login", element: <Login />
+            },
+            {
+                path: "/scope", element: <Scope />
             }
+
 
         ],
     },
