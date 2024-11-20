@@ -92,6 +92,43 @@
   }
   
 
+  /* Breakpoint for mobile (max-width 768px) */
+@media (max-width: 768px) {
+  .project-banner {
+    padding: 24px;
+    height: auto;
+    background: url('/public/img/Mobile.png') center/cover no-repeat;
+  }
+
+  .banner-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .banner-content p {
+    width: 90%;
+  }
+
+  .close-button {
+    top: 16px;
+    left: 16px;
+  }
+}
+
+  @media (max-width: 1024px) {
+    .project-banner {
+      padding: 32px;
+      height: auto;
+      background: url('/public/img/Tablet.png') center/cover no-repeat;
+    }
+  
+    .banner-content h1 {
+      font-size: 2rem;
+    }
+  
+    .banner-content p {
+      width: 700px;
+    }
+  }
 
   /* Breakpoint for 1400px */
 @media (min-width: 1400px) {
@@ -109,6 +146,7 @@
     width: 950px;
   }
 }
+
 
 /* Breakpoint for 1800px */
 @media (min-width: 1800px) {
