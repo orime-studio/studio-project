@@ -10,7 +10,7 @@ const ProjectBanner = ({ onClose, logoSrc, logoAlt, title, description }) => (
     <div className="logo">
       <img src={logoSrc} alt={logoAlt} />
     </div>
-    <div className="banner-content">
+    <div className="banner-content-project">
       <h1>{title}</h1>
       <p>{description}</p>
     </div>

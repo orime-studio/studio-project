@@ -1,111 +1,134 @@
 // ProjectBanner.scss
 
 .project-banner {
-     width: calc(100% - 32px);
+  width: calc(100% - 32px);
   margin: 16px auto;
-    height: 140vh;
-   /*  max-width: 1888px;
-    max-height: 911px; */
-    padding: 48px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: url('/public/img/Banner with the image.png') center/cover no-repeat;
-    border-radius: 40px;
-/*     gap: 36px;
- */   
-  }
+  height: 140vh;
+  padding: 48px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url('/public/img/Banner with the image.png') center/cover no-repeat;
+  border-radius: 40px;
+  /*     gap: 36px;
+ */
+}
 
-  .header-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0 16px;
-    position: relative;
-  }
-  
-  .close-button {
-    position: absolute;
-    top: 32px;
-    left: 32px;
-    width: 44px;
-    height: 44px;
-    background-color: #d7cce0;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 1.2rem;
-    display: flex;
+
+.close-button {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  width: 44px;
+  height: 44px;
+  background-color: #d7cce0;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
   justify-content: center;
   align-items: center;
-  }
-  
-  .logo {
-    width: 130px;
-    height: auto;
-    margin-bottom: 50px;
-    
-  }
-  
-  .logo img {
-    width: 100%;
-    height: auto;
-    align-self: center;
-  }
-  
-  .banner-content {
-    text-align: center;
-    /* max-width: 888px; */
-    padding: 0 16px;
-  }
-  
-  .banner-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 16px;
-    line-height: 1.2;
-    align-self: center;
-        color: #2B2E37;
+}
 
-  }
-  
-  .banner-content p {
-    width: 850px;
-    font-size: 1rem;
-    margin-bottom: 24px;
-    line-height: 1.5;
-    align-self: center;
-    color: #2B2E37;
-    ;
-  }
-  
+.logo {
+  width: 130px;
+  height: auto;
+  margin-bottom: 50px;
 
-  
-  .main-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    background-color: #f0f0f0;
-    min-height: 100vh;
-  }
-  
+}
 
-  /* Breakpoint for mobile (max-width 768px) */
+.logo img {
+  width: 100%;
+  height: auto;
+  align-self: center;
+}
+
+.banner-content-project {
+  text-align: center;
+  max-width: 888px;
+  padding: 0 16px;
+}
+
+.banner-content-project h1 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  line-height: 1.2;
+  align-self: center;
+  color: #2B2E37;
+
+}
+
+.banner-content-project p {
+  /* width: 60%; */
+  font-size: 1rem;
+  margin-bottom: 24px;
+  line-height: 1.5;
+  align-self: center;
+  color: #2B2E37;
+
+}
+
+
+
+.main-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #f0f0f0;
+  min-height: 100vh;
+}
+
+
+/* Breakpoint for mobile (max-width 768px) */
 @media (max-width: 768px) {
   .project-banner {
-    padding: 24px;
-    height: auto;
+    width: calc(100% - 32px);
+    height: 100vh;
+    margin: 16px auto;
+    padding: 48px;
     background: url('/public/img/Mobile.png') center/cover no-repeat;
   }
 
-  .banner-content h1 {
-    font-size: 1.8rem;
+  .logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 30px;
+
   }
 
-  .banner-content p {
+  .close-button {
+    width: 28px;
+    height: 28px;
+  }
+
+  .banner-content-project {
     width: 90%;
+  }
+
+  .banner-content-project h1 {
+    color: #2B2E37;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.12px;
+    width: 100%;
+  }
+
+  .banner-content-project p {
+    color: #2B2E37;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
   }
 
   .close-button {
@@ -114,23 +137,28 @@
   }
 }
 
-  @media (max-width: 1024px) {
-    .project-banner {
-      padding: 32px;
-      height: auto;
-      background: url('/public/img/Tablet.png') center/cover no-repeat;
-    }
-  
-    .banner-content h1 {
-      font-size: 2rem;
-    }
-  
-    .banner-content p {
-      width: 700px;
-    }
+@media (max-width: 1024px) {
+  .project-banner {
+    padding: 32px;
+    background: url('/public/img/Tablet.png') center/cover no-repeat;
   }
 
-  /* Breakpoint for 1400px */
+
+  .banner-content-project {
+    width: 90%;
+  }
+
+  .banner-content-project h1 {
+    font-size: 1.2rem;
+  }
+
+  .banner-content-project p {
+    font-size: .8rem;
+    line-height: 1.2;
+  }
+}
+
+/* Breakpoint for 1400px */
 @media (min-width: 1400px) {
   .project-banner {
     padding: 64px;
@@ -138,7 +166,7 @@
     max-height: none;
   }
 
-  .banner-content h1 {
+  .banner-content-project h1 {
     font-size: 3rem;
   }
 
@@ -156,11 +184,11 @@
     max-height: none;
   }
 
-  .banner-content h1 {
+  .banner-content-project h1 {
     font-size: 3.5rem;
   }
 
-  .banner-content p {
+  .banner-content-project p {
     width: 1100px;
   }
 }
