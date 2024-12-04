@@ -44,12 +44,12 @@ const MainPage = () => {
   const roleItems = {
     title: 'My Role',
     cards: [
-      { icon: '/img/UI Consultation.svg', alt: 'Research', text: 'Research' },
-      { icon: '/img/UI Consultation.svg', alt: 'Wireframes', text: 'Wireframes' },
-      { icon: '/img/UI Consultation.svg', alt: 'User Flow', text: 'User Flow' },
-      { icon: 'public/img/UI Consultation.svg', alt: 'UX/UI Design', text: 'UX/UI Design' },
-      { icon: 'public/img/UI Consultation.svg', alt: 'Style Guide', text: 'Style Guide' },
-      { icon: 'public/img/UI Consultation.svg', alt: 'Design QA', text: 'Design QA' }
+      { icon: '/img/code-browser.svg', alt: 'Research', text: 'Research' },
+      { icon: '/img/Desktop and Mobile.svg', alt: 'Wireframes', text: 'Wireframes' },
+      { icon: '/img/building-02.svg', alt: 'User Flow', text: 'User Flow' },
+      { icon: '/img/cursor-box.svg', alt: 'UX/UI Design', text: 'UX/UI Design' },
+      { icon: '/img/brush-01.svg', alt: 'Style Guide', text: 'Style Guide' },
+      { icon: '/img/UI Consultation.svg', alt: 'Design QA', text: 'Design QA' }
     ]
   };
 

@@ -23,7 +23,7 @@
   padding: 32px;
   display: flex;
   flex-direction: column;
-  height: 637px;
+  height: 440px;
 
   @media (max-width: 1000px) {
     width: 100%;
@@ -48,8 +48,9 @@
   color: #2B2E37;
   font-size: 1rem;
   line-height: 1.5;
-  width: 100%; // נוודא שהטקסט יתפרש על כל הרוחב
-  flex-grow: 1; // Make sure this paragraph grows to take the remaining space
+  width: 100%; 
+  flex-grow: 1;
+  margin-top: 16px; 
 
   @media (max-width: 1000px) {
     width: 100%;
@@ -65,7 +66,8 @@
   background: #EBE7EE;
   border-radius: 28px;
   padding: 32px;
-  height: 637px;
+
+  height: 440px;
 
   @media (max-width: 1000px) {
     width: 100%;
@@ -88,8 +90,9 @@
 }
 
 .about-role-card {
-  width: 182px; // גודל לפי הפיגמה
-  height: 140px; // גובה לפי הפיגמה
+  /* width: 182px;  */
+  width: calc(33.33% - 12px);
+  height: 144px; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -102,20 +105,19 @@
 
   @media (max-width: 600px) {
     width: calc(100% / 2 - 16px); // שלוש כרטיסיות בשורה עם מרווחים
-    margin-bottom: 16px; // רווח תחתון לכרטיסיות
+     // רווח תחתון לכרטיסיות
   }
 }
 
 .about-role-card img {
-  height: 36px; // גובה לפי הפיגמה
-  flex: 1 0 0;
-  margin-bottom: 16px;
+  height: 36px; 
+  /* flex: 1 0 0; */
+  
 
   @media (max-width: 600px) {
     width: 36px;
     height: 36px; 
-    font-size: 16px;
-
+    
   }
 }
 
