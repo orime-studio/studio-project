@@ -16,7 +16,7 @@
         padding: 24px;
         flex-direction: column;
         align-items: flex-start;
-        gap: 16px;
+       
         border-radius: 20px;
         background: #EFEDF3;
 
@@ -24,6 +24,7 @@
             width: 36px;
             height: 36px;
             flex-shrink: 0;
+            margin-bottom: 24px;
         }
 
         .challenge-card-title {
@@ -45,5 +46,18 @@
             line-height: 20px;
             /* 125% */
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .the-challenge-cards {
+        width: 100%;
+
+        .challenge-card {
+            img{
+                margin-bottom: 12px;
+            }
+        }
+
     }
 }
