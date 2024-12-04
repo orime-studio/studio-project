@@ -7,6 +7,7 @@ import ProtectedRouteAdmin from "./ProtectedRouteAdmin";
 import Login from "./Login";
 import LandingPageHeb from "./LandingPageHebrew/LandingPageHebrew";
 import Scope from "./ProjectPage/Scope";
+import AboutMyRole from "./ProjectPage/ScopeMyRole";
 
 
 
@@ -30,7 +31,11 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/scope", element: <Scope />
+            },
+            {
+                path: "/hf", element: <AboutMyRole />
             }
+            
 
 
         ],

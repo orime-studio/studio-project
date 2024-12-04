@@ -28,6 +28,7 @@ import React from 'react';
  */import ProjectBanner from './components/MainBanner';
 import AboutMyRoleSection from './components/AboutMyRole';
 import TheResearch from './components/Research';
+import TheChallenge from './components/TheChallenge';
 
 // Main Page Component
 const MainPage = () => {
@@ -71,6 +72,15 @@ const MainPage = () => {
         description="Skope has developed a digital platform for both patients and their physicians that uses AI-based precision medicine engines to personalize cancer treatment plans. My job included characterization, developing the"
       />
       <AboutMyRoleSection aboutContent={aboutContent} roleItems={roleItems} />
+
+      <TheChallenge
+       title='The Challenge'
+       description='The purpose of the app is to allow the patient
+       to: Access their medical information, Upload medical documents,
+       Schedule and view appointments for tests, such as MRI & PSA,
+       Biopsies , Find additional information about their disease through articles and videos,
+       Communicate with essential contacts, such as physicians, the hospital, clinics etc.'
+       />
 
       <TheResearch 
         title="The Research"

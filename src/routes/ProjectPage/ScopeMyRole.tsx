@@ -1,4 +1,5 @@
 import AboutMyRoleSection from "./components/AboutMyRole";
+import TheChallenge from "./components/TheChallenge";
 
 const AboutMyRole = () => {
     const aboutContent = {
@@ -21,7 +22,14 @@ const AboutMyRole = () => {
   
     return (
       <div className="main-page">
-        <AboutMyRoleSection aboutContent={aboutContent} roleItems={roleItems} />
+       <TheChallenge
+       title='The Challenge'
+       description='The purpose of the app is to allow the patient
+       to: Access their medical information, Upload medical documents,
+       Schedule and view appointments for tests, such as MRI & PSA,
+       Biopsies , Find additional information about their disease through articles and videos,
+       Communicate with essential contacts, such as physicians, the hospital, clinics etc.'
+       />
       </div>
     );
   };

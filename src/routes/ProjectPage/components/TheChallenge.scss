@@ -1,0 +1,40 @@
+.the-challenge {
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - 32px);
+    margin: 16px auto;
+    gap: 16px;
+
+    .the-challenge-container {
+        display: flex;
+        flex-direction: column;
+        padding: 52px 44px;
+        align-items: flex-start;
+        flex: 1 0 0;
+        align-self: stretch;
+        border-radius: 28px;
+        background: #EFEDF3;
+
+        .the-challenge-title {
+            color: #2B2E37;
+            font-family: "Playfair Display";
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 1.12px;
+            margin-bottom: 16px;
+        }
+
+        .the-challenge-text {
+            color: #2B2E37;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            width: 630px;
+
+        }
+    }
+}
