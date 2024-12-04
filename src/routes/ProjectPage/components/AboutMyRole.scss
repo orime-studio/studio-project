@@ -1,78 +1,95 @@
-
-// AboutMyRoleSection.scss
-
-.section-container {
-    width: calc(100% - 32px);
+.about-section-container {
+  width: calc(100% - 32px);
   margin: 16px auto;
-  height: 461px;
   display: flex;
-/*   justify-content: space-between;
- */  align-items: flex-start;
-  /* padding: 52px 44px; */
-  border-radius: 28px;
+  align-items: stretch; // Stretch both sections to equal height
   gap: 16px;
 
-
+  @media (max-width: 1000px) {
+    flex-direction: row; // In medium screens, show as columns
+    margin-bottom: 50px;
+  }
+  @media (max-width: 500px) {
+    flex-direction: column; // In medium screens, show as columns
+    margin-bottom: 50px;
+  }
 }
 
 /* Left side (About) */
-.section-about {
-  flex: 0 0 50%;
+.about-section-about {
+  flex: 1; // Both sections should grow equally
   background: #EBE7EE;
-  border-radius: 28px; /* Added border-radius to match each side */
-  padding: 32px; 
-  height: 100%;
+  border-radius: 28px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  height: 637px;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+    padding: 24px;
+  }
 }
 
-.section-about h2 {
+.about-section-about h2 {
   color: #2B2E37;
   font-family: "Playfair Display";
   font-size: 28px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
   letter-spacing: 1.12px;
   margin-bottom: 16px;
+
+  @media (max-width: 1000px) {
+    font-size: 24px;
+  }
 }
 
-.section-about p {
+.about-section-about p {
   color: #2B2E37;
   font-size: 1rem;
   line-height: 1.5;
-  width: 80%;
-  
+  width: 100%; // נוודא שהטקסט יתפרש על כל הרוחב
+  flex-grow: 1; // Make sure this paragraph grows to take the remaining space
 
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
 }
 
 /* Right side (My Role) */
-.section-role {
-  flex: 0 0 48.5%;
-  height: 100%;
-
+.about-section-role {
+  flex: 1; // Both sections should grow equally
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
   background: #EBE7EE;
-  border-radius: 28px; 
-  padding: 32px; 
+  border-radius: 28px;
+  padding: 32px;
+  height: 637px;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+    padding: 24px;
+  }
 }
 
-.section-role h2 {
+.about-section-role h2 {
   width: 100%;
   color: #2B2E37;
   font-family: "Playfair Display";
   font-size: 28px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
   letter-spacing: 1.12px;
-/*   margin-bottom: 16px;
- */}
 
-.role-card {
-  /* width: 236px;
-  height: 140px; */
-  width: 31%;
+  @media (max-width: 1000px) {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+}
+
+.about-role-card {
+  width: 182px; // גודל לפי הפיגמה
+  height: 140px; // גובה לפי הפיגמה
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -81,27 +98,36 @@
   border-radius: 28px;
   background: #F5F3F7;
   backdrop-filter: blur(20px);
- 
+  text-align: left;
+
+  @media (max-width: 600px) {
+    width: calc(100% / 2 - 16px); // שלוש כרטיסיות בשורה עם מרווחים
+    margin-bottom: 16px; // רווח תחתון לכרטיסיות
+  }
 }
 
-.role-card img {
-  width: 28px;
-  height: 28px;
+.about-role-card img {
+  height: 36px; // גובה לפי הפיגמה
+  flex: 1 0 0;
   margin-bottom: 16px;
+
+  @media (max-width: 600px) {
+    width: 36px;
+    height: 36px; 
+    font-size: 16px;
+
+  }
 }
 
-.role-card p {
+.about-role-card p {
   color: #2B2E37;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-family: "Montserrat";
+  font-size: 16px; // גודל הפונט לפי הפיגמה
+  font-weight: 700; // משקל פונט לפי הפיגמה
+  line-height: normal;
   margin: 0;
-}
 
-.main-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
-  background-color: #f0f0f0;
-  min-height: 100vh;
+  @media (max-width: 600px) {
+    font-size: 14px; // קצת הקטנה במובייל כדי לשפר קריאות
+  }
 }

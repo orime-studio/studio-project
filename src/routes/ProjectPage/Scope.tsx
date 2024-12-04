@@ -27,6 +27,7 @@ import React from 'react';
 /* import './AboutMyRoleSection.scss';
  */import ProjectBanner from './components/MainBanner';
 import AboutMyRoleSection from './components/AboutMyRole';
+import TheResearch from './components/Research';
 
 // Main Page Component
 const MainPage = () => {
@@ -52,6 +53,14 @@ const MainPage = () => {
     ]
   };
 
+ /*  const researchContent = {
+    title: "The Research",
+    description: "The purpose of the app is to allow the patient to access their medical information, upload medical documents, schedule and view appointments for tests, and more.",
+    image1: { src: "public/img/Image1.png", alt: "Research Image 1" },
+    image2: { src: "public/img/Image2.png", alt: "Research Image 2" }
+  }; */
+
+
   return (
     <div className="main-page-project">
       <ProjectBanner 
@@ -62,6 +71,14 @@ const MainPage = () => {
         description="Skope has developed a digital platform for both patients and their physicians that uses AI-based precision medicine engines to personalize cancer treatment plans. My job included characterization, developing the"
       />
       <AboutMyRoleSection aboutContent={aboutContent} roleItems={roleItems} />
+
+      <TheResearch 
+        title="The Research"
+        description="The purpose of the app is to allow the patient to: Access their medical information, Upload medical documents, Schedule and view appointments for tests, such as MRI & PSA, Biopsies , Find additional information about their disease through articles and videos , Communicate with essential contacts, such as physicians, the hospital, clinics etc."
+        image1={{ src: "/img/image 15.png", alt: "Research Image 1" }}
+        image2={{ src: "public/img/image 14.png", alt: "Research Image 2" }}
+      />
+
     </div>
   );
 };
