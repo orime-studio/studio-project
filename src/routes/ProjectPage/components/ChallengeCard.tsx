@@ -1,4 +1,4 @@
-import React from 'react'
+/* import React from 'react'
 import './ChallengeCard.scss';
 
 const ChallengeCard = ({ imgSrc, imgAlt, cardTitle, cardDescription }) => {
@@ -13,4 +13,4 @@ const ChallengeCard = ({ imgSrc, imgAlt, cardTitle, cardDescription }) => {
     )
 }
 
-export default ChallengeCard
+export default ChallengeCard */

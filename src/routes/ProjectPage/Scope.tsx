@@ -30,6 +30,36 @@ const MainPage = () => {
     ]
   };
 
+const cardsData = [
+    {
+        imgSrc: 'img/Platforms.svg',
+        imgAlt: 'Platforms',
+        cardTitle: 'Platforms',
+        cardDescription: 'Mobile & Desktop',
+    },
+    {
+        imgSrc: '/img/ProjectTimeline.svg',
+        imgAlt: 'Project Timeline',
+        cardTitle: 'Project Timeline',
+        cardDescription: 'Two Months',
+    },
+    {
+        imgSrc: './img/ProjectType.svg',
+        imgAlt: 'Project Type',
+        cardTitle: 'Project Type',
+        cardDescription: 'Medical App',
+    },
+    {
+        imgSrc: './img/Users.svg',
+        imgAlt: 'Users',
+        cardTitle: 'Users',
+        cardDescription: 'Patients',
+    },
+];
+
+
+
+
 
 
   return (
@@ -43,14 +73,15 @@ const MainPage = () => {
       />
       <AboutMyRoleSection aboutContent={aboutContent} roleItems={roleItems} />
 
-      <TheChallenge
-       title='The Challenge'
-       description='The purpose of the app is to allow the patient
+        <TheChallenge
+        title="The Challenge"
+        description="The purpose of the app is to allow the patient
        to: Access their medical information, Upload medical documents,
        Schedule and view appointments for tests, such as MRI & PSA,
        Biopsies , Find additional information about their disease through articles and videos,
-       Communicate with essential contacts, such as physicians, the hospital, clinics etc.'
-       />
+       Communicate with essential contacts, such as physicians, the hospital, clinics etc."
+        cards={cardsData}
+    />
 
       <TheResearch 
         title="The Research"

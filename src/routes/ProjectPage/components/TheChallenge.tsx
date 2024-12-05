@@ -1,48 +1,25 @@
-import ChallengeCard from "./ChallengeCard"
+import React from 'react';
 import './TheChallenge.scss';
 
-const TheChallenge = ({ title, description}) => {
+const TheChallenge = ({ title, description, cards }) => {
     return (
         <div className="the-challenge">
-            
             <div className="the-challenge-cards">
-                <ChallengeCard
-                    imgSrc='img/Platforms.svg'
-                    imgAlt='banner'
-                    cardTitle='Platforms'
-                    cardDescription='Mobile & Desktop' 
-                    />
-
-                <ChallengeCard
-                   imgSrc='/img/ProjectTimeline.svg'
-                    imgAlt='Project Timelin'
-                    cardTitle='Project Timeline'
-                    cardDescription='Two Months'
-                     />
-
-                <ChallengeCard
-                    imgSrc='./img/ProjectType.svg'
-                    imgAlt='Project Type'
-                    cardTitle='Project Type'
-                    cardDescription='Medical App'
-                     />
-
-                <ChallengeCard
-                   imgSrc='./img/Users.svg'
-                     imgAlt='Users'
-                    cardTitle='Users'
-                    cardDescription='Patients'
-                     />
-
+                {cards.map((card, index) => (
+                    <div key={index} className="challenge-card">
+                        <img src={card.imgSrc} alt={card.imgAlt} />
+                        <h2 className="challenge-card-title">{card.cardTitle}</h2>
+                        <p className="challenge-card-text">{card.cardDescription}</p>
+                    </div>
+                ))}
             </div>
 
             <div className="the-challenge-container">
                 <h2 className="the-challenge-title">{title}</h2>
                 <p className="the-challenge-text">{description}</p>
             </div>
-
         </div>
-    )
-}
+    );
+};
 
-export default TheChallenge
+export default TheChallenge;
