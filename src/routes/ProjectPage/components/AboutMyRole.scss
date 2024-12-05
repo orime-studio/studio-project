@@ -7,11 +7,10 @@
 
   @media (max-width: 1000px) {
     flex-direction: row; // In medium screens, show as columns
-    margin-bottom: 50px;
   }
   @media (max-width: 500px) {
     flex-direction: column; // In medium screens, show as columns
-    margin-bottom: 50px;
+   
   }
 }
 

@@ -10,7 +10,7 @@
         flex-direction: column;
         padding: 52px 44px;
         align-items: flex-start;
-        flex: 1 0 0;
+       width: 100%;
         align-self: stretch;
         border-radius: 28px;
         background: #EFEDF3;
@@ -33,15 +33,32 @@
             font-style: normal;
             font-weight: 400;
             line-height: 24px;
-            width: 100%;
+            width: 60%;
 
         }
     }
+}
+
+@media (max-width: 1000px) {
+    .the-challenge {
+        .the-challenge-container {
+            .the-challenge-text {
+                width: 100%;
+            }
+        }
+    } 
 }
 @media (max-width: 768px) {
     .the-challenge {
         flex-direction: column-reverse;
         gap: 16px;
+
+        .the-challenge-container {
+            .the-challenge-text {
+                width: 100%;
+            }
+
+        }
 
     }
 }
