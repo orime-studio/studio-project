@@ -1,0 +1,74 @@
+.detail-section {
+    width: calc(100% - 32px);
+    margin: 16px auto;
+    display: flex;
+    height: 650px;
+    padding: 52px 0px 52px 44px;
+    align-items: center;
+    gap: 60px;
+    border-radius: 28px;
+    background: #EFEDF3;
+    align-self: stretch;
+    
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      height: auto; 
+      padding: 52px 10px 52px 10px;
+    }
+  
+    &.detail-left {
+      flex-direction: row-reverse; // הופך את הסדר כך שהתמונה תהיה משמאל
+    }
+  }
+  
+  .detail-content {
+    flex: 1;
+  }
+  
+  .detail-title {
+    color: #2B2E37;
+    font-family: "Playfair Display";
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 1.28px;
+    line-height: normal;
+    margin-bottom: 16px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .detail-description {
+    color: #2B2E37;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    width: 550px;
+    text-align: center;
+  
+    @media (max-width: 1000px) {
+      width: 90%; 
+      align-self: center;
+      text-align: center;
+    }
+  }
+  
+  .detail-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .detail-image {
+    width: 630px; // גודל תמונה ברוחב מסך גדול
+    max-width: 100%; // להתאמה למסכים קטנים יותר
+    border-radius: 28px;
+  
+    @media (max-width: 1000px) {
+      width: 95%; // גודל תמונה בטאבלט ומובייל
+    }
+  }
+  

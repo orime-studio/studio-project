@@ -1,33 +1,10 @@
-/* import ProjectBanner from "./components/MainBanner";
-
-// Main Page Component
-const MainPage = () => {
-  const handleClose = () => {
-    window.location.href = "/"; // Redirect to homepage
-  };
-
-
-  return (
-    <div className="main-page-project">
-      <ProjectBanner 
-        onClose={handleClose}
-        logoSrc="img/LogoA.svg"
-        logoAlt="Logo Description"
-        title="Scope - AI Agent Builder"
-        description="Skope has developed a digital platform for both patients and their physicians that uses AI-based precision medicine engines to personalize cancer treatment plans. My job included characterization, developing the"
-      />
-    </div>
-  );
-};
-
-export default MainPage; */
-
 
 import React from 'react';
 import ProjectBanner from './components/MainBanner';
 import AboutMyRoleSection from './components/AboutMyRole';
 import TheResearch from './components/Research';
 import TheChallenge from './components/TheChallenge';
+import DetailProject from './components/DeatailProject';
 
 // Main Page Component
 const MainPage = () => {
@@ -53,12 +30,6 @@ const MainPage = () => {
     ]
   };
 
- /*  const researchContent = {
-    title: "The Research",
-    description: "The purpose of the app is to allow the patient to access their medical information, upload medical documents, schedule and view appointments for tests, and more.",
-    image1: { src: "public/img/Image1.png", alt: "Research Image 1" },
-    image2: { src: "public/img/Image2.png", alt: "Research Image 2" }
-  }; */
 
 
   return (
@@ -88,6 +59,23 @@ const MainPage = () => {
         image2={{ src: "/img/image 160.png", alt: "Research Image 2" }}
       />
 
+
+
+<DetailProject
+        title="Main Dashboard"
+        description="The purpose of the app is to allow the patient to: Access their medical information, Upload medical documents, Schedule and view appointments for tests, such as MRI & PSA, Biopsies, Find additional information about their disease through articles and videos, Communicate with essential contacts, such as physicians, the hospital, clinics etc."
+        imageSrc="/img/Scope main Banner image.png"
+        imageAlt="Main Dashboard Image"
+        imageRight={true} // תמונה בצד ימין
+      />
+
+      <DetailProject
+        title="Detailed Reports"
+        description="The app offers the ability to generate detailed reports for both patients and physicians, providing valuable insights into the treatment progress and recommendations."
+        imageSrc="/img/Scope main Banner image.png"
+        imageAlt="Detailed Reports Image"
+        imageRight={false} // תמונה בצד שמאל
+      />
     </div>
   );
 };
