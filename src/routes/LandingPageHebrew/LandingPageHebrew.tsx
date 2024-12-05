@@ -2,6 +2,7 @@ import AboutUs from './AboutUs';
 import BannerSection from './BannerSection';
 import MainBanner from './MainBanner';
 import OurServiceN from './OurServicesN';
+import OurStory from './OurStory';
 import StudioContactHebrew from './StudioContact';
 import './Styles/main.scss';
 import WhatsAppButton from './WhatsAppButton';
@@ -47,7 +48,7 @@ const LandingPageHeb = () => {
                     description="משחקים לשיפור הקוגנטיביות"
                     sectionClass="reability-heb"
                 />
-
+                <OurStory />
             </div>
             <AboutUs />
             <div id="contactForm">

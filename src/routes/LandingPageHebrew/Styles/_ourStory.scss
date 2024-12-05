@@ -1,0 +1,174 @@
+.our-story-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 32px;
+    background: #F7F3FC;
+    border-radius: 28px;
+    backdrop-filter: blur(20px);
+    margin: 16px 0;
+   
+    
+    .our-story-title {
+        font-family: 'Assistant', sans-serif;
+        font-size: 35px;
+        font-weight: 700;
+        color: #2B2E37;
+        text-align: center;
+        margin-bottom: 58px;
+    }
+
+    .step-container {
+        display: flex;
+        position: relative; // For centering the numbers on the line
+        height: 896px;
+
+        // הגדרות עבור צד ימין
+        .step-right-side {
+            display: flex;
+            flex-direction: column;
+           // gap: 214.25px;
+            justify-content: space-between;
+            // הוספתי הגדרות נוספות לדוגמה, תוכל לשנות לפי הצורך
+            padding-left: 40px; // דוגמה להוספת ריווח משמאל
+           // align-self: flex-end;
+           margin: 200.65px 0 40px;
+
+            .step-card {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+
+                .image-circle {
+                    display: flex;
+                    padding: 18.824px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 82.353px;
+                    background: #EBE1F7;
+                    margin-bottom: 16px;
+
+                    img {
+                        font-size: 42.353px;
+                    }
+                }
+
+                h3 {
+                    color: #2B2E37;
+                    text-align: right;
+                    font-family: Assistant;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 1.5;
+                    color: #4A4A4A;
+                    margin-top: 16px;
+                }
+            }
+
+            .right {
+                align-items: flex-end;
+            }
+        }
+
+        // הגדרות עבור צד שמאל
+        .step-left-side {
+            display: flex;
+            flex-direction: column;
+           justify-content: space-between;
+            // הוספתי הגדרות נוספות לדוגמה, תוכל לשנות לפי הצורך
+            padding-right: 40px; // דוגמה להוספת ריווח מימין
+            margin-bottom: 213px;
+          
+
+            .step-card {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+
+                .image-circle {
+                    display: flex;
+                    padding: 18.824px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 82.353px;
+                    background: #EBE1F7;
+                    margin-bottom: 16px;
+
+                    img {
+                        font-size: 42.353px;
+                    }
+                }
+
+                h3 {
+                    color: #2B2E37;
+                    text-align: left;
+                    font-family: Assistant;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+
+                p {
+                    margin-top: 8px;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    color: #4A4A4A;
+                }
+            }
+
+            .left {
+                align-items: flex-start;
+            }
+        }
+
+        .step-center {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 16px 32px;
+
+            img {
+                height: 100%;
+            }
+
+            .number {
+                position: absolute;
+                background: #F7F3FC;
+                color: #C2A3E5;
+                border-radius: 50%;
+                border: 5px solid #C2A3E5;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .num1 {
+                top: 0;
+            }
+
+            .num2 {
+                top: 214.25px;
+            }
+
+            .num3 {
+                top: 428.5px;
+            }
+
+            .num4 {
+                top: 642.75px;
+            }
+        }
+    }
+}
