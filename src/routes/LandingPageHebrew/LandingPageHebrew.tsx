@@ -1,5 +1,4 @@
 import AboutUs from './AboutUs';
-import AutoDrawer from './AutoDrawer';
 import BannerSection from './BannerSection';
 import MainBanner from './MainBanner';
 import OurServiceN from './OurServicesN';
@@ -48,11 +47,9 @@ const LandingPageHeb = () => {
                     description="משחקים לשיפור הקוגנטיביות"
                     sectionClass="reability-heb"
                 />
+
             </div>
-
-
             <AboutUs />
-
             <div id="contactForm">
                 <StudioContactHebrew />
             </div>
