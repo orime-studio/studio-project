@@ -85,7 +85,7 @@ const MainPage = () => {
         title="The Research"
         description="The purpose of the app is to allow the patient to: Access their medical information, Upload medical documents, Schedule and view appointments for tests, such as MRI & PSA, Biopsies , Find additional information about their disease through articles and videos , Communicate with essential contacts, such as physicians, the hospital, clinics etc."
         image1={{ src: "/img/image 15.png", alt: "Research Image 1" }}
-        image2={{ src: "/img/image 14.png", alt: "Research Image 2" }}
+        image2={{ src: "/img/image 160.png", alt: "Research Image 2" }}
       />
 
     </div>
