@@ -20,8 +20,9 @@
 
     .step-container {
         display: flex;
-        position: relative; // For centering the numbers on the line
-        height: 896px;
+        position: relative;
+       // For centering the numbers on the line
+       
 
         // הגדרות עבור צד ימין
         .step-right-side {
@@ -33,11 +34,14 @@
             padding-left: 40px; // דוגמה להוספת ריווח משמאל
            // align-self: flex-end;
            margin: 200.65px 0 40px;
+           text-align: right;
+        
 
             .step-card {
                 display: flex;
                 flex-direction: column;
                 width: 320px;
+               
 
                 .image-circle {
                     display: flex;
@@ -48,7 +52,7 @@
                     background: #EBE1F7;
                     margin-bottom: 16px;
 
-                    img {
+                    .icon {
                         font-size: 42.353px;
                     }
                 }
@@ -72,7 +76,8 @@
             }
 
             .right {
-                align-items: flex-end;
+                align-items: flex-start;
+                direction: rtl;
             }
         }
 
@@ -100,8 +105,9 @@
                     background: #EBE1F7;
                     margin-bottom: 16px;
 
-                    img {
+                    .line {
                         font-size: 42.353px;
+                        width: 100%;
                     }
                 }
 
@@ -124,7 +130,9 @@
             }
 
             .left {
-                align-items: flex-start;
+                align-items: flex-end;
+                direction: rtl;
+                text-align: left;
             }
         }
 
