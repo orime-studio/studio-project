@@ -1,3 +1,4 @@
+import OurStoryMobile from "../LandingPageHebrew/OurStoryMobile";
 import AboutMyRoleSection from "./components/AboutMyRole";
 import TheChallenge from "./components/TheChallenge";
 
@@ -21,7 +22,9 @@ const AboutMyRole = () => {
     };
   
     return (
-      <div className="main-page">
+      <div>
+
+        <OurStoryMobile />
 
       </div>
     );

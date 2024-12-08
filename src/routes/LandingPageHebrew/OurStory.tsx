@@ -1,7 +1,30 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import OurStoryMobile from './OurStoryMobile';
 
 const OurStory = () => {
     const numbersRef = useRef([]); // שמירה על רפרנס למספרים
+    const [isMobile, setIsMobile] = useState(false);
+
+    console.log("Is mobile:", isMobile);
+    console.log("Window width:", window.innerWidth);
+
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768); // קבע את הגודל המתאים
+        };
+
+        // הגדרת המצב ההתחלתי
+        handleResize();
+
+        // מאזין לשינוי גודל המסך
+        window.addEventListener('resize', handleResize);
+
+        // ניקוי המאזין
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -27,13 +50,16 @@ const OurStory = () => {
         return () => observer.disconnect(); // ניקוי האובזרבר בעת עזיבת הקומפוננטה
     }, []);
 
-    return (
+
+    return isMobile ? (
+        <OurStoryMobile />
+    ) : (
         <div className="our-story-container">
             <h2 className="our-story-title">המסע שלנו יחד איתך</h2>
 
             <div className="step-container">
                 <div className="step-right-side">
-                    <div className="step-card right num2">
+                    <div className="step-card right">
                         <span className="image-circle">
                             <img className='icon' src="img/compass.svg" alt="compass" />
                         </span>
@@ -101,8 +127,8 @@ const OurStory = () => {
                         <span className="image-circle">
                             <img className='icon' src="img/Frame 6481.svg" alt="" />
                         </span>
-                      <h3>אפיון ועיצוב חוויית משתמש (UX/UI)</h3>
-                   <p>נעבוד בצמוד כדי ליצור מוצר שמשלב יופי וטכנולוגיה. אנחנו נשלב את היכולות שלנו בעיצוב ופיתוח כדי להביא את הרעיון שלך לחיים. האתר יהיה מהיר, מאובטח ונגיש, עם קוד נקי ועיצוב מרהיב.</p>
+                        <h3>אפיון ועיצוב חוויית משתמש (UX/UI)</h3>
+                        <p>נעבוד בצמוד כדי ליצור מוצר שמשלב יופי וטכנולוגיה. אנחנו נשלב את היכולות שלנו בעיצוב ופיתוח כדי להביא את הרעיון שלך לחיים. האתר יהיה מהיר, מאובטח ונגיש, עם קוד נקי ועיצוב מרהיב.</p>
                     </div>
                 </div>
             </div>

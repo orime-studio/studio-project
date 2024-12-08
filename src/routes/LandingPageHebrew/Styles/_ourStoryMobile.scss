@@ -1,0 +1,129 @@
+.our-story-mobile-container {
+  
+    height: auto;
+    border-radius: 28px;
+    background: #F7F3FC;
+    backdrop-filter: blur(20px);
+    margin: 16px auto;
+
+
+
+    .our-story-mobile-title {
+        color: #2B2E37;
+        text-align: center;
+        font-family: Assistant;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding: 26px 3px 60px 2px;
+    }
+
+    .mobile-step-container {
+        display: flex;
+
+    }
+
+    .right-side-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        .step-card {
+            display: flex;
+            width: 271px;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 10px 10px 60px 10px;
+            max-height: 280px;
+
+            .image-circle {
+                display: flex;
+                padding: 18.824px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 82.353px;
+                background: #EBE1F7;
+                margin-bottom: 16px;
+
+                .icon {
+                    font-size: 42.353px;
+                }
+            }
+
+            h3 {
+                color: #2B2E37;
+                text-align: right;
+                font-family: Assistant;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            p {
+                color: #000;
+                text-align: right;
+                font-family: Assistant;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+
+    }
+
+    .line-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px 16px 16px 16px;
+        width: 40px;
+       
+        flex-shrink: 0;
+
+        img {
+            height: 100%;
+        }
+
+        .number {
+            position: absolute;
+            background: #F7F3FC;
+            color: #C2A3E5;
+            border-radius: 50%;
+            border: 5px solid #C2A3E5;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.5s ease-in-out, background 0.5s ease-in-out;
+            /* שינוי חלק */
+        }
+
+        .number.active {
+            background: #C2A3E5;
+            color: #FFFFFF;
+        }
+
+        .num1 {
+            top: 0;
+        }
+
+        .num2 {
+            top: 286px;
+        }
+
+        .num3 {
+            top: 658px;
+        }
+
+        .num4 {
+            top: 1030px;
+        }
+
+    }
+}

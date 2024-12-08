@@ -60,8 +60,6 @@ const cardsData = [
 
 
 
-
-
   return (
     <div className="main-page-project">
       <ProjectBanner 
