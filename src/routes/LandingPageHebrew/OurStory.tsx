@@ -59,7 +59,7 @@ const OurStory = () => {
 
             <div className="step-container">
                 <div className="step-right-side">
-                    <div className="step-card right">
+                    <div className="step-card right mt-3">
                         <span className="image-circle">
                             <img className='icon' src="img/compass.svg" alt="compass" />
                         </span>
@@ -70,7 +70,7 @@ const OurStory = () => {
                             שיעניקו למבקרים חוויה יוצאת דופן.
                         </p>
                     </div>
-                    <div className="step-card right num4">
+                    <div className="step-card right num4 stategy">
                         <span className="image-circle">
                             <img className='icon' src="img/rocket-02.svg" alt="" />
                         </span>
@@ -123,7 +123,7 @@ const OurStory = () => {
                             שתבליט אותך בשוק התחרותי.
                         </p>
                     </div>
-                    <div className="step-card left num3">
+                    <div className="step-card left num3 experience">
                         <span className="image-circle">
                             <img className='icon' src="img/Frame 6481.svg" alt="" />
                         </span>
@@ -138,7 +138,7 @@ const OurStory = () => {
                 <p className="aboutUs-description">
                     האתר שלכם הוא יותר מרק קוד ועיצוב – הוא הסיפור שלכם, המקום שבו הלקוחות שלכם פוגשים אתכם לראשונה.
                     <br /><br />
-
+ 
                     <span>
                         אנחנו יודעים כמה <strong>חשוב שהאתר או החנות שלכם ישקפו באמת את מהות העסק שלכם.</strong> כשהסיפור מועבר בצורה הנכונה, זה יוצר חיבור אמיתי עם הלקוחות הפוטנציאליים ומעודד אותם לפעול.
                     </span>

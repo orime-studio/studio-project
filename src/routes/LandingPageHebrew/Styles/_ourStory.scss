@@ -16,12 +16,13 @@
         color: #2B2E37;
         text-align: center;
         margin-bottom: 58px;
+        direction: rtl;
+
     }
 
     .step-container {
         display: flex;
         position: relative;
-       // For centering the numbers on the line
        
 
         // הגדרות עבור צד ימין
@@ -42,6 +43,7 @@
                 flex-direction: column;
                 width: 320px;
                
+
 
                 .image-circle {
                     display: flex;
@@ -119,6 +121,7 @@
                     font-style: normal;
                     font-weight: 700;
                     line-height: normal;
+                    direction: rtl;
                 }
 
                 p {
@@ -126,6 +129,8 @@
                     font-size: 16px;
                     line-height: 1.5;
                     color: #4A4A4A;
+                    direction: rtl;
+
                 }
             }
 
@@ -177,11 +182,11 @@
             }
 
             .num3 {
-                top: 428.5px;
+                top: 460px;
             }
 
             .num4 {
-                top: 642.75px;
+                top: 670px;
             }
         }
     }
@@ -213,4 +218,13 @@
             margin: 0 auto;
         }
     }
+}
+
+.experience{
+    margin-top: -1000px !important;
+
+} 
+
+.stategy{
+    margin-top: 185px;  
 }

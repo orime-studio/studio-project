@@ -1,5 +1,5 @@
 .our-story-mobile-container {
-  
+
     height: auto;
     border-radius: 28px;
     background: #F7F3FC;
@@ -17,6 +17,8 @@
         font-weight: 700;
         line-height: normal;
         padding: 26px 3px 60px 2px;
+        direction: rtl;
+
     }
 
     .mobile-step-container {
@@ -27,6 +29,7 @@
     .right-side-mobile {
         display: flex;
         flex-direction: column;
+
         .step-card {
             display: flex;
             height: auto;
@@ -34,7 +37,7 @@
             flex-direction: column;
             align-items: flex-end;
             padding: 10px 10px 50px 10px;
-           
+
 
             .image-circle {
                 display: flex;
@@ -58,6 +61,8 @@
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
+                direction: rtl;
+
             }
 
             p {
@@ -68,6 +73,8 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
+                direction: rtl;
+
             }
         }
 
@@ -80,8 +87,8 @@
         align-items: center;
         margin: 40px 16px 16px 16px;
         width: 40px;
-       
-      //  flex-shrink: 0;
+
+        //  flex-shrink: 0;
 
         img {
             height: 100%;
@@ -97,7 +104,8 @@
             height: 40px;
             display: flex;
             justify-content: center;
-
+            margin: 0 auto;
+            padding-top: 2px;
             font-size: 16px;
             font-weight: bold;
             transition: color 0.5s ease-in-out, background 0.5s ease-in-out;
@@ -107,23 +115,24 @@
         .number.active {
             background: #C2A3E5;
             color: #FFFFFF;
-            
+
+
         }
 
         .num1 {
-            top: 0;
+            top: -10px;
         }
 
         .num2 {
-            top: 286px;
+            top: 305px;
         }
 
         .num3 {
-            top: 658px;
+            top: 672px;
         }
 
         .num4 {
-            top: 1030px;
+            top: 1045px;
         }
 
     }
@@ -143,7 +152,7 @@
             font-weight: bold;
         }
 
-        .second-title{
+        .second-title {
             margin-top: 30px;
         }
 
