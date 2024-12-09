@@ -1,3 +1,4 @@
+import OurStory from './OurStory';
 import TeamMember from './TeamMember';
 
 const AboutUs = () => {
@@ -53,7 +54,8 @@ const AboutUs = () => {
                 />
             </div>
 
-            <div className="aboutUs-content">
+
+            {/* <div className="aboutUs-content">
                 <h2 className="aboutUs-title second-title">הדרך שלנו</h2>
                 <p className="aboutUs-description">
                     האתר שלכם הוא יותר מרק קוד ועיצוב – הוא הסיפור שלכם, המקום שבו הלקוחות שלכם פוגשים אתכם לראשונה.
@@ -73,7 +75,7 @@ const AboutUs = () => {
                     <br />
                     <strong>יחד ניצור חוויה דיגיטלית שגורמת ללקוחות להתחבר, להישאר, ולבחור בך שוב ושוב.</strong>
                 </p>
-            </div>
+            </div> */}
         </section>
     );
 };

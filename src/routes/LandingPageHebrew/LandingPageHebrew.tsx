@@ -48,9 +48,10 @@ const LandingPageHeb = () => {
                     description="משחקים לשיפור הקוגנטיביות"
                     sectionClass="reability-heb"
                 />
-                <OurStory />
+               
             </div>
             <AboutUs />
+            <OurStory />
             <div id="contactForm">
                 <StudioContactHebrew />
             </div>
