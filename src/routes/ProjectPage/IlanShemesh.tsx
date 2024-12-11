@@ -6,9 +6,11 @@ import TheResearch from './components/Research';
 import TheChallenge from './components/TheChallenge';
 import DetailProject from './components/DeatailProject';
 import DesignSystem from './components/DesignSystem';
+import './IlanShemesh.scss';
+import Banner from './components/Banner';
+import EnhancedDetailProject from './components/EnhancedDetailProject';
 
-// Main Page Component
-const MainPage = () => {
+const IlanShemesh = () => {
   const handleClose = () => {
     window.location.href = "/"; // Redirect to homepage
   };
@@ -62,16 +64,16 @@ const cardsData = [
 
 
   return (
-    <div className="main-page-project">
+    <div className="ilan-shemesh-page">
       <ProjectBanner 
         onClose={handleClose}
-        logoSrc="img/LogoA.svg"
+        logoSrc="img/Logo 1.svg"
         logoAlt="Logo Description"
-        title="Scope - AI Agent Builder"
-        description="Skope has developed a digital platform for both patients and their physicians that uses AI-based precision medicine engines to personalize cancer treatment plans. My job included characterization, developing the"
-        desktopBg="/img/DesktopBanner.png"
-        tabletBg="/img/TabletBanner.png"
-        mobileBg="/img/MobileBanner.png"
+        title="Ilan Overview"
+        description="אפליקציה לניהול ליקויי דירה ומסירת דירות לרוכשים"
+        desktopBg="/img/IlanDesktop.png"
+        tabletBg="/img/IlanTablet.png"
+        mobileBg="/img/IlanMobile.png"
       />
       <AboutMyRoleSection aboutContent={aboutContent} roleItems={roleItems} />
 
@@ -86,11 +88,11 @@ const cardsData = [
     />
 
       <TheResearch 
-       className="ltr-text"
-        title="The Research"
-        description="The purpose of the app is to allow the patient to: Access their medical information, Upload medical documents, Schedule and view appointments for tests, such as MRI & PSA, Biopsies , Find additional information about their disease through articles and videos , Communicate with essential contacts, such as physicians, the hospital, clinics etc."
-        image1={{ src: "/img/image 15.png", alt: "Research Image 1" }}
-        image2={{ src: "/img/image 160.png", alt: "Research Image 2" }}
+      className="rtl-text"
+        title="המחקר"
+        description="האפליקציה מיועדת בעיקר לבנאים ומנהלי פרויקטים, שאינם מרבים להשתמש בטכנולוגיות מורכבות. לכן, היה קריטי לפתח מערכת פשוטה וקלה לתפעול, שתסייע להם לעבור מתהליך ידני נוכחי לפלטפורמה דיגיטלית נוחה לשימוש. בהתחשב בכך שהזמן הוא רכיב קריטי במערכת, הושם דגש על פתרונות שמייעלים את העבודה, כגון לשוניות גדולות המכילות סיכומים של המידע החשוב ביותר, חלוקות ברורות ומובחנות בתוך הטקסט, כלי חיפוש מהיר וחכם המאפשר גישה ישירה לכל המידע, והתראות עבור פועלי בנייה על ליקויים חדשים, וכן עבור דיירים בעת חתימה על פרוטוקולים." 
+        image1={{ src: "/img/IlanNotes 01.png", alt: "Research Image 1" }}
+        image2={{ src: "public/img/IlanNotes 02.png", alt: "Research Image 2" }}
       />
 
 
@@ -98,11 +100,27 @@ const cardsData = [
       title="Design System"
       description="תיאור קצר לגבי המערכת העיצובית ותפקידה"
       leftImages={[
-        { src: '/img/FontsIlan.png', alt: 'Left Image 1' },
-        { src: '/img/ColorsIlan.png', alt: 'Left Image 2' },
+        { src: '/img/IllanFonts.png', alt: 'Left Image 1' },
+        { src: '/img/IlanColors.png', alt: 'Left Image 2' },
       ]}
-      rightImage={{ src: '/img/IconsIlan.png', alt: 'Right Image' }}
+      rightImage={{ src: '/img/IlanIcons.png', alt: 'Right Image' }}
     />
+
+
+<Banner
+        imageSrc="/img/asset 23.jpeg"
+        alt="תיאור התמונה"
+      />
+
+<EnhancedDetailProject
+        title="כותרת הפרויקט"
+        description="תיאור מפורט של הפרויקט שיכלול את כל המידע הדרוש."
+        mainImageSrc="/path/to/main-image.jpg"
+        mainImageAlt="תיאור התמונה הראשית"
+        secondaryImageSrc="/path/to/secondary-image.jpg"
+        secondaryImageAlt="תיאור התמונה הנוספת"
+        imageRight={false} // אם רוצים שהתמונות יהיו בצד ימין, לשים true
+      />
 
 <DetailProject
         title="Main Dashboard"
@@ -123,4 +141,4 @@ const cardsData = [
   );
 };
 
-export default MainPage;
+export default IlanShemesh;

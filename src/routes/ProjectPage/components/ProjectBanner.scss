@@ -9,11 +9,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url('/public/img/Banner with the image.png') center/cover no-repeat;
-  border-radius: 28px;  /*     gap: 36px;
- */
+  background: var(--desktop-bg) center/cover no-repeat;
+  border-radius: 28px;
 }
-
 
 .close-button {
   position: absolute;
@@ -32,10 +30,10 @@
 }
 
 .logo {
-  width: 130px;
+  width: 100px;
   height: auto;
   margin-bottom: 50px;
-
+  margin-top: -20px;
 }
 
 .logo img {
@@ -56,20 +54,15 @@
   line-height: 1.2;
   align-self: center;
   color: #2B2E37;
-
 }
 
 .banner-content-project p {
-  /* width: 60%; */
   font-size: 1rem;
   margin-bottom: 24px;
   line-height: 1.5;
   align-self: center;
   color: #2B2E37;
-
 }
-
-
 
 .main-page {
   display: flex;
@@ -80,29 +73,27 @@
   min-height: 100vh;
 }
 
-
 /* Breakpoint for mobile (max-width 768px) */
 @media (max-width: 768px) {
   .project-banner {
     width: calc(100% - 32px);
-    height: 90vh;
     height: 600px;
-
     margin: 16px auto;
     padding: 48px;
-    background: url('/public/img/Mobile.png') center/cover no-repeat;
+    background: var(--mobile-bg) center/cover no-repeat;
   }
 
   .logo {
     width: 80px;
     height: auto;
     margin-bottom: 30px;
-
   }
 
   .close-button {
     width: 28px;
     height: 28px;
+    top: 16px;
+    left: 16px;
   }
 
   .banner-content-project {
@@ -129,21 +120,14 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-
-  }
-
-  .close-button {
-    top: 16px;
-    left: 16px;
   }
 }
 
 @media (max-width: 1024px) {
   .project-banner {
     padding: 32px;
-    background: url('/public/img/Tablet.png') center/cover no-repeat;
+    background: var(--tablet-bg) center/cover no-repeat;
   }
-
 
   .banner-content-project {
     width: 90%;
@@ -175,7 +159,6 @@
     width: 950px;
   }
 }
-
 
 /* Breakpoint for 1800px */
 @media (min-width: 1800px) {
