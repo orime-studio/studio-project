@@ -1,18 +1,17 @@
 import React from 'react';
 import './AboutMyRole.scss';
 
-// About and My Role Section Component
-const AboutMyRoleSection = ({ aboutContent, roleItems }) => {
+const AboutMyRoleSection = ({ aboutContent, roleItems, isRTL = false }) => {
   return (
     <div className="about-section-container">
       {/* Left side - About */}
-      <div className="about-section-about">
+      <div className={`about-section-about ${isRTL ? 'rtl' : 'ltr'}`}>
         <h2>{aboutContent.title}</h2>
         <p>{aboutContent.description}</p>
       </div>
 
       {/* Right side - My Role */}
-      <div className="about-section-role">
+      <div className={`about-section-role ${isRTL ? 'rtl' : 'ltr'}`}>
         <h2>{roleItems.title}</h2>
         {roleItems.cards.map((card, index) => (
           <div className="about-role-card" key={index}>

@@ -132,3 +132,16 @@
     font-size: 14px; // קצת הקטנה במובייל כדי לשפר קריאות
   }
 }
+
+
+.rtl {
+  direction: rtl;
+  text-align: right;
+  font-family: assistant;
+  
+}
+
+.ltr {
+  direction: ltr;
+  text-align: left;
+}

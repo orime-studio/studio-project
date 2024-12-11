@@ -2,46 +2,26 @@
     width: calc(100% - 32px);
     margin: 16px auto;
     display: flex;
-    height: 700px; // גובה חדש הכולל את שתי התמונות
+    height: 650px;
     padding: 52px 0px 52px 44px;
     align-items: center;
     gap: 60px;
     border-radius: 28px;
     background: #EFEDF3;
     align-self: stretch;
-  
+    
     @media (max-width: 1000px) {
       flex-direction: column;
-      height: auto;
+      height: auto; 
       padding: 52px 10px 52px 10px;
     }
   
+    &.enhanced-detail-left {
+      flex-direction: row-reverse; // הופך את הסדר כך שהתמונה תהיה משמאל
+    }
+  
     &.enhanced-detail-right {
-      flex-direction: row-reverse; // הופך את הסדר כך שהתמונות יהיו בצד ימין
-    }
-  }
-  
-  .enhanced-detail-images {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px; // רווח בין התמונות
-  
-    .enhanced-detail-main-image {
-      width: 630px; // גודל תמונה ראשית ברוחב מסך גדול
-      max-width: 100%; // להתאמה למסכים קטנים יותר
-      border-radius: 28px;
-  
-      @media (max-width: 1000px) {
-        width: 95%; // גודל תמונה בטאבלט ומובייל
-      }
-    }
-  
-    .enhanced-detail-secondary-image {
-      width: 200px; // גובה קצר לתמונה הנוספת
-      max-width: 100%;
-      border-radius: 14px; // פינה מעוגלת קטנה
+      flex-direction: row; // הסדר הרגיל
     }
   }
   
@@ -50,36 +30,67 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    direction: rtl;
+  }
   
-    .enhanced-detail-title {
-      color: #2B2E37;
-      font-family: "Playfair Display", serif;
-      font-size: 32px;
-      font-weight: 500;
-      letter-spacing: 1.28px;
-      line-height: normal;
-      margin-bottom: 16px;
-      text-align: center;
-      display: flex;
-      justify-content: center;
+  .enhanced-short-image-container {
+    margin-bottom: 16px;
+  }
+  
+  .enhanced-short-image {
+    height: 130px; // גובה קצר לתמונה
+    width: auto;
+    border-radius: 10px;
+    
+    @media (max-width: 1000px) {
+      height: 80px;
     }
+  }
   
-    .enhanced-detail-description {
-      color: #2B2E37;
-      font-family: "Montserrat", sans-serif;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 26px;
-      margin: 0 auto;
-      margin-bottom: 32px;
-      width: 550px;
+  .enhanced-detail-title {
+    color: #2B2E37;
+    font-family: Assistant;
+font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1.28px;
+    line-height: normal;
+    margin-bottom: 16px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .enhanced-detail-description {
+    color: #2B2E37;
+    font-family: Assistant;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    width: 550px;
+    text-align: center;
+  
+    @media (max-width: 1000px) {
+      width: 90%; 
+      align-self: center;
       text-align: center;
+    }
+  }
   
-      @media (max-width: 1000px) {
-        width: 90%;
-        align-self: center;
-        text-align: center;
-      }
+  .enhanced-detail-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .enhanced-detail-image {
+    width: 630px; // גודל תמונה ברוחב מסך גדול
+    max-width: 100%; // להתאמה למסכים קטנים יותר
+    border-radius: 28px;
+  
+    @media (max-width: 1000px) {
+      width: 95%; // גודל תמונה בטאבלט ומובייל
     }
   }
   

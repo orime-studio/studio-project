@@ -7,14 +7,13 @@
     padding: 52px 0px 52px 44px;
     flex-direction: column;
     align-items: center;
-    /* gap: 60px; */
-    /* align-self: stretch; */
+    
 
     .res-section-title {
         color: #2B2E37;
-        font-family: "Playfair Display";
-        font-size: 32px;
-        font-weight: 500;
+        font-family: Assistant;
+font-size: 32px;
+font-weight: 700;
         letter-spacing: 1.28px;
         line-height: normal;
         margin-bottom: 16px; // מרחק קטן מהכותרת לטקסט
@@ -22,13 +21,15 @@
 
     .res-section-description {
         color: #2B2E37;
-        font-family: "Montserrat";
+        font-family: Assistant;
+
         font-size: 16px;
         font-weight: 400;
         line-height: 26px; // 162.5%
         margin: 0 auto;
         margin-bottom: 32px; // מרחק בין הטקסט לתמונות
         width: 70%;
+        text-align: center;
 
     }
 
@@ -46,8 +47,13 @@
         .res-image2 {
             margin-left: auto;
             
-
-            
+        }
+        .res-image1 {
+    right: 0!important;
+    margin-right: -55px; 
+    margin-left: 50px;
+  
+             
         }
     }
 
