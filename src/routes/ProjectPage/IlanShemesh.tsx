@@ -12,51 +12,51 @@ import EnhancedDetailProject from './components/EnhancedDetailProject';
 
 const IlanShemesh = () => {
     const handleClose = () => {
-        window.location.href = "/"; // Redirect to homepage
+        window.location.href = "/"; 
     };
 
     const aboutContent = {
-        title: 'About',
+        title: 'על הפרוייקט',
         description:
-            'The purpose of the app is to allow the patient to: Access their medical information, Upload medical documents, Schedule and view appointments for tests, such as MRI & PSA, Biopsies, Find additional information about their disease through articles and videos, Communicate with essential contacts, such as physicians, the hospital, clinics etc.'
+            'האפליקציה שואפת ליצור פלטפורמה שתאפשר ניהול אי סדרים באתרי בנייה, וכן העברה מהירה ויעילה של נכסים לדיירים עתידיים. כיום, נהלי ניהול הנכסים מתבצעים באופן ידני, מה שמעכב את מסירת הדירות ויוצר נתק בין הקבלנים לעובדי הבנייה בנוגע לתיקון נזקים.'
     };
 
     const roleItems = {
         title: 'דברים שנעשו',
         cards: [
-            { icon: '/img/code-browser.svg', alt: 'Research', text: 'Research' },
-            { icon: '/img/Desktop and Mobile.svg', alt: 'Wireframes', text: 'Wireframes' },
-            { icon: '/img/building-02.svg', alt: 'User Flow', text: 'User Flow' },
-            { icon: '/img/cursor-box.svg', alt: 'UX/UI Design', text: 'UX/UI Design' },
-            { icon: '/img/brush-01.svg', alt: 'Style Guide', text: 'Style Guide' },
-            { icon: '/img/UI Consultation.svg', alt: 'Design QA', text: 'Design QA' }
+            { icon: '/img/dataflow-01.svg', alt: 'Research', text: 'זרימת משתמשים' },
+            { icon: '/img/Desktop and Mobile (1).svg', alt: 'Wireframes', text: 'סקיצות ראשוניות' },
+            { icon: '/img/microscope.svg', alt: 'User Flow', text: 'מחקר' },
+            { icon: '/img/thumbs-up.svg', alt: 'UX/UI Design', text: 'בדיקת עיצוב' },
+            { icon: '/img/magic-wand-01.svg', alt: 'Style Guide', text: 'מדריך סגנון' },
+            { icon: '/img/brush-01 (1).svg', alt: 'Design QA', text: 'עיצוב UX/UI' }
         ]
     };
 
     const cardsData = [
         {
-            imgSrc: 'img/Platforms.svg',
+            imgSrc: '/img/clock-rewind.svg',
             imgAlt: 'Platforms',
-            cardTitle: 'Platforms',
-            cardDescription: 'Mobile & Desktop',
+            cardTitle: 'משך הפרויקט',
+            cardDescription: 'חודש',
         },
         {
             imgSrc: '/img/ProjectTimeline.svg',
             imgAlt: 'Project Timeline',
-            cardTitle: 'Project Timeline',
-            cardDescription: 'Two Months',
+            cardTitle: 'פלטפורמות',
+            cardDescription: 'טאבלט ונייד',
         },
         {
-            imgSrc: './img/ProjectType.svg',
+            imgSrc: './img/users-01.svg',
             imgAlt: 'Project Type',
-            cardTitle: 'Project Type',
-            cardDescription: 'Medical App',
+            cardTitle: 'משתמשים',
+            cardDescription: 'מנהלי פרויקטים',
         },
         {
-            imgSrc: './img/Users.svg',
-            imgAlt: 'Users',
-            cardTitle: 'Users',
-            cardDescription: 'Patients',
+            imgSrc: './img/tag-01.svg',
+            imgAlt: 'סוג הפרויקט',
+            cardTitle: 'סוג הפרויקט',
+            cardDescription: 'אפליקציה בתחום הנדל”ן',
         },
         
     ];
@@ -84,13 +84,10 @@ const IlanShemesh = () => {
       />
 
             <TheChallenge
-                title="The Challenge"
-                description="The purpose of the app is to allow the patient
-       to: Access their medical information, Upload medical documents,
-       Schedule and view appointments for tests, such as MRI & PSA,
-       Biopsies , Find additional information about their disease through articles and videos,
-       Communicate with essential contacts, such as physicians, the hospital, clinics etc."
+                title="האתגר"
+                description="האתגרים המרכזיים באפיון האפליקציה כוללים יצירת לוח בקרה (Dashboard) המכיל את כל המידע הנחוץ, כגון מספר הדירות, הקבלנים וליקויים שהטיפול בהם מתעכב. בנוסף, יש צורך בממשק ברור ומושך, יחד עם זמינות מהירה לטיפול בליקויים."
                 cards={cardsData}
+                isRTL={true}
             />
 
             <TheResearch

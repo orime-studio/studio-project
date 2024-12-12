@@ -32,7 +32,7 @@
 
 .about-section-about h2 {
   color: #2B2E37;
-  font-family: "Playfair Display";
+  
   font-size: 28px;
   font-weight: 600;
   letter-spacing: 1.12px;
@@ -77,7 +77,6 @@
 .about-section-role h2 {
   width: 100%;
   color: #2B2E37;
-  font-family: "Playfair Display";
   font-size: 28px;
   font-weight: 600;
   letter-spacing: 1.12px;
@@ -122,9 +121,9 @@
 
 .about-role-card p {
   color: #2B2E37;
-  font-family: "Montserrat";
-  font-size: 16px; // גודל הפונט לפי הפיגמה
-  font-weight: 700; // משקל פונט לפי הפיגמה
+  
+  font-size: 16px; 
+  font-weight: 700; 
   line-height: normal;
   margin: 0;
 
@@ -137,7 +136,10 @@
 .rtl {
   direction: rtl;
   text-align: right;
-  font-family: assistant;
+  font-family: Assistant!important;
+font-size: 32px;
+font-style: normal;
+
   
 }
 

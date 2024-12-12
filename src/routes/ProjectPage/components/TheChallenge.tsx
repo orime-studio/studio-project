@@ -1,10 +1,10 @@
 import React from 'react';
 import './TheChallenge.scss';
 
-const TheChallenge = ({ title, description, cards }) => {
+const TheChallenge = ({ title, description, cards, isRTL = false }) => {
     return (
         <div className="the-challenge">
-            <div className="the-challenge-cards">
+            <div className={`the-challenge-cards ${isRTL ? 'rtl' : 'ltr'}`}>
                 {cards.map((card, index) => (
                     <div key={index} className="challenge-card">
                         <img src={card.imgSrc} alt={card.imgAlt} />
@@ -14,7 +14,7 @@ const TheChallenge = ({ title, description, cards }) => {
                 ))}
             </div>
 
-            <div className="the-challenge-container">
+            <div className={`the-challenge-container ${isRTL ? 'rtl' : 'ltr'}`}>
                 <h2 className="the-challenge-title">{title}</h2>
                 <p className="the-challenge-text">{description}</p>
             </div>

@@ -17,7 +17,6 @@
 
         .the-challenge-title {
             color: #2B2E37;
-            font-family: "Playfair Display";
             font-size: 28px;
             font-weight: 600;
             letter-spacing: 1.12px;
@@ -26,7 +25,7 @@
 
         .the-challenge-text {
             color: #2B2E37;
-            font-family: Montserrat;
+           
             font-size: 16px;
             font-weight: 400;
             line-height: 24px;
@@ -60,7 +59,6 @@
 
         .challenge-card-title {
             color: #2B2E37;
-            font-family: Montserrat;
             font-size: 16px;
             font-weight: 700;
         }
@@ -68,7 +66,7 @@
         .challenge-card-text {
             color: #2B2E37;
             text-align: center;
-            font-family: Montserrat;
+           
             font-size: 16px;
             font-weight: 400;
             line-height: 20px;
@@ -101,3 +99,19 @@
         }
     }
 }
+
+
+.rtl {
+    direction: rtl;
+    text-align: right;
+    font-family: Assistant!important;
+  font-size: 32px;
+  font-style: normal;
+  
+    
+  }
+  
+  .ltr {
+    direction: ltr;
+    text-align: left;
+  }
