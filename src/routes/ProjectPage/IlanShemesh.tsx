@@ -157,7 +157,7 @@ const IlanShemesh = () => {
                 shortImageAlt="תיאור התמונה הנוספת"
                 imageRight={true} // אם רוצים שהתמונות יהיו בצד ימין, לשים true
             />
-
+<h2 id="firstProject" className='project-title'>הפרוייקטים שלנו</h2>
             <BannerSection
                 variant="withMargin"
                 sideClass="right"
