@@ -8,6 +8,7 @@ import Login from "./Login";
 import LandingPageHeb from "./LandingPageHebrew/LandingPageHebrew";
 import Scope from "./ProjectPage/Scope";
 import IlanShemesh from "./ProjectPage/IlanShemesh";
+import Primo from "./ProjectPage/Prrimo";
 
 
 
@@ -34,6 +35,9 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/ilan-shemesh", element: <IlanShemesh />
+            },
+            {
+                path: "/priimo", element: <Primo />
             }
             
 
