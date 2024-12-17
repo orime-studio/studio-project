@@ -39,25 +39,25 @@ const Primo = () => {
             imgSrc: '/img/clock-rewind.svg',
             imgAlt: 'Platforms',
             cardTitle: 'משך הפרויקט',
-            cardDescription: 'חודש',
+            cardDescription: 'חודשיים',
         },
         {
             imgSrc: '/img/ProjectTimeline.svg',
             imgAlt: 'Project Timeline',
             cardTitle: 'פלטפורמות',
-            cardDescription: 'טאבלט ונייד',
+            cardDescription: 'נייד',
         },
         {
             imgSrc: './img/users-01.svg',
             imgAlt: 'Project Type',
             cardTitle: 'משתמשים',
-            cardDescription: 'מנהלי פרויקטים',
+            cardDescription: 'מטופלים ורופאים',
         },
         {
             imgSrc: './img/tag-01.svg',
             imgAlt: 'סוג הפרויקט',
             cardTitle: 'סוג הפרויקט',
-            cardDescription: 'אפליקציה בתחום הנדל”ן',
+            cardDescription:'אפליקצייה בתחום הרפואה'
         },
 
     ];
@@ -95,25 +95,25 @@ const Primo = () => {
                 className="rtl-text"
                 title="המחקר"
                 description="בשלב הראשון של המחקר מייןתי את כל הנתונים לפי קטגוריות ובניתי תרשים זרימה על מנת להתבונן באפליקציה מנקודת מבט המשתמש. כדי למנוע עומס מידע על המשתמש, השתמשתי בשיטות שמגבירות את הנוחות והקלות במציאת המידע. יצרתי מערכי נתונים המכילים 3-5 פרטי מידע בכל מערך, כאשר כל מערך נמצא בכרטיסייה נפרדת ומסודר בסליידר. בנוסף, בהתחשב בכך שהמשתמשים באפליקציה הם נושאי סרטן הערמונית ושצפייה בנתוניהם עשויה להיות מלחיצה, עיצבתי את הממשק עם צורות עגולות ורכות וצבעים עדינים כמו ורוד בהיר במקום אדום חזק, במטרה להפחית חרדה וליצור תחושת רוגע ושלווה."
-                image1={{ src: "/img/IlanNotes 02.png", alt: "Research Image 1" }}
-                image2={{ src: "/img/IlanNotes 01.png", alt: "Research Image 2" }}
+                image1={{ src: "/img/Primo/asset 3.png", alt: "Research Image 1" }}
+                image2={{ src: "/img/Primo/asset 4.png", alt: "Research Image 2" }}
             />
 
 
             <DesignSystem
                 title="Design System"
-                description="המערכת עוצבה בסגנון מינימליסטי, פשוט ונקי כדי לאפשר עבודה חלקה עם המערכת בזמן עבודה בשטח בנוי"
+                description="המערכת עוצבה בסגנון מינימליסטי, פשוט ונקי כדי לאפשר עבודה חלקה עם המערכת בזמן טיפול שליחת מסמכים רגישים וקבלת תשובות"
                 leftImages={[
-                    { src: '/img/IllanFonts.png', alt: 'Left Image 1' },
-                    { src: '/img/IlanColors.png', alt: 'Left Image 2' },
+                    { src: '/img/Primo/Fonts.png', alt: 'Left Image 1' },
+                    { src: '/img/Primo/Colors.png', alt: 'Left Image 2' },
                 ]}
-                rightImage={{ src: '/img/IlanIcons.png', alt: 'Right Image' }}
+                rightImage={{ src: '/img/Primo/Icons.png', alt: 'Right Image' }}
             />
 
 
             <Banner
-                desktopImageSrc="/img/Ilan_asset_23.jpeg"
-        mobileImageSrc="/img/ILAN_Mobile_Mock.jpg"
+                desktopImageSrc="/img/Primo/bannermid.png"
+        mobileImageSrc="/img/Primo/bannermid.png"
                 alt="תיאור התמונה"
             />
 
@@ -169,14 +169,14 @@ const Primo = () => {
                 sectionClass="fashion-heb"
             />
             <BannerSection
-            variant="withMargin"
-                sideClass="left"
-                href="http://www.alex-osadchi.com/primo/"
-                title="Software Design"
-                name="Priimo"
-                description="התאמת טיפולים אישיים לסרטן"
-                sectionClass="priimo-heb"
-            />
+                variant="withMargin"
+                    sideClass="right"
+                    href="/ilan-shemesh"
+                    title="Management System"
+                    name="Ilan Overview"
+                    description="אפליקציה לניהול ליקויי דירה ומסירת דירות לרוכשים"
+                    sectionClass="shemesh-heb"
+                />
 
             <BannerSection
             variant="withMargin"
