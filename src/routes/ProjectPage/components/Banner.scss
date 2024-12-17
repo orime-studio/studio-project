@@ -1,4 +1,4 @@
-.full-width-image-container {
+/* .full-width-image-container {
     position: relative;
   
     width: calc(100% - 32px);
@@ -15,5 +15,26 @@
     border-radius: 28px;
 
 
+  } */
+  
+  /* Banner.scss */
+  .banner-container {
+    position: relative;
+    width: calc(100% - 32px);
+    margin: 16px auto;
+    height: 135vh;
+    border-radius: 28px;
+    background-image: var(--banner-desktop-bg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden; // לוודא שהתמונה לא תחרוג מהקונטיינר
+  }
+  
+  @media (max-width: 768px) {
+    .banner-container {
+      background-image: var(--banner-mobile-bg);
+      height: auto; // ניתן לשנות לפי הצורך
+    }
   }
   

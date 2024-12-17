@@ -112,7 +112,8 @@ const IlanShemesh = () => {
 
 
             <Banner
-                imageSrc="/img/asset 23.jpeg"
+                desktopImageSrc="/img/Ilan_asset_23.jpeg"
+        mobileImageSrc="/img/ILAN_Mobile_Mock.jpg"
                 alt="תיאור התמונה"
             />
 
