@@ -1,10 +1,15 @@
 
-function BannerSection({ href, title, name, description, sectionClass , sideClass }) {
+function BannerSection({ href, title, name, description, sectionClass, sideClass, variant }) {
     const handleClick = () => {
         window.open(href, "_blank", "noopener,noreferrer");
     }
     return (
-        <div className={`banner-section-heb ${sectionClass}`} onClick={handleClick} role="button" tabIndex={0}>
+        <div  className={`
+            banner-section-heb 
+            ${sectionClass} 
+            ${variant === 'withMargin' ? 'with-margin' : ''} 
+        `}
+        onClick={handleClick} role="button" tabIndex={0}>
             <a
                 href={href}
                 target="_blank"

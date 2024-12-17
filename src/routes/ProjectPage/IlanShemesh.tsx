@@ -9,10 +9,11 @@ import DesignSystem from './components/DesignSystem';
 import './IlanShemesh.scss';
 import Banner from './components/Banner';
 import EnhancedDetailProject from './components/EnhancedDetailProject';
+import BannerSection from '../LandingPageHebrew/BannerSection';
 
 const IlanShemesh = () => {
     const handleClose = () => {
-        window.location.href = "/"; 
+        window.location.href = "/";
     };
 
     const aboutContent = {
@@ -58,7 +59,7 @@ const IlanShemesh = () => {
             cardTitle: 'סוג הפרויקט',
             cardDescription: 'אפליקציה בתחום הנדל”ן',
         },
-        
+
     ];
 
 
@@ -77,11 +78,11 @@ const IlanShemesh = () => {
                 mobileBg="/img/IlanMobile.png"
             />
 
-            <AboutMyRoleSection 
-        aboutContent={aboutContent} 
-        roleItems={roleItems} 
-        isRTL={true}
-      />
+            <AboutMyRoleSection
+                aboutContent={aboutContent}
+                roleItems={roleItems}
+                isRTL={true}
+            />
 
             <TheChallenge
                 title="האתגר"
@@ -147,6 +148,7 @@ const IlanShemesh = () => {
             />
 
             <EnhancedDetailProject
+           
                 title="יצירת ליקויים חדשים"
                 description="מסך יצירת הליקויים, המשמש לתיעוד נזקים חדשים הדורשים תיקון, עוצב בשני חלקים: בצד ימין מוצגת מפה שעליה ניתן לסמן נזקים או ליקויים, ובצד שמאל מוצעת אפשרות לערוך ליקויים שתועדו בעבר. פורמט זה נוצר כדי לאפשר למשתמש לראות בצורה ויזואלית את מיקום הליקוי, ובמקביל להאיץ את תהליך הדיווח עליו."
                 mainImageSrc="/img/IlanDetail7.png"
@@ -156,7 +158,34 @@ const IlanShemesh = () => {
                 imageRight={true} // אם רוצים שהתמונות יהיו בצד ימין, לשים true
             />
 
+            <BannerSection
+                variant="withMargin"
+                sideClass="right"
+                href="https://t-and-t-shop.onrender.com/about"
+                title="Full Stack Development"
+                name="T&T Fashion"
+                description="חנות אונליין שנבנתה עם React ו-NodeJS"
+                sectionClass="fashion-heb"
+            />
+            <BannerSection
+            variant="withMargin"
+                sideClass="left"
+                href="http://www.alex-osadchi.com/primo/"
+                title="Software Design"
+                name="Priimo"
+                description="התאמת טיפולים אישיים לסרטן"
+                sectionClass="priimo-heb"
+            />
 
+            <BannerSection
+            variant="withMargin"
+                sideClass="left"
+                href="http://www.alex-osadchi.com/reability-online-2/"
+                title="Video Motion Game"
+                name="ReAbility Online"
+                description="משחקים לשיפור הקוגנטיביות"
+                sectionClass="reability-heb"
+            />
 
 
         </div>

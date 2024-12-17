@@ -17,6 +17,7 @@ const LandingPageHeb = () => {
             <div>
                 <h2 id="firstProject" className='project-title'>הפרוייקטים שלנו</h2>
                 <BannerSection
+                variant="none"
                     sideClass="right"
                     href="https://t-and-t-shop.onrender.com/about"
                     title="Full Stack Development"
@@ -25,6 +26,7 @@ const LandingPageHeb = () => {
                     sectionClass="fashion-heb"
                 />
                 <BannerSection
+                variant="none"
                     sideClass="left"
                     href="http://www.alex-osadchi.com/primo/"
                     title="Software Design"
@@ -33,6 +35,7 @@ const LandingPageHeb = () => {
                     sectionClass="priimo-heb"
                 />
                 <BannerSection
+                variant="none"
                     sideClass="right"
                     href="http://www.alex-osadchi.com/ilaan-shemesh/"
                     title="Management System"
@@ -41,6 +44,7 @@ const LandingPageHeb = () => {
                     sectionClass="shemesh-heb"
                 />
                 <BannerSection
+                variant="none"
                     sideClass="left"
                     href="http://www.alex-osadchi.com/reability-online-2/"
                     title="Video Motion Game"

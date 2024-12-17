@@ -9,6 +9,11 @@
     direction: rtl; /* כיוון התוכן לעברית */
     cursor: pointer;
 
+    &.with-margin {
+        width: calc(100% - 32px);
+  margin: 16px auto;
+    }
+
     &.fashion-heb {
         background-image: url('/img/T&T Fashion.jpg');
     }
