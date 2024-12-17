@@ -13,11 +13,12 @@
     color: #2B2E37;
     font-family: Assistant;
     font-size: 32px;
-    font-weight: 500;
+    font-weight: 700;
     text-align: center;
     margin-bottom: 16px;
   }
   
+
   .design-system-description {
     color: #2B2E37;
     font-family: Assistant;
@@ -33,9 +34,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    gap: 8%; /* הגדלנו מ-5% ל-8% */
-/*     margin-top: 30px;
- */
+    gap: 8%; 
   }
   
   .design-left-images {
@@ -93,7 +92,7 @@
       flex-direction: column; /* תמונות שמאליות יישארו בעמודה */
       gap: 40px; /* רווח בין התמונות */
       align-items: center; /* מרכז את התמונות */
-      margin-left: -20px;
+     /*  margin-left: -20px; */
 
     }
 
