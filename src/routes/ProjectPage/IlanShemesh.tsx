@@ -102,7 +102,7 @@ const IlanShemesh = () => {
 
             <DesignSystem
                 title="Design System"
-                description="התערכת עוצבה בסגנון מינימליסטי, פשוט ונקי כדי לאפשר עבודה חלקה עם המערכת בזמן עבודה בשטח בנוי"
+                description="המערכת עוצבה בסגנון מינימליסטי, פשוט ונקי כדי לאפשר עבודה חלקה עם המערכת בזמן עבודה בשטח בנוי"
                 leftImages={[
                     { src: '/img/IllanFonts.png', alt: 'Left Image 1' },
                     { src: '/img/IlanColors.png', alt: 'Left Image 2' },
