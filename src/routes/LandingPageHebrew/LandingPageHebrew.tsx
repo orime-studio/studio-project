@@ -37,7 +37,7 @@ const LandingPageHeb = () => {
                 <BannerSection
                 variant="none"
                     sideClass="right"
-                    href="http://www.alex-osadchi.com/ilaan-shemesh/"
+                    href="/ilan-shemesh"
                     title="Management System"
                     name="Ilan Overview"
                     description="אפליקציה לניהול ליקויי דירה ומסירת דירות לרוכשים"
