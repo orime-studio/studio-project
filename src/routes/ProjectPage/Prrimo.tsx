@@ -124,39 +124,47 @@ const Primo = () => {
                 mainImageAlt="תיאור התמונה הראשית"
                 shortImageSrc="/img/Primo/articlesP.png"
                 shortImageAlt="תיאור התמונה הנוספת"
-                imageRight={false} // אם רוצים שהתמונות יהיו בצד ימין, לשים true
+                imageRight={false} 
+                 imageWidth="auto" 
+  imageHeight="600px"
             />
 
             <EnhancedDetailProject
                 title="מערכת התראות"
                 description="האפליקציה מיועדת בעיקר לבנאים ומנהלי פרויקטים, שאינם מרבים להשתמש בטכנולוגיות מורכבות. לכן, היה חשוב לפתח מערכת פשוטה וקלה לתפעול, שתאפשר למשתמשים מעבר נוח מהתהליך הידני הנוכחי לפלטפורמה דיגיטלית יעילה ונוחה לשימוש. מערכת ההתראות מספקת מידע קריטי בזמן אמת, ומסייעת בניהול אפקטיבי של העבודה באתר."
-                mainImageSrc="/img/IlanDetail4.png"
+                mainImageSrc="/img/Primo/Timeline.png"
                 mainImageAlt="תיאור התמונה הראשית"
-                shortImageSrc="/img/IlanDetail3.png"
+                shortImageSrc="/img/Primo/TimelineP.png"
                 shortImageAlt="תיאור התמונה הנוספת"
-                imageRight={true} // אם רוצים שהתמונות יהיו בצד ימין, לשים true
+                imageRight={true}
+                 imageWidth="auto" 
+  imageHeight="600px"
             />
 
 
             <EnhancedDetailProject
                 title="תהליך החיפוש"
                 description="המשתמש יכול לגשת לרשימת החיפושים האחרונים שלו, הכוללת את הקטגוריה שאליה משתייך כל חיפוש."
-                mainImageSrc="/img/IlanDetail5.png"
+                mainImageSrc="/img/Primo/Uploads.png"
                 mainImageAlt="תיאור התמונה הראשית"
-                shortImageSrc="/img/IlanDetail6.png"
+                shortImageSrc="/img/Primo/UploadsP.png"
                 shortImageAlt="תיאור התמונה הנוספת"
-                imageRight={false} // אם רוצים שהתמונות יהיו בצד ימין, לשים true
+                imageRight={false} 
+                 imageWidth="auto" 
+  imageHeight="600px"
             />
 
             <EnhancedDetailProject
            
                 title="יצירת ליקויים חדשים"
                 description="מסך יצירת הליקויים, המשמש לתיעוד נזקים חדשים הדורשים תיקון, עוצב בשני חלקים: בצד ימין מוצגת מפה שעליה ניתן לסמן נזקים או ליקויים, ובצד שמאל מוצעת אפשרות לערוך ליקויים שתועדו בעבר. פורמט זה נוצר כדי לאפשר למשתמש לראות בצורה ויזואלית את מיקום הליקוי, ובמקביל להאיץ את תהליך הדיווח עליו."
-                mainImageSrc="/img/IlanDetail7.png"
+                mainImageSrc="/img/Primo/Menu.png"
                 mainImageAlt="תיאור התמונה הראשית"
-                shortImageSrc="/img/IlanDetail8.png"
+                shortImageSrc="/img/Primo/MenuP.png"
                 shortImageAlt="תיאור התמונה הנוספת"
-                imageRight={true} // אם רוצים שהתמונות יהיו בצד ימין, לשים true
+                imageRight={true} 
+                 imageWidth="auto" 
+  imageHeight="600px"
             />
 <h2 id="firstProject" className='project-title'>הפרוייקטים שלנו</h2>
             <BannerSection

@@ -124,7 +124,9 @@ const IlanShemesh = () => {
                 mainImageAlt="תיאור התמונה הראשית"
                 shortImageSrc="/img/IlanDetail1.png"
                 shortImageAlt="תיאור התמונה הנוספת"
-                imageRight={false} // אם רוצים שהתמונות יהיו בצד ימין, לשים true
+                imageRight={false} 
+                 imageWidth="700px" 
+  imageHeight="auto"
             />
 
             <EnhancedDetailProject
@@ -134,7 +136,9 @@ const IlanShemesh = () => {
                 mainImageAlt="תיאור התמונה הראשית"
                 shortImageSrc="/img/IlanDetail3.png"
                 shortImageAlt="תיאור התמונה הנוספת"
-                imageRight={true} // אם רוצים שהתמונות יהיו בצד ימין, לשים true
+                imageRight={true} 
+                imageWidth="700px" 
+  imageHeight="auto"
             />
 
 
@@ -145,7 +149,9 @@ const IlanShemesh = () => {
                 mainImageAlt="תיאור התמונה הראשית"
                 shortImageSrc="/img/IlanDetail6.png"
                 shortImageAlt="תיאור התמונה הנוספת"
-                imageRight={false} // אם רוצים שהתמונות יהיו בצד ימין, לשים true
+                imageRight={false} 
+                 imageWidth="700px" 
+  imageHeight="auto"
             />
 
             <EnhancedDetailProject
@@ -156,7 +162,9 @@ const IlanShemesh = () => {
                 mainImageAlt="תיאור התמונה הראשית"
                 shortImageSrc="/img/IlanDetail8.png"
                 shortImageAlt="תיאור התמונה הנוספת"
-                imageRight={true} // אם רוצים שהתמונות יהיו בצד ימין, לשים true
+                imageRight={true} 
+               imageWidth="700px" 
+  imageHeight="auto"
             />
 <h2 id="firstProject" className='project-title'>הפרוייקטים שלנו</h2>
             <BannerSection
