@@ -28,7 +28,7 @@ const LandingPageHeb = () => {
                 <BannerSection
                 variant="none"
                     sideClass="left"
-                    href="http://www.alex-osadchi.com/primo/"
+                    href="/priimo"
                     title="Software Design"
                     name="Priimo"
                     description="התאמת טיפולים אישיים לסרטן"

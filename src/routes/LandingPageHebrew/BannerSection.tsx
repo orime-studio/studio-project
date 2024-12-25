@@ -1,8 +1,9 @@
 
 function BannerSection({ href, title, name, description, sectionClass, sideClass, variant }) {
     const handleClick = () => {
-        window.open(href, "_blank", "noopener,noreferrer");
+        window.location.href = href;
     }
+    
     return (
         <div  className={`
             banner-section-heb 
@@ -12,7 +13,7 @@ function BannerSection({ href, title, name, description, sectionClass, sideClass
         onClick={handleClick} role="button" tabIndex={0}>
             <a
                 href={href}
-                target="_blank"
+                target="_self"
                 rel="noopener noreferrer"
                 className={`content-overlay-heb ${sideClass}`}
                 aria-label={title}
