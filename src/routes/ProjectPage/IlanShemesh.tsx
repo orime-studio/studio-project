@@ -73,9 +73,9 @@ const IlanShemesh = () => {
                 logoAlt="Logo Description"
                 title="Ilan Overview"
                 description="אפליקציה לניהול ליקויי דירה ומסירת דירות לרוכשים"
-                desktopBg="/img/Ilan_DesktopB.png"
-                tabletBg="/img/IlanTablet.png"
-                mobileBg="/img/IlanMobile.png"
+                desktopBg="/img/Ilan_Desktop_f.png"
+                tabletBg="/img/Ilan_Tablet_f.png"
+                mobileBg="/img/Ilan_Mobile_f.png"
             />
 
             <AboutMyRoleSection
