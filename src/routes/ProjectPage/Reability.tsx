@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProjectBanner from './components/MainBanner';
 import AboutMyRoleSection from './components/AboutMyRole';
@@ -19,7 +18,7 @@ const Reability = () => {
     const aboutContent = {
         title: 'על הפרוייקט',
         description:
-            'האפליקציה נועדה לאפשר למטופלים גישה למידע הרפואי שלהם, להעלות מסמכים רפואיים, לתזמן ולצפות בתורני בדיקות כגון MRI ו-PSA וביופסיות. בנוסף, המשתמשים יכולים למצוא מידע נוסף על מחלתם באמצעות מאמרים וסרטונים, ולתקשר עם אנשי קשר חיוניים כמו רופאים, בתי חולים ומרפאות. הפלטפורמה מספקת חוויית משתמש אינטואיטיבית ונגישה, המאפשרת ניהול קל ויעיל של טיפול סרטן הערמונית.'
+            'מטרת מערכת התנועה היא לסייע למטופלי שבץ בשיקום מהבית באמצעות תרגילי בקרה מוטורית והדרכה בשיתוף עם המטפל. המערכת דורשת ציוד בסיסי כגון מחשב ו-Webcam, ובכך מבטלת את הצורך במרפאות.'
     };
 
     const roleItems = {
@@ -71,11 +70,11 @@ const Reability = () => {
                 onClose={handleClose}
                 logoSrc="img/Logo 1.svg"
                 logoAlt="Logo Description"
-                title="Priimo App"
-                description="PriiMO היא פלטפורמה דיגיטלית המשתמשת בבינה מלאכותית להתאמת טיפולי סרטן מותאמים אישית למטופלים ולרופאים, עם עיצוב אינטואיטיבי ואבטחת איכות בכל שלבי הפיתוח והיישום."
-                desktopBg="/img/Primo/Priimo_Desktop.png"
-                tabletBg="/img/Primo/Priimo_Mobile.png"
-                mobileBg="/img/Primo/Priimo_Tablet.png"
+                title="Reability Games"
+                description="מערכת התנועה (Reability Games) משפרת את הכישורים המוטוריים, הקוגניטיביים והתפקודיים של המטופל. המערכת עושה שימוש במצלמת תלת-ממד סטנדרטית לניתוח תנועות המטופל בזמן ביצוע משימות פונקציונליות ומשחקים מגוונים, במטרה לוודא ביצוע תנועות מדויקות."
+                desktopBg="/img/Reability/Reability_Desktop.png"
+                tabletBg="/img/Reability/Reability_Tablet.png"
+                mobileBg="/img/Reability/Reability_Mobile.png"
             />
 
             <AboutMyRoleSection
@@ -86,7 +85,16 @@ const Reability = () => {
 
             <TheChallenge
                 title="האתגר"
-                description="האתגרים המרכזיים ביצירת האפליקציה כללו ארגון כל המידע לפי קטגוריות ובניית היררכיות מתאימות, עיצוב מסד נתונים ברור וישיר למשתמש, ופיתוח כלי ניווט פשוט ומהיר. בנוסף, היה צורך לוודא שהממשק יהיה ידידותי ונגיש למשתמשים במצבים רגישים, תוך שמירה על אמינות ודיוק במידע המוצג."
+                description={
+                    <>
+                        <p>האתגרים המרכזיים בפיתוח המערכת כללו:</p>
+                        <ul>
+                            <li>•בניית שפה עיצובית מתאימה למטופלים</li>
+                            <li>יצירת כלי ניווט שמתאים למגבלות הפיזיות של המטופלים</li>
+                            <li>עיצוב איורים ואנימציות ברורים ואסתטיים</li>
+                        </ul>
+                    </>
+                }
                 cards={cardsData}
                 isRTL={true}
             />

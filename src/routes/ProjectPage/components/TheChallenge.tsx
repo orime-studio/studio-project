@@ -16,7 +16,9 @@ const TheChallenge = ({ title, description, cards, isRTL = false }) => {
 
             <div className={`the-challenge-container ${isRTL ? 'rtl' : 'ltr'}`}>
                 <h2 className="the-challenge-title">{title}</h2>
-                <p className="the-challenge-text">{description}</p>
+                {/* <p className="the-challenge-text">{description}</p> */}
+                <div className="the-challenge-text">{description}</div>
+
             </div>
         </div>
     );
