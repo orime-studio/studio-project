@@ -189,7 +189,7 @@ const Primo = () => {
             <BannerSection
             variant="withMargin"
                 sideClass="left"
-                href="http://www.alex-osadchi.com/reability-online-2/"
+                href="/reability"
                 title="Video Motion Game"
                 name="ReAbility Online"
                 description="משחקים לשיפור הקוגנטיביות"
