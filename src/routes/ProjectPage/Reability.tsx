@@ -44,7 +44,7 @@ const Reability = () => {
             imgSrc: '/img/ProjectTimeline.svg',
             imgAlt: 'Project Timeline',
             cardTitle: 'פלטפורמות',
-            cardDescription: 'נייד',
+            cardDescription: 'מחשב',
         },
         {
             imgSrc: './img/users-01.svg',
@@ -102,78 +102,80 @@ const Reability = () => {
             <TheResearch
                 className="rtl-text"
                 title="המחקר"
-                description="בשלב הראשון של המחקר מייןתי את כל הנתונים לפי קטגוריות ובניתי תרשים זרימה על מנת להתבונן באפליקציה מנקודת מבט המשתמש. כדי למנוע עומס מידע על המשתמש, השתמשתי בשיטות שמגבירות את הנוחות והקלות במציאת המידע. יצרתי מערכי נתונים המכילים 3-5 פרטי מידע בכל מערך, כאשר כל מערך נמצא בכרטיסייה נפרדת ומסודר בסליידר. בנוסף, בהתחשב בכך שהמשתמשים באפליקציה הם נושאי סרטן הערמונית ושצפייה בנתוניהם עשויה להיות מלחיצה, עיצבתי את הממשק עם צורות עגולות ורכות וצבעים עדינים כמו ורוד בהיר במקום אדום חזק, במטרה להפחית חרדה וליצור תחושת רוגע ושלווה."
-                image1={{ src: "/img/Primo/asset 3.png", alt: "Research Image 1" }}
-                image2={{ src: "/img/Primo/asset 4.png", alt: "Research Image 2" }}
+                description="כדי לאפשר למטפל לעקוב אחר מדדי הביצועים של המטופל, כל המשחקים מנוהלים אך ורק באמצעות תנועות הידיים. מתוך כך, היה חיוני לעצב ממשק משתמש עם כלי ניווט ואינטראקציה מתאימים. לקחנו בחשבון שהכפתורים יהיו גדולים מספיק כדי שהמשתמשים יוכלו לקרוא את התוכן שלהם גם כאשר הסמן מרחף מעליהם. מכיוון שהמשתמשים הם מטופלים עם מוגבלויות מוטוריות, הפרדנו את הכפתורים ככל האפשר כדי למנוע טעויות בניווט. בנוסף, כל כפתור מאופיין בצבע ואייקון ייחודיים. על מנת להתאים לצרכי המטופלים, עיצבתי כלי ניווט מיוחד שמוודא שכאשר מטופל מרחף מעל כפתור, מופעל טיימר ויזואלי של 3 שניות לפני ביצוע הפעולה, מה שמסייע בהפחתת טעויות בבחירת המשתמש."
+                image1={{ src: "/img/Reability/NOTE1.jpeg", alt: "Research Image 1" }}
+                image2={{ src: "/img/Reability/NOTE2.png", alt: "Research Image 2" }}
             />
 
 
             <DesignSystem
                 title="Design System"
-                description="המערכת עוצבה בסגנון מינימליסטי, פשוט ונקי כדי לאפשר עבודה חלקה עם המערכת בזמן טיפול שליחת מסמכים רגישים וקבלת תשובות"
+                description="עיצבתי שני סוגי מערכות: אחת למטופל ואחת למטפל. מערכת המטופל מותאמת למסך הבית ונשלטת באמצעות ידיו ומצלמת תלת-ממד, לבדיקת הכישורים הקוגניטיביים והמוטוריים שלו. מערכת המטפל מותאמת למחשב שמאפשר תקשורת עם המטופל, התאמת רמות קושי, תזמון פגישות, איסוף נתונים על המקרה וקביעת מצב המטופל."
                 leftImages={[
-                    { src: '/img/Primo/Fonts.png', alt: 'Left Image 1' },
-                    { src: '/img/Primo/Colors.png', alt: 'Left Image 2' },
+                    { src: '/img/Reability/Fonts.png', alt: 'Left Image 1' },
+                    { src: '/img/Reability/Colors.png', alt: 'Left Image 2' },
                 ]}
-                rightImage={{ src: '/img/Primo/Icons.png', alt: 'Right Image' }}
+                rightImage={{ src: '/img/Reability/Icons.png', alt: 'Right Image' }}
             />
 
 
             <Banner
-                desktopImageSrc="/img/Primo/bannermid.png"
-        mobileImageSrc="/img/Primo/bannermid.png"
+                desktopImageSrc="/img/Reability/banner.png"
+        mobileImageSrc="/img/Reability/banner.png"
                 alt="תיאור התמונה"
             />
 
-            <EnhancedDetailProject
-                title="מאמרים"
-                description="באפליקציה ישנה אפשרות למשתמש לסמן כל מאמר כ־'נקרא' או 'לא נקרא', וכן להצמיד מאמרים חשובים בחלק העליון של העמוד. לשיפור הנגישות והשימושיות, שורת החיפוש ממוקמת מצד שמאל של כותרת העמוד. כאשר המשתמש לוחץ על שורת החיפוש, היא נפתחת במלואה מעבר לכותרת, והמערכת מתחילה לסנן ולחפש את התוכן באופן אוטומטי עם תחילת ההקלדה. תכונות אלו מאפשרות למשתמשים למצוא בקלות את המידע הרלוונטי ולהתעדכן בחדשות ובמאמרים החשובים להם."
-                mainImageSrc="/img/Primo/articles.png"
-                mainImageAlt="תיאור התמונה הראשית"
-                shortImageSrc="/img/Primo/articlesP.png"
-                shortImageAlt="תיאור התמונה הנוספת"
-                imageRight={false} 
-                 imageWidth="auto" 
-  imageHeight="600px"
-            />
+          
+<DetailProject
+        title="חדר משחקים"
+        description="האיורים על כרכי המשחקים פשוטים וברורים, כולם מעוצבים בשלושה צבעים וצורות גאומטריות מובחנות. המשחק נפתח לאחר טיימר של 3 שניות כדי להבהיר למטופל שהוא נכנס למשחק. המשחק הנבחר מוצג כהה יותר ומתכתי."
+        imageSrc="/img/Reability/Lobby.png"
+        imageAlt="Main Dashboard Image"
+        imageRight={true} 
+      />
 
-            <EnhancedDetailProject
-                title="מערכת התראות"
-                description="האפליקציה מיועדת בעיקר לבנאים ומנהלי פרויקטים, שאינם מרבים להשתמש בטכנולוגיות מורכבות. לכן, היה חשוב לפתח מערכת פשוטה וקלה לתפעול, שתאפשר למשתמשים מעבר נוח מהתהליך הידני הנוכחי לפלטפורמה דיגיטלית יעילה ונוחה לשימוש. מערכת ההתראות מספקת מידע קריטי בזמן אמת, ומסייעת בניהול אפקטיבי של העבודה באתר."
-                mainImageSrc="/img/Primo/Timeline.png"
-                mainImageAlt="תיאור התמונה הראשית"
-                shortImageSrc="/img/Primo/TimelineP.png"
-                shortImageAlt="תיאור התמונה הנוספת"
-                imageRight={true}
-                 imageWidth="auto" 
-  imageHeight="600px"
-            />
+      <DetailProject
+        title="בקשת חיבור"
+        description="המטופל חייב לעמוד בטיימר של 3 שניות בעת ניווט במערכת כדי למנוע טעויות הנגרמות מהמגבלות הפיזיות שלו. במקרה זה, המטופל מקבל בקשת שיחת וידאו מהמטפל, שהוא יכול לסרב או לקבל. אם המטופל לא מגיב תוך 10 שניות, הבקשה תעלם מהמסך."
+        imageSrc="/img/Reability/ConnectionRequest.png"
+        imageAlt="Detailed Reports Image"
+        imageRight={false} 
+      />
+      
+<DetailProject
+        title="רמת כאב"
+        description="כל שבועיים, המטופל מקבל שאלון אינטראקטיבי לגבי רמת הכאב שלו. סולם מדידת הכאב כולל שישה רמות, כל אחת עם אימוג'י ותיאור מתאים."
+        imageSrc="/img/Reability/PainLevel.png"
+        imageAlt="Main Dashboard Image"
+        imageRight={true} 
+      />
 
+      <DetailProject
+        title="משחק אופניים"
+        description="המשחק מדמה רכיבה על אופניים באמצעות מכשיר ספינינג. המסך מעוצב כך שיחזק את תחושת הרכיבה. בצד שמאל של המסך נמצא מד דופק התואם למהירות הווידאו, במרכז שלושה מדדים למדידת מרחק, מהירות וקלוריות שנשרפו. בפינה העליונה הימנית, עיצבתי את מסלול הרכיבה של המטופל. כל הפרמטרים מחושבים באמצעות מצלמת עומק."
+        imageSrc="/img/Reability/Bicycle.png"
+        imageAlt="Detailed Reports Image"
+        imageRight={false} 
+      />
+    
+      
+<DetailProject
+        title="מסך טיפולים"
+        description="בצד שמאל, מקמתי סרגל המציג את המטופלים הזמינים לחיבור עם המטפל. מעל, יצרתי מונה המציג את מספר המטופלים הכולל ושורת חיפוש."
+        imageSrc="/img/Reability/Treatments.png"
+        imageAlt="Main Dashboard Image"
+        imageRight={true} 
+      />
 
-            <EnhancedDetailProject
-                title="העלאות"
-                description="מסך ההעלאות שומר על היסטוריה מלאה של כל ההעלאות שבוצעו, כאשר כל העלאה מאופיינת לפי סוג ומספר המסמכים שנכללו. בנוסף, ניתן להשתמש במסנן שמאפשר למיין את המסמכים לפי סטטוס (בודק על ידי רופא או לא). לאחר לחיצה על סמל הפלוס, המשתמש יכול לבחור לצלם תמונה או להעלות תמונה מהגלריה שלו. תכונה זו מקלה על המשתמשים לנהל את המסמכים הרפואיים שלהם בצורה מסודרת ונגישה, ומבטיחה שהמידע הרפואי תמיד יהיה זמין ומעודכן."
-                mainImageSrc="/img/Primo/Uploads.png"
-                mainImageAlt="תיאור התמונה הראשית"
-                shortImageSrc="/img/Primo/Strip_3.png"
-                shortImageAlt="תיאור התמונה הנוספת"
-                imageRight={false} 
-                 imageWidth="auto" 
-  imageHeight="600px"
-            />
-
-            <EnhancedDetailProject
+      <DetailProject
+        title="טיפול מלא"
+        description="ברגע שהבקשה מתקבלת, המטפל רואה שידור חי של מסך המטופל ויכול להדריך אותו בזמן אמת. בחלק העליון של המסך יש שלושה בקרים: נתק שיחה, הגדרות וכיבוי קול. ניתן לטפל בו זמנית בארבעה מטופלים מרביים. כדי לטפל במטופל חדש, על המטפל לסיים אחד מהשיחות הקיימות."
+        imageSrc="/img/Reability/FullTreatment.png"
+        imageAlt="Detailed Reports Image"
+        imageRight={false} 
+      />
+    
            
-                title="תפריט"
-                description="מסך התפריט מכיל את כל הכלים והשירותים הנדרשים למשתמש, כגון הגדרות, אפשרויות יצירת קשר, מידע על הקליניקה ועוד. העיצוב של התפריט נועד להיות אינטואיטיבי ונוח לשימוש, כך שהמשתמשים יוכלו לגשת במהירות לכל הפונקציות והמידע שהם צריכים. התפריט מאפשר התאמה אישית של חוויית המשתמש, ומספק גישה קלה לכל המשאבים והכלים התומכים בטיפול ובניהול המידע הרפואי."
-                mainImageSrc="/img/Primo/Menu.png"
-                mainImageAlt="תיאור התמונה הראשית"
-                shortImageSrc="/img/Primo/Strip_1.png"
-                shortImageAlt="תיאור התמונה הנוספת"
-                imageRight={true} 
-                 imageWidth="auto" 
-  imageHeight="600px"
-            />
 <h2 id="firstProject" className='project-title'>הפרוייקטים שלנו</h2>
             <BannerSection
                 variant="withMargin"
@@ -194,14 +196,14 @@ const Reability = () => {
                     sectionClass="shemesh-heb"
                 />
 
-            <BannerSection
+<BannerSection
             variant="withMargin"
                 sideClass="left"
-                href="http://www.alex-osadchi.com/reability-online-2/"
-                title="Video Motion Game"
-                name="ReAbility Online"
-                description="משחקים לשיפור הקוגנטיביות"
-                sectionClass="reability-heb"
+                href="/priimo/"
+                title="Software Design"
+                name="Priimo"
+                description="התאמת טיפולים אישיים לסרטן"
+                sectionClass="priimo-heb"
             />
 
 
