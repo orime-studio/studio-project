@@ -74,7 +74,7 @@ const Reability = () => {
                 description="מערכת התנועה (Reability Games) משפרת את הכישורים המוטוריים, הקוגניטיביים והתפקודיים של המטופל. המערכת עושה שימוש במצלמת תלת-ממד סטנדרטית לניתוח תנועות המטופל בזמן ביצוע משימות פונקציונליות ומשחקים מגוונים, במטרה לוודא ביצוע תנועות מדויקות."
                 desktopBg="/img/Reability/Reability_Desktop.png"
                 tabletBg="/img/Reability/Reability_Tablet.png"
-                mobileBg="/img/Reability/Reability_Mobile.png"
+                mobileBg="/img/Reability/Reability_Mobile_Project_banner_mobile.png"
             />
 
             <AboutMyRoleSection

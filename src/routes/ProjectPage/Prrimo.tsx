@@ -74,7 +74,7 @@ const Primo = () => {
                 title="Priimo App"
                 description="PriiMO היא פלטפורמה דיגיטלית המשתמשת בבינה מלאכותית להתאמת טיפולי סרטן מותאמים אישית למטופלים ולרופאים, עם עיצוב אינטואיטיבי ואבטחת איכות בכל שלבי הפיתוח והיישום."
                 desktopBg="/img/Primo/Priimo_Desktop.png"
-                tabletBg="/img/Primo/Priimo_Mobile.png"
+                tabletBg="/img/Primo/Priimo_Mobile_Project_banner.png"
                 mobileBg="/img/Primo/Priimo_Tablet.png"
             />
 
