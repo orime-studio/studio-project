@@ -19,7 +19,7 @@ const LandingPageHeb = () => {
                 <BannerSection
                 variant="none"
                     sideClass="right"
-                    href="https://t-and-t-shop.onrender.com/about"
+                    href="https://t-and-t-shop.onrender.com"
                     title="Full Stack Development"
                     name="T&T Fashion"
                     description="חנות אונליין שנבנתה עם React ו-NodeJS"
